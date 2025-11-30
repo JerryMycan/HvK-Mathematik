@@ -1,0 +1,145 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage{tabularx}
+\usepackage{amsmath}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath, amssymb, amsthm}
+\usepackage{graphicx}
+\usepackage{array}
+\usepackage[left=2cm, right=2cm, top=2cm, bottom=2cm]{geometry}
+\usepackage{fancyhdr}
+\usepackage{xfp}
+\usepackage{pgf}
+
+\pagestyle{fancy}
+\lhead{Klassenarbeit 45min.}
+\chead{Heinrich-von-Kleist-Schule}
+\rhead{Mathematik - G8A}
+\lfoot{}
+\cfoot{Seite \thepage}
+\rfoot{}
+
+\newcommand{\punkteA}{6}
+\newcommand{\punkteB}{11}
+\newcommand{\punkteC}{5}
+\newcommand{\punkteD}{4}
+\newcommand{\punkteE}{15}
+
+\newcommand{\maxSumme}{61}
+\newcommand{\noteEinsMin}{\fpeval{round(\maxSumme * 0.90,0)}}
+\newcommand{\noteZweiMin}{\fpeval{round(\maxSumme * 0.75,0)}}
+\newcommand{\noteDreiMin}{\fpeval{round(\maxSumme * 0.60,0)}}
+\newcommand{\noteVierMin}{\fpeval{round(\maxSumme * 0.45,0)}}
+\newcommand{\noteFunfMin}{\fpeval{round(\maxSumme * 0.20,0)}}
+\newcommand{\noteSechsMin}{0}
+
+\newcommand{\summe}{%
+	\pgfmathparse{\punkteA + \punkteB + \punkteC + \punkteD + \punkteE}%
+	\pgfmathprintnumber{\pgfmathresult}}
+
+\begin{document}
+	
+	\begin{center}
+		\textbf{Klassenarbeit - Lineare Funktionen und Gleichungen}
+	\end{center}
+	
+	\textbf{Vor- und Nachname:} \underline{\hspace{10cm}}\\[0.5cm]
+	
+	\textbf{Aufgabe 1 (6 Punkte)}\newline
+	Zeichne die folgenden Funktionen in ein Koordinatensystem:\newline
+	a) \( f(x) = 2x - 3 \)\newline
+	b) \( g(x) = -\frac{1}{2}x + 2 \)\newline
+	c) \( h(x) = 3 - x \)\newline
+	
+	\textbf{Aufgabe 2 (17 Punkte)}\newline
+	a) Bestimme die Funktionsgleichung der linearen Funktion, die durch die Punkte \(A(1|3)\) und \(B(3|7)\) verläuft.\newline
+	b) Berechne die Nullstelle dieser Funktion.\newline
+	c) Prüfe rechnerisch, ob der Punkt \(C(2|5)\) auf der Geraden liegt.\newline
+	
+	\textbf{Aufgabe 3 (9 Punkte)}\newline
+	Berechne den Schnittpunkt folgender linearer Funktionen:\newline
+	\[ f(x) = 4x - 5 \quad \text{und} \quad g(x) = 7 - 2x \]
+	
+	\textbf{Aufgabe 4 (6 Punkte)}\newline
+	Begründe, ob der Punkt \(P(3|10)\) auf, über oder unter der Geraden \( f(x) = 3x - 5 \) liegt.
+	
+	\textbf{Aufgabe 5 (15 Punkte)}\newline
+	a) Ermittle die Gleichung der Geraden mit Nullstelle bei \( x = 65 \) und Steigung \( m = -2,7 \).\newline
+	b) Bestimme eine zur Geraden \( g(x) = 2x - 1 \) parallele Gerade, die bei \( x = 5 \) die Nullstelle hat.\newline
+	c) Bestimme eine Gerade \(s(x)\), die orthogonal zu \( g(x)\) aus dem Teil b) liegt.
+	
+	
+	\textbf{Auswertungstabelle:}
+	\begin{center}
+		\begin{tabular}{|c|c|c|c|c|c|c|c|}
+			\hline
+			Aufgabe & 1 & 2 & 3 & 4 & 5 & Summe & Note \\
+			\hline
+			Punkte & \text{/ \punkteA } & \text{/ \punkteB } & \text{/ \punkteC } & \text{/ \punkteD } & \text{/ \punkteE} & \summe & \\
+			\hline
+		\end{tabular}
+	\end{center}
+	
+	\textbf{Notenschlüssel:}
+	\begin{center}
+		\begin{tabular}{|c|c|c|c|c|c|c|}
+			\hline
+			Note & 1 & 2 & 3 & 4 & 5 & 6 \\
+			\hline
+			Prozent \% & 100--90 & 89--75 & 74--60 & 59--45 & 44--20 & 19--0 \\
+			\hline
+			Punkte & \maxSumme{}--\noteEinsMin{} & \fpeval{\noteEinsMin-1}--\noteZweiMin{} & \fpeval{\noteZweiMin-1}--\noteDreiMin{} & \fpeval{\noteDreiMin-1}--\noteVierMin{} & \fpeval{\noteVierMin-1}--\noteFunfMin{} & \fpeval{\noteFunfMin-1}--\noteSechsMin{} \\
+			\hline
+		\end{tabular}
+	\end{center}
+	
+	\vspace{3cm}
+	\textbf{Kenntnisnahme eines Elternteils:} \hrulefill \hfill \textbf{Note:} \hrulefill
+	
+	\newpage
+	\section*{Lösungen zur Klassenarbeit}
+	
+	\textbf{Aufgabe 1}
+	\begin{itemize}
+		\item[a)] Gerade durch $(0|-3)$, Steigung $2$.
+		\item[b)] Gerade durch $(0|2)$, fallend mit Steigung $-\frac{1}{2}$.
+		\item[c)] Gerade durch $(0|3)$, fallend mit Steigung $-1$.
+	\end{itemize}
+	
+	\textbf{Aufgabe 2}
+	\begin{itemize}
+		\item[a)] Steigung: $m=\frac{7-3}{3-1}=2$, somit: $f(x)=2x+b$. Punkt A einsetzen: $3=2\cdot1+b$, ergibt $b=1$. \newline Funktionsgleichung: $f(x)=2x+1$.
+		\item[b)] Nullstelle berechnen: $0=2x+1 \Rightarrow x=-\frac{1}{2}$.
+		\item[c)] Punktprobe für $C(2|5)$: $f(2)=2\cdot2+1=5$. Der Punkt liegt auf der Geraden.
+	\end{itemize}
+	
+	\textbf{Aufgabe 3}
+	\begin{align*}
+		4x-5 &= 7-2x \\ 6x &= 12 \\ x &= 2 \\ 
+		\text{Einsetzen in } f(x):\quad y &=4\cdot2-5=3 \\ 
+		\text{Schnittpunkt}&:(2|3)
+	\end{align*}
+	
+	\textbf{Aufgabe 4}
+	\begin{align*}
+		f(3)&=3\cdot3-5=4 \quad\text{(Funktionswert)}\\
+		P_y&=10 \quad\text{(Punktkoordinate)}\\
+		\text{Da }10 &> 4, \text{liegt der Punkt }P(3|10) \text{ oberhalb der Geraden.}
+	\end{align*}
+	
+	\textbf{Aufgabe 5}
+	\begin{itemize}
+		\item[a)] Nullstelle bei $x=65$, also $(65|0)$. Steigung $m=-2,7$:
+		\[0=-2,7\cdot65+b \quad\Rightarrow\quad b=175,5\]
+		Funktionsgleichung: $f(x)=-2,7x+175,5$
+		\item[b)] Parallel bedeutet gleiche Steigung $m=2$, Nullstelle bei $(5|0)$:
+		\[0=2\cdot5+b \quad\Rightarrow\quad b=-10\]
+		Funktionsgleichung: $g(x)=2x-10$
+		\item[c)] Zeichnung der beiden Geraden ins Koordinatensystem:
+		\begin{itemize}
+			\item $f(x)=-2,7x+175,5$
+			\item $g(x)=2x-10$
+		\end{itemize}
+	\end{itemize}
+	
+\end{document}
+

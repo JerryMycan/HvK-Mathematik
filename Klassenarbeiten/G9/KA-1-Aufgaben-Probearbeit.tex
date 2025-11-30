@@ -1,0 +1,164 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage{tabularx}
+\usepackage{amsmath}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath, amssymb, amsthm}
+\usepackage{graphicx}
+\usepackage{enumitem}
+\usepackage{array}
+\usepackage[left=2cm, right=2cm, top=2cm, bottom=2cm]{geometry}
+\usepackage{fancyhdr}
+\usepackage{xfp}
+\usepackage{pgf}
+
+\pagestyle{fancy}
+\lhead{Probe-Klassenarbeit 45min.}
+\chead{Heinrich-von-Kleist-Schule}
+\rhead{Mathematik - G9A}
+\lfoot{}
+\cfoot{Seite \thepage}
+\rfoot{}
+
+\newcommand{\punkteA}{0}
+\newcommand{\punkteB}{0}
+\newcommand{\punkteC}{0}
+\newcommand{\punkteD}{0}
+\newcommand{\punkteE}{0}
+
+\newcommand{\maxSumme}{45}
+\newcommand{\noteEinsMin}{\fpeval{round(\maxSumme * 0.95,0)}}
+\newcommand{\noteZweiMin}{\fpeval{round(\maxSumme * 0.80,0)}}
+\newcommand{\noteDreiMin}{\fpeval{round(\maxSumme * 0.60,0)}}
+\newcommand{\noteVierMin}{\fpeval{round(\maxSumme * 0.45,0)}}
+\newcommand{\noteFunfMin}{\fpeval{round(\maxSumme * 0.20,0)}}
+\newcommand{\noteSechsMin}{0}
+
+\newcommand{\summe}{%
+	\pgfmathparse{\punkteA + \punkteB + \punkteC + \punkteD + \punkteE}%
+	\pgfmathprintnumber{\pgfmathresult}}
+
+\begin{document}
+	
+	\begin{center}
+		\textbf{Probe-Klassenarbeit - Lineare Funktionen und LGS}
+	\end{center}
+	
+	\textbf{Vor- und Nachname:} \underline{\hspace{10cm}}\\[0.1cm]
+	Die Lösungen sowie Lösungswege sollten klar strukturiert und gut nachvollziehbar sein. Jeder einzelne Berechnungsschritt ist mit einer kurzen, prägnanten Überschrift zu versehen, die verdeutlicht, welcher Teil der Aufgabe bearbeitet wird. \\[0.1cm]
+	
+	\textbf{Aufgabe 1 (Punkte)}\\
+	Gegeben ist ein Koordinatensystem, in dem die Graphen der linearen Funktionen \(f\) und \(g\) eingezeichnet sind (siehe Abbildung~1).\\
+	Bestimme den Schnittpunkt der beiden Funktionen \emph{rechnerisch}.
+	Bestimme dazu zunächst aus der Abbildung die Funktionsgleichungen von \(f\) und \(g\).
+	Stelle anschließend das lineare Gleichungssystem
+	\[
+	\begin{cases}
+		y = f(x)\\
+		y = g(x)
+	\end{cases}
+	\]
+	auf und löse es mit dem Einsetzungsverfahren.
+	Gib das Ergebnis als Punkt \(S(x_S \mid y_S)\) an.
+
+	\begin{figure}[h!]
+		\centering
+		\includegraphics[width=0.8\textwidth]{plot-1.png}
+		\caption{Graph der linearen Funktionen \(f\) und \(g\)}
+	\end{figure}
+
+	
+	%\vspace{1cm}
+	
+	\textbf{Aufgabe 2 (Punkte)}\\
+	Beim Sommerfest der Schule werden Eintrittskarten für \emph{Erwachsene} und \emph{Kinder} verkauft. 
+	Eine Familie mit \emph{2 Erwachsenen und 3 Kindern} zahlt insgesamt \(\,23\,€\).
+	Eine andere Familie mit \emph{1 Erwachsenen und 5 Kindern} zahlt \(\,22\,€\).
+	
+	\begin{enumerate}[label=\alph*)]
+		\item Lege geeignete Variablen fest und stelle aus den Angaben ein lineares Gleichungssystem auf.
+		\item Löse das Gleichungssystem \emph{rechnerisch} (z.\,B. mit dem Additions- oder Einsetzungsverfahren) und bestimme den Eintrittspreis für Erwachsene und für Kinder.
+		\item Formuliere einen Antwortsatz und prüfe dein Ergebnis durch Einsetzen.
+		\item Wie viel bezahlt eine Gruppe mit \emph{3 Erwachsenen und 4 Kindern}?
+		\item Am Ende des Tages wurden insgesamt \emph{250 Karten} verkauft, die Tageseinnahmen betragen \(\,1{,}070\,€\).
+		Bestimme mit Hilfe eines linearen Gleichungssystems, wie viele \emph{Erwachsenen-} und wie viele \emph{Kinderkarten} verkauft wurden.
+	\end{enumerate}
+		
+	\textbf{Aufgabe 3 (Punkte)}\\
+	Gegeben ist das lineare Gleichungssystem in Matrixschreibweise
+	\[
+	A\vec{x}=\vec{b},\quad
+	A=\begin{pmatrix}
+		2 & 1 & -1\\
+		1 & -1 & 2\\
+		3 & 2 & 1
+	\end{pmatrix},\quad
+	\vec{b}=\begin{pmatrix}
+		0\\
+		9\\
+		7
+	\end{pmatrix}.
+	\]
+	\begin{enumerate}
+		\item Löse das Gleichungssystem rechnerisch (z.\,B. mit dem Gauß-Verfahren).
+		\item Prüfe dein Ergebnis durch Einsetzen in \(A\vec{x}=\vec{b}\).
+	\end{enumerate}
+
+
+	%\newpage
+	
+% Reelle Zahlen – Wurzeln vereinfachen (teilweises Ziehen)
+
+\textbf{Aufgabe 4 (Punkte)}\\
+Vereinfache so weit wie möglich, indem du vollständige Quadrate aus der Wurzel ziehst.
+\begin{enumerate}[label=\alph*)]
+	\item \(\sqrt{20}\)
+	\item \(\sqrt{45}\)
+	\item \(\sqrt{72}\)
+	\item \(\sqrt{147}\)
+	\item \(\sqrt{108}\)
+	\item \(\sqrt{300}\)
+\end{enumerate}
+
+\medskip
+\textbf{Aufgabe 5 (Punkte)}\\
+Vereinfache so weit wie möglich durch teilweises Ziehen. \emph{Hinweis:} Gehe von \(a,b,x,y\ge 0\) aus.
+\begin{enumerate}[label=\alph*)]
+	\item \(\sqrt{18x^{2}}\)
+	\item \(\sqrt{50a^{2}}\)
+	\item \(\sqrt{12x^{4}}\)
+	\item \(\sqrt{\dfrac{72x^{2}}{2}}\)
+	\item \(\sqrt{27a^{2}b}\)
+	\item \(\sqrt{8x^{3}y^{5}}\)
+\end{enumerate}
+
+	%\vspace{1.5cm}
+	
+	\textbf{Aufgabe 6 (Punkte)}\\
+	Vereinfache mithilfe der Wurzelgesetze. Rationalisiere ggf. den Nenner.
+	\emph{Hinweis:} Es gelte \(a,b,x,y>0\).
+	
+	\begin{enumerate}[label=\alph*)]
+		\item \(\sqrt{18a^{2}b}\)
+		\item \(\sqrt{12x}\cdot\sqrt{27x^{3}}\)
+		\item \(\displaystyle \frac{\sqrt{48a^{5}}}{\sqrt{3a}}\)
+		\item \(5\sqrt{2x}-2\sqrt{8x}+3\sqrt{18x}\)
+		\item \(\sqrt{\dfrac{9a^{3}b}{4a}}\cdot \dfrac{\sqrt{b}}{\sqrt{a^{2}}}\)
+		\item \(\displaystyle \frac{2}{\sqrt{5x}}+\frac{3\sqrt{x}}{\sqrt{20}}\)
+	\end{enumerate}
+	
+	% Aufgabe: Wurzelgesetze mit Variablen (fortgeschritten)
+	\textbf{Aufgabe 7 (fortgeschritten)}\\
+	Vereinfache vollständig mithilfe der Wurzelgesetze und rationalisiere ggf. den Nenner.
+	\emph{Hinweis:} Es gelte \(a,b,x,y>0\).
+	
+	\begin{enumerate}[label=\alph*)]
+		\item \(\displaystyle \sqrt{75\,a^{3}b^{5}}\cdot \frac{\sqrt{12ab}}{3\sqrt{3a}}\)
+		\item \(\displaystyle \frac{\sqrt{32\,x^{5}}}{4\sqrt{2x}}+\frac{3\sqrt{18\,x^{3}}}{2\sqrt{8x}}\)
+		\item \(\displaystyle \frac{5}{\sqrt{a}+\sqrt{b}}-\frac{2}{\sqrt{a}-\sqrt{b}}\)
+		\item \(\displaystyle \left(\frac{\sqrt{45\,x^{4}y}}{\sqrt{5xy}}\right)\,:\,\left(\frac{\sqrt{9x^{2}}}{\sqrt{x}}\right)\)
+		\item \(\displaystyle \sqrt{\frac{(12a^{3}b^{2})(27ab^{5})}{3a^{2}b}}\cdot\frac{1}{\sqrt{6ab}}\)
+		\item \(\displaystyle \sqrt{50\,x^{3}y^{5}}-2\sqrt{2xy}\cdot\sqrt{8x^{2}y^{3}}+\sqrt{200\,x^{3}y^{5}}\)
+	\end{enumerate}
+	
+	
+\end{document}

@@ -1,0 +1,132 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage{tabularx}
+\usepackage{amsmath}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath, amssymb, amsthm}
+\usepackage{graphicx}
+\usepackage{array}
+\usepackage[left=2cm, right=2cm, top=2cm, bottom=2cm]{geometry}
+\usepackage{fancyhdr}
+\usepackage{xfp} % Für mathematische Berechnungen in LaTeX
+\usepackage{pgf} % Erlaubt Berechnungen mit \pgfmathparse
+
+% Kopf- und Fußzeile
+\pagestyle{fancy}
+\lhead{6. März 2025\\Klassenarbeit 45min.}
+\chead{Heinrich-von-Kleist-Schule}
+\rhead{Mathematik - G6E}
+\lfoot{}
+%\cfoot{Seite \thepage}
+\rfoot{}
+
+% Makro für einzelne Punkteingaben (hier einfach Platzhalter)
+\newcommand{\punkteA}{20}  % Eingetragene Punkte für Aufgabe 1
+\newcommand{\punkteB}{15}  % Eingetragene Punkte für Aufgabe 2
+\newcommand{\punkteC}{12}   % Eingetragene Punkte für Aufgabe 3
+\newcommand{\punkteD}{6}   % Eingetragene Punkte für Aufgabe 4
+\newcommand{\punkteE}{0}  % Eingetragene Punkte für Aufgabe 5
+
+% Maximale Punktzahl insgesamt
+\newcommand{\maxSumme}{53}  % Hier die maximale Punktzahl anpassen
+
+% Automatische Berechnung der Notengrenzen
+\newcommand{\noteEinsMin}{\fpeval{round(\maxSumme * 0.90,0)}}
+\newcommand{\noteZweiMin}{\fpeval{round(\maxSumme * 0.75,0)}}
+\newcommand{\noteDreiMin}{\fpeval{round(\maxSumme * 0.60,0)}}
+\newcommand{\noteVierMin}{\fpeval{round(\maxSumme * 0.45,0)}}
+\newcommand{\noteFunfMin}{\fpeval{round(\maxSumme * 0.20,0)}}
+\newcommand{\noteSechsMin}{0}
+
+% Automatische Berechnung der Summe
+\newcommand{\summe}{%
+	\pgfmathparse{\punkteA + \punkteB + \punkteC + \punkteD + \punkteE}%
+	\pgfmathprintnumber{\pgfmathresult}
+}
+
+
+\begin{document}
+	
+	\begin{center}
+		%\textbf{Klassenarbeit N°1 G8}\\[0.3cm]
+		\textbf{Rechnen mit Brüchen}\\[0.2cm]
+		%\textbf{© J. Mycan}\\[0.5cm]
+	\end{center}
+	
+	\textbf{Vor- und Nachname:} \underline{\hspace{10cm}}\\%[0.5cm]
+	
+	%\vspace{1cm}
+
+\textbf{Aufgabe 1}\hfill (8+12 = \punkteA{} Punkte)\
+\\Löse folgende Aufgaben.
+\begin{center}
+	\renewcommand{\arraystretch}{1.5}
+	\begin{tabular}{llll}
+		a) $\frac{3}{4} + \frac{5}{6} =$ & \quad b) $\frac{7}{8} - \frac{2}{5} =$ & \quad  c) $\frac{2}{3} \cdot \frac{4}{9} =$ & \quad  d) $\frac{5}{7} \div \frac{3}{8} =$ \\
+		e) $\frac{1}{2} + \frac{1}{3} - \frac{1}{4} =$ & \quad f) $\frac{5}{6} \cdot \frac{3}{4} \div \frac{2}{5} =$ & \quad g) $\left( \frac{3}{5} + \frac{2}{7} \right) \cdot \frac{4}{9} =$ & \quad h) $\frac{8}{11} \div \left( \frac{5}{6} - \frac{1}{4} \right) =$ \\
+	\end{tabular}
+\end{center}
+
+	\textbf{Aufgabe 2} \hfill (6+9 = \punkteB{} Punkte)\\
+	Wandle die folgenden Prozentangaben in Brüche und Dezimalzahlen um. Beispiel: \[50\% = \frac{1}{2} = 0,5\]
+\begin{center}
+	\renewcommand{\arraystretch}{1.5}
+	\begin{tabular}{lll}
+		a) $25\% =$ & \qquad b) $40\% =$ & \qquad c) $12.5\% =$ \\
+		d) $66.6\% =$ & \qquad e) $5\% =$ & \qquad f) $83.33\% =$ \\
+	\end{tabular}
+\end{center}
+	
+	\textbf{Aufgabe 3} \hfill (\punkteC{} Punkte)\\
+	Berechne die entsprechende  Anteile von Größen.
+\begin{center}
+	\renewcommand{\arraystretch}{1.5}
+	\begin{tabular}{lll}
+		a) $\frac{1}{12}$ von 200m = & b) $\frac{5}{6}$ von 4,2dm = & c) $11\%$ von 2m = \\
+		d) $\frac{1}{5}$ von \dots min sind 40min &  e) $\frac{9}{10}$ von \dots sind 54h & f) $\frac{6}{13}$ von \dots sind 84€\\
+	\end{tabular}
+\end{center}
+	
+	
+	\textbf{Aufgabe 4} \hfill (\punkteD{} Punkte)\\
+	Kurt Klugschwätzer behauptet: "In der Klasse 6b spielen ein Drittel aller Schüler genau ein Instrument. Die Hälfte davon spielt Geige, zwei Schüler flöten und drei Schüler spielen Klavier."
+	Wie viele Schüler hat die Klasse 6b? Begründe deine Antwort.\\
+
+	\textbf{Aufgabe 5} \hfill (2+6=\punkteE{} Punkte)\\
+	Ein Zwölftel aller Schüler einer Realschule fahren mit dem Fahrrad und mit dem Moped zur Schule. Ein Achtel der Schüler wird mit dem Schulbus gebracht. Die übrigen kommen zu Fuß.
+\begin{enumerate}
+	\item[a)] Welcher Anteil (Bruch) der Schüler kommt nicht zu Fuß?
+	\item[b)] Wenn 27 Schüler ein Fahrrad oder Moped benutzen, wie viele Schüler hat dann diese Schule?
+\end{enumerate}
+
+	\vspace{0.5cm}
+	\textbf{Auswertungstabelle:}
+	\begin{center}
+		\begin{tabular}{|c|c|c|c|c|c|c|c|}
+			\hline
+			Aufgabe & 1 & 2 & 3 & 4 & 5 & Summe & Note \\
+			\hline
+			Punkte  & \text{\quad / \punkteA } & \text{\quad / \punkteB } & \text{ \quad / \punkteC } & \text{\quad / \punkteD } & \text{\quad / \punkteE}  & \summe & \\
+			\hline
+		\end{tabular}
+	\end{center}	
+	%	\vspace{1cm}
+	
+	\textbf{Notenschlüssel:}
+	
+	\begin{center}
+		\begin{tabular}{|c|c|c|c|c|c|c|}
+			\hline
+			Note & 1 & 2 & 3 & 4 & 5 & 6 \\
+			\hline
+			Prozent \% & 100--90 & 89--75 & 74--60 & 59--45 & 44--20 & 19--0 \\
+			\hline
+			Punkte & \maxSumme{}--\noteEinsMin{} & \fpeval{\noteEinsMin-1}--\noteZweiMin{} & \fpeval{\noteZweiMin-1}--\noteDreiMin{} & \fpeval{\noteDreiMin-1}--\noteVierMin{} & \fpeval{\noteVierMin-1}--\noteFunfMin{} & \fpeval{\noteFunfMin-1}--\noteSechsMin{} \\
+			\hline
+		\end{tabular}
+	\end{center}
+	
+	\vspace{3cm}
+	
+	\textbf{Kenntnisnahme eines Elternteils:} \hrulefill \hfill \textbf{Note:} \hrulefill
+	
+\end{document}

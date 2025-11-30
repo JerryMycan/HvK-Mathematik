@@ -1,0 +1,105 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage{tabularx}
+\usepackage{amsmath}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath, amssymb, amsthm}
+\usepackage{graphicx}
+\usepackage{array}
+\usepackage[left=2cm, right=2cm, top=2cm, bottom=2cm]{geometry}
+\usepackage{fancyhdr}
+\usepackage{xfp}
+\usepackage{pgf}
+
+\pagestyle{fancy}
+\lhead{Probe-Klassenarbeit 45min.}
+\chead{Heinrich-von-Kleist-Schule}
+\rhead{Mathematik - G8A}
+\lfoot{}
+\cfoot{Seite \thepage}
+\rfoot{}
+
+\newcommand{\punkteA}{6}
+\newcommand{\punkteB}{7}
+
+\newcommand{\punkteC}{5}
+\newcommand{\punkteD}{12}
+\newcommand{\punkteE}{8}
+
+\newcommand{\maxSumme}{38}
+\newcommand{\noteEinsMin}{\fpeval{round(\maxSumme * 0.96,0)}}
+\newcommand{\noteZweiMin}{\fpeval{round(\maxSumme * 0.80,0)}}
+\newcommand{\noteDreiMin}{\fpeval{round(\maxSumme * 0.60,0)}}
+\newcommand{\noteVierMin}{\fpeval{round(\maxSumme * 0.45,0)}}
+\newcommand{\noteFunfMin}{\fpeval{round(\maxSumme * 0.20,0)}}
+\newcommand{\noteSechsMin}{0}
+
+\newcommand{\summe}{%
+	\pgfmathparse{\punkteA + \punkteB + \punkteC + \punkteD + \punkteE}%
+	\pgfmathprintnumber{\pgfmathresult}}
+
+\begin{document}
+	
+	\begin{center}
+		\textbf{Probe-Klassenarbeit - Lineare Funktionen und LGS}
+	\end{center}
+	
+	\textbf{Vor- und Nachname:} \underline{\hspace{10cm}}\\[0.1cm]
+	Die Lösungen sowie Lösungswege sollten klar strukturiert und gut nachvollziehbar sein. Jeder einzelne Berechnungsschritt ist mit einer kurzen, prägnanten Überschrift zu versehen, die verdeutlicht, welcher Teil der Aufgabe bearbeitet wird. \\[0.1cm]
+	
+\textbf{Aufgabe 1 (6 Punkte)}\newline
+Zeichne die Graphen folgender Funktionen in ein gemeinsames Koordinatensystem:\newline
+	a) $f(x) = -\frac{5}{3}x + 3$\newline
+	b) $h(x) = -1 - 2x$\newline
+	c) $g(x) = -\frac{20}{30}x - 2$\newline
+
+\textbf{Aufgabe 2 (7 Punkte)}\newline
+Gegeben sind die Punkte $A(1|4)$ und $B(5|8)$.\newline
+	a) Ermittle die Funktionsgleichung der Geraden durch diese Punkte.\newline
+	b) Berechne die Nullstelle der Funktion.\newline
+	c) Prüfe rechnerisch, ob der Punkt $C(3|6)$ auf dieser Geraden liegt.\newline
+
+\textbf{Aufgabe 3 (5 Punkte)}\newline
+Berechne den Schnittpunkt folgender Geraden:
+\[f(x) = -0,5x + 5 \quad\text{und}\quad g(x) = 1,5x - 3\]
+
+\textbf{Aufgabe 4 (12 Punkte)}\newline
+	a) Ermittle die Nullstelle der Geraden $v(x)$, die parallel zu $s(x)= -3x-2$ verläuft und die $y$-Achse in $(0|6)$ schneidet.\newline
+	b) Ermittle eine zur Geraden $f(x)=4x-1$ parallele Gerade mit Nullstelle bei $x=-4$.\newline
+	c) Ermittle eine Gerade, die orthogonal zur Geraden aus Teil b) durch den Punkt $(0|2)$ verläuft.\newline
+
+\textbf{Aufgabe 5 (8 Punkte)}\newline
+Ein Behälter enthält zu Beginn 1500 Liter Wasser. Wegen eines Defekts verliert er täglich 75 Liter Wasser.\newline
+	a) Stelle eine Funktionsgleichung auf, die den Sachverhalt beschreibt.\newline
+	b) Wie viel Wasser befindet sich nach 12 Tagen im Behälter?\newline
+	c) Nach wie vielen Tagen ist der Behälter leer?\newline
+	
+	\vspace{1cm}
+	\textbf{Auswertungstabelle:}
+	\begin{center}
+		\begin{tabular}{|c|c|c|c|c|c|c|c|}
+			\hline
+			Aufgabe & 1 & 2 & 3 & 4 & 5 & Summe\\
+			\hline
+			Punkte & \text{\ \ / \punkteA } & \text{\ \ / \punkteB } & \text{\ \ / \punkteC } & \text{\ \ / \punkteD } & \text{\ \ / \punkteE} & \text{\ \ / \summe}\\
+			\hline
+		\end{tabular}
+	\end{center}
+	
+	\textbf{Notenschlüssel:}
+	\begin{center}
+		\begin{tabular}{|c|c|c|c|c|c|c|}
+			\hline
+			Note & 1 & 2 & 3 & 4 & 5 & 6 \\
+			\hline
+			Prozent \% & 100--96 & 95--80 & 79--60 & 59--45 & 44--16 & 15--0 \\
+			\hline
+			Punkte & \maxSumme{}--\noteEinsMin{} & \fpeval{\noteEinsMin-1}--\noteZweiMin{} & \fpeval{\noteZweiMin-1}--\noteDreiMin{} & \fpeval{\noteDreiMin-1}--\noteVierMin{} & \fpeval{\noteVierMin-1}--\noteFunfMin{} & \fpeval{\noteFunfMin-1}--\noteSechsMin{} \\
+			\hline
+		\end{tabular}
+	\end{center}
+	
+	\vspace{2cm}
+	\textbf{Kenntnisnahme eines Elternteils:} \hrulefill \hfill \textbf{Note:} \hrulefill
+	
+\end{document}
+

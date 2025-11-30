@@ -1,0 +1,70 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage{tabularx}
+\usepackage{amsmath}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath, amssymb, amsthm}
+\usepackage{graphicx}
+\usepackage{array}
+\usepackage[left=2cm, right=2cm, top=2cm, bottom=2cm]{geometry}
+\usepackage{fancyhdr}
+\usepackage{xfp}
+\usepackage{pgf}
+
+\pagestyle{fancy}
+\lhead{Probe-Klassenarbeit 45min.}
+\chead{Heinrich-von-Kleist-Schule}
+\rhead{Mathematik - G8A}
+\lfoot{}
+\cfoot{Seite \thepage}
+\rfoot{}
+
+\newcommand{\punkteA}{6}
+\newcommand{\punkteB}{9}
+
+\newcommand{\punkteC}{5}
+\newcommand{\punkteD}{12}
+\newcommand{\punkteE}{8}
+
+\newcommand{\maxSumme}{40}
+\newcommand{\noteEinsMin}{\fpeval{round(\maxSumme * 0.96,0)}}
+\newcommand{\noteZweiMin}{\fpeval{round(\maxSumme * 0.80,0)}}
+\newcommand{\noteDreiMin}{\fpeval{round(\maxSumme * 0.60,0)}}
+\newcommand{\noteVierMin}{\fpeval{round(\maxSumme * 0.45,0)}}
+\newcommand{\noteFunfMin}{\fpeval{round(\maxSumme * 0.20,0)}}
+\newcommand{\noteSechsMin}{0}
+
+\newcommand{\summe}{%
+	\pgfmathparse{\punkteA + \punkteB + \punkteC + \punkteD + \punkteE}%
+	\pgfmathprintnumber{\pgfmathresult}}
+
+\begin{document}
+	
+	\begin{center}
+		\textbf{Probe-Klassenarbeit - Lineare Funktionen und Gleichungen}
+	\end{center}
+\textbf{Aufgabe 1 (Realitätsbezug - Kauf und Verkauf)}\\
+Ein Händler kauft Äpfel für 1,50 € pro kg und verkauft sie mit 0,70 € Gewinn pro kg. Stelle die lineare Funktion auf und berechne den Gewinn bei 40 kg.\\
+\\
+\textbf{Aufgabe 2 (Modellierung und Interpretation)}\\
+Ein Baum ist nach 2 Jahren 1,5 m hoch, nach 5 Jahren 3 m. Ermittle die Funktionsgleichung und erkläre, was Steigung und y-Achsenabschnitt bedeuten.\\
+\\
+\textbf{Aufgabe 3 (Fehleranalyse und Korrektur)}\\
+Ein Schüler gibt an, die Gerade durch (1|4) und (2|8) habe die Gleichung $y=4x$. Prüfe, ob dies stimmt. Begründe und korrigiere gegebenenfalls.\\
+\\
+\textbf{Aufgabe 4 (Grafische Interpretation)}\\
+Zeichne den Graphen von $y=-3x+1$ und bestimme grafisch die neue Funktionsgleichung, wenn der Graph um 2 Einheiten nach oben verschoben wird.\\
+\\
+\textbf{Aufgabe 5 (Vergleichende Analyse)}\\
+Tarif A kostet 10 € Grundgebühr und 0,15 € pro Minute, Tarif B hat keine Grundgebühr, dafür 0,35 € pro Minute. Stelle für beide Tarife die Gleichungen auf und berechne, ab wie vielen Minuten Tarif A günstiger ist.\\
+\\
+\textbf{Aufgabe 6 (Besondere Lagebeziehungen)}\\
+Die Gerade $g$ hat die Gleichung $y=3x+5$. Ermittle eine zu $g$ senkrechte Gerade $h$, die durch den Punkt (0|2) verläuft.\\
+\\
+\textbf{Aufgabe 7 (Rückwärtsrechnung)}\\
+Eine lineare Funktion hat die Steigung 2,5 und verläuft durch den Punkt (4|0). Ermittle den y-Achsenabschnitt und gib die Funktionsgleichung an.\\
+\\
+\textbf{Aufgabe 8 (Erstellen eigener Beispiele)}\\
+Erstelle eine lineare Funktion, deren Graph die y-Achse oberhalb des Ursprungs schneidet und eine negative Steigung hat. Begründe deine Wahl.\\
+
+\end{document}
+

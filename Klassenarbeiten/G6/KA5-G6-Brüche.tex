@@ -1,0 +1,169 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage{tabularx}
+\usepackage{amsmath}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath, amssymb, amsthm}
+\usepackage{graphicx}
+\usepackage{array}
+\usepackage[left=2cm, right=2cm, top=2cm, bottom=2cm]{geometry}
+\usepackage{fancyhdr}
+\usepackage{xfp} % Für mathematische Berechnungen in LaTeX
+\usepackage{pgf} % Erlaubt Berechnungen mit \pgfmathparse
+
+% Kopf- und Fußzeile
+\pagestyle{fancy}
+\lhead{6. März 2025\\Vorbereitung 45min.}
+\chead{Heinrich-von-Kleist-Schule}
+\rhead{Mathematik - G6E}
+\lfoot{}
+%\cfoot{Seite \thepage}
+\rfoot{}
+
+% Makro für einzelne Punkteingaben (hier einfach Platzhalter)
+\newcommand{\punkteA}{0}  % Eingetragene Punkte für Aufgabe 1
+\newcommand{\punkteB}{0}  % Eingetragene Punkte für Aufgabe 2
+\newcommand{\punkteC}{0}   % Eingetragene Punkte für Aufgabe 3
+\newcommand{\punkteD}{0}   % Eingetragene Punkte für Aufgabe 4
+\newcommand{\punkteE}{0}  % Eingetragene Punkte für Aufgabe 5
+
+% Maximale Punktzahl insgesamt
+\newcommand{\maxSumme}{100}  % Hier die maximale Punktzahl anpassen
+
+% Automatische Berechnung der Notengrenzen
+\newcommand{\noteEinsMin}{\fpeval{round(\maxSumme * 0.90,0)}}
+\newcommand{\noteZweiMin}{\fpeval{round(\maxSumme * 0.75,0)}}
+\newcommand{\noteDreiMin}{\fpeval{round(\maxSumme * 0.60,0)}}
+\newcommand{\noteVierMin}{\fpeval{round(\maxSumme * 0.45,0)}}
+\newcommand{\noteFunfMin}{\fpeval{round(\maxSumme * 0.20,0)}}
+\newcommand{\noteSechsMin}{0}
+
+% Automatische Berechnung der Summe
+\newcommand{\summe}{%
+	\pgfmathparse{\punkteA + \punkteB + \punkteC + \punkteD + \punkteE}%
+	\pgfmathprintnumber{\pgfmathresult}
+}
+
+
+\begin{document}
+	
+	\begin{center}
+		%\textbf{Klassenarbeit N°1 G8}\\[0.3cm]
+		\textbf{Rechnen mit Brüchen}\\[0.2cm]
+		%\textbf{© J. Mycan}\\[0.5cm]
+	\end{center}
+	
+	\textbf{Vor- und Nachname:} \underline{\hspace{10cm}}\\%[0.5cm]
+	
+	%\vspace{1cm}
+
+\textbf{Aufgabe 1}\hfill ( \punkteA{} Punkte)\
+
+Berechne die folgenden Bruchterme. Achte auf die Klammern und kürze, wenn möglich.
+Zeige alle Rechenschritte übersichtlich!
+
+\begin{center}
+	\renewcommand{\arraystretch}{2}
+	\begin{tabular}{ll}
+		a) $\left( \frac{3}{4} + \frac{1}{2} \right) \cdot \frac{2}{5} =$ & 
+		b) $\frac{7}{8} : \left( \frac{3}{4} - \frac{1}{8} \right) =$ \\
+		
+		c) $\left( \frac{5}{6} - \frac{2}{3} \right) \cdot \left( \frac{3}{4} + \frac{1}{2} \right) =$ &
+		d) $\frac{2}{3} + \left( \frac{4}{9} : \frac{2}{3} \right) =$ \\
+	\end{tabular}
+\end{center}
+
+\textbf{Aufgabe 2} \hfill ( Punkte)\\
+Eine Schule plant, drei Fünftel aller Klassenzimmer neu zu gestalten.
+\(\frac{3}{10}\) dieser Räume sollen grün gestrichen werden, \(\frac{1}{4}\) in Gelbtönen.
+Wie groß ist der Anteil der grün gestrichenen Räume an allen Räumen? Und wie groß ist der Anteil der gelben Räume an allen Räumen?
+Gib beide Anteile vollständig gekürzt als Bruch an.\\
+
+\textbf{Aufgabe 3} \hfill ( Punkte)\\
+Ein Kuchenstück wiegt \( \frac{5}{6} \) kg.
+Davon werden \( \frac{1}{4} \) kg für später eingefroren. Der Rest wird in 5 gleich große Stücke geteilt.
+Wie viel wiegt ein dieser Stücke? Gib dein Ergebnis als Bruch in kg an.\\[1em]
+
+\textbf{Aufgabe 4} \hfill ( Punkte)\\
+Das Schwimmbad "Wiesenbad“ in Eschborn ist 25 m lang, 15 m breit und 2 m tief.\\[0.2cm]
+	a)Berechne das Volumen des Beckens in Kubikmetern.\\[0.2cm]
+	b) Wie viele Liter Wasser passen in das Schwimmbecken?\\
+
+
+
+\textbf{Aufgabe 5} \hfill ( Punkte)\\
+Gib jeweils die fehlenden Winkel an.
+
+\begin{minipage}{0.48\textwidth}
+	\textbf{a)}\\
+	\includegraphics[width=0.75\textwidth]{winkel-1.png}\\
+	Berechne die Winkel \(\beta\) und \(\gamma\). Begründe jeweils mit einer Winkelbeziehung.
+\end{minipage}
+\hfill
+\begin{minipage}{0.48\textwidth}
+	\textbf{b)}\\
+	\includegraphics[width=0.75\textwidth]{winkel-2.png}\\
+	Berechne den Winkel \(\alpha\). Begründe deine Rechnung.
+\end{minipage}
+
+\vspace{1.5cm}
+
+\begin{minipage}{0.48\textwidth}
+	\textbf{c)}\\
+	\includegraphics[width=0.90\textwidth]{winkel-3.png}\\
+	Berechne die Winkel \(\beta\) und \(c\). Begründe jeweils, welche Winkelbeziehungen du genutzt hast.
+\end{minipage}
+\hfill
+\begin{minipage}{0.48\textwidth}
+	\textbf{d)}\\
+	\includegraphics[width=0.80\textwidth]{winkel-4.png}\\
+	Berechne den Winkel \(\gamma\). Begründe deine Rechnung mithilfe der gegebenen Winkel.
+\end{minipage}
+
+\textbf{Aufgabe 6} \hfill ( Punkte)\\
+Berechne die Flächeninhalte der folgenden Figuren. Zerlege die Flächen in bekannte geometrische Formen (z.\,B.\ Rechtecke, Dreiecke, Trapeze). Notiere alle Zwischenschritte und gib die Lösung jeweils in  an.\\
+
+\begin{minipage}{0.48\textwidth}
+	\textbf{a)}\\
+	\includegraphics[width=0.9\textwidth]{flaeche-1.png}\\
+\end{minipage}
+\hfill
+\begin{minipage}{0.48\textwidth}
+	\textbf{b)}\\
+	\includegraphics[width=0.9\textwidth]{flaeche-2.png}\\
+\end{minipage}
+
+
+
+
+	\vspace{0.5cm}
+	\textbf{Auswertungstabelle:}
+	\begin{center}
+		\begin{tabular}{|c|c|c|c|c|c|c|c|}
+			\hline
+			Aufgabe & 1 & 2 & 3 & 4 & 5 & Summe & Note \\
+			\hline
+			Punkte  & \text{\quad / \punkteA } & \text{\quad / \punkteB } & \text{ \quad / \punkteC } & \text{\quad / \punkteD } & \text{\quad / \punkteE}  & \summe & \\
+			\hline
+		\end{tabular}
+	\end{center}	
+	%	\vspace{1cm}
+	
+	\textbf{Notenschlüssel:}
+	
+	\begin{center}
+		\begin{tabular}{|c|c|c|c|c|c|c|}
+			\hline
+			Note & 1 & 2 & 3 & 4 & 5 & 6 \\
+			\hline
+			Prozent \% & 100--90 & 89--75 & 74--60 & 59--45 & 44--20 & 19--0 \\
+			\hline
+			Punkte & \maxSumme{}--\noteEinsMin{} & \fpeval{\noteEinsMin-1}--\noteZweiMin{} & \fpeval{\noteZweiMin-1}--\noteDreiMin{} & \fpeval{\noteDreiMin-1}--\noteVierMin{} & \fpeval{\noteVierMin-1}--\noteFunfMin{} & \fpeval{\noteFunfMin-1}--\noteSechsMin{} \\
+			\hline
+		\end{tabular}
+	\end{center}
+	
+	\vspace{3cm}
+	
+	\textbf{Kenntnisnahme eines Elternteils:} \hrulefill \hfill \textbf{Note:} \hrulefill
+	
+\end{document}

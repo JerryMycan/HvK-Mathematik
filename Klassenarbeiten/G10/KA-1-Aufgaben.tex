@@ -1,0 +1,198 @@
+\documentclass[a4paper,12pt]{article}
+%\documentclass[a4paper,fontsize=13pt]{scrartcl}
+
+\usepackage{tabularx}
+\usepackage{amsmath}
+\usepackage[utf8]{inputenc}
+\usepackage{multicol}
+\usepackage{amsmath, amssymb, amsthm}
+\usepackage{graphicx}
+\usepackage{enumitem}
+\usepackage{array}
+\usepackage[left=2cm, right=2cm, top=2cm, bottom=2cm]{geometry}
+\usepackage{fancyhdr}
+\usepackage{xfp}
+\usepackage{pgf}
+
+\usepackage{graphicx}
+\usepackage{fancyhdr}
+\setlength{\headheight}{28pt} % genug Platz für das Logo
+\pagestyle{fancy}
+\fancyhf{} % alles leeren
+\fancyhead[L]{\includegraphics[height=1.2cm]{logo.png}}
+\fancyhead[C]{\small Klassenarbeit – Rechnen mit Potenzen \ (Kl. G10B)}
+\fancyhead[R]{\small Name:\ \rule{2.8cm}{0.4pt}}
+\fancyfoot[C]{\thepage}
+
+\fancyfoot[C]{Seite \thepage \enspace\textbullet\enspace J.\,Mycan \textcopyright~2025 *Klassenarbeit 45 min.*}
+
+\renewcommand{\footrulewidth}{0.4pt}
+
+
+
+
+%\pagestyle{fancy}
+%\lhead{Klassenarbeit 45min.}
+%\chead{Heinrich-von-Kleist-Schule}
+%\rhead{Mathematik - G8A}
+%\lfoot{}
+%\cfoot{Seite \thepage}
+%\rfoot{}
+
+\newcommand{\punkteA}{6}
+\newcommand{\punkteB}{6}
+\newcommand{\punkteC}{6}
+\newcommand{\punkteD}{18}
+\newcommand{\punkteE}{6}
+%\newcommand{\punkteF}{12}
+
+\newcommand{\maxSumme}{42}
+\newcommand{\noteEinsMin}{\fpeval{round(\maxSumme * 0.95,0)}}
+\newcommand{\noteZweiMin}{\fpeval{round(\maxSumme * 0.80,0)}}
+\newcommand{\noteDreiMin}{\fpeval{round(\maxSumme * 0.60,0)}}
+\newcommand{\noteVierMin}{\fpeval{round(\maxSumme * 0.45,0)}}
+\newcommand{\noteFunfMin}{\fpeval{round(\maxSumme * 0.20,0)}}
+\newcommand{\noteSechsMin}{0}
+
+\newcommand{\summe}{%
+	\pgfmathparse{\punkteA + \punkteB + \punkteC + \punkteD + \punkteE}%
+	\pgfmathprintnumber{\pgfmathresult}}
+
+\begin{document}
+	
+%	\begin{center}
+%		\textbf{Klassenarbeit - Lineare Funktionen und LGS}
+%	\end{center}
+	
+%	\textbf{Vor- und Nachname:} \underline{\hspace{10cm}}\\[0.1cm]
+\vspace{2cm}
+Bearbeite die Klassenarbeit ohne Taschenrechner und ohne elektronische Hilfsmittel. Schreibe jede Aufgabe vollständig ab. Die Lösungen sowie Lösungswege sollen klar strukturiert und gut nachvollziehbar sein. Zeige alle Zwischenschritte und markiere das Endergebnis deutlich. Vereinfache Ergebnisse soweit möglich. \\[1cm]
+	
+	% -------------------------------------------------
+	% Aufgabe 1
+	% -------------------------------------------------
+\textbf{Aufgabe 1 (6 Punkte)}\\
+Wandle \emph{ohne Rundung} in die Form \(a\cdot 10^{n}\) mit \(1\le a<10\) um.
+\begin{multicols}{2}
+	\begin{enumerate}[label=\alph*)]
+		\item \(0{,}00052\)
+		\item \(0{,}0063\)
+		\item \(4\,700\,000\)
+		\item \(0{,}0000008\)
+		\item \(125\,000\)
+		\item \(91{,}2\)
+	\end{enumerate}
+\end{multicols}
+
+	
+	
+	\vspace{2 cm}
+	
+	% -------------------------------------------------
+	% Aufgabe 2
+	% -------------------------------------------------
+\textbf{Aufgabe 2 (6 Punkte)}\\
+Schreibe in normale Dezimalschreibweise um (\emph{ohne} Rundung).
+\begin{multicols}{2}
+	\begin{enumerate}[label=\alph*)]
+		\item \(4{,}5\cdot 10^{3}\)
+		\item \(6{,}02\cdot 10^{-4}\)
+		\item \(9\cdot 10^{1}\)
+		\item \(1{,}8\cdot 10^{-2}\)
+		\item \(2{,}75\cdot 10^{5}\)
+		\item \(3{,}6\cdot 10^{0}\)
+	\end{enumerate}
+\end{multicols}
+
+	
+	
+	\vspace{2cm}
+	% -------------------------------------------------
+	% Aufgabe 3
+	% -------------------------------------------------
+\textbf{Aufgabe 3 (6 Punkte)}\\
+Vereinfache und berechne vollständig. \emph{Hinweis:} Es gilt z.B: \((27)^{3}=(3^3)^{3}\)
+\begin{multicols}{2}
+	\begin{enumerate}[label=\alph*)]
+		\item \(2^{5}\cdot 2^{-2}\cdot 2\)
+		\item \(3^{-2}:3^{-5}\)
+		\item \(\bigl(5^{2}\cdot 5^{-1}\bigr)^{2}\)
+		\item \(10^{-4}\cdot 10^{6}:10\)
+		\item \(4^{-1}\cdot 2^{2}\)
+		\item \(16^{\tfrac{3}{4}}\)
+	\end{enumerate}
+\end{multicols}
+
+	
+	\newpage
+	% -------------------------------------------------
+	% Aufgabe 4
+	% -------------------------------------------------
+\textbf{Aufgabe 4 (18 Punkte)}\\
+Vereinfache vollständig; schreibe ohne negative Exponenten und rationalisiere ggf. den Nenner. Es gelte \(a,b,x,y>0\).
+
+\begin{multicols}{2}
+	\begin{enumerate}[label=\alph*)]
+		\item \(\sqrt{32\,a^{2}b}\) % → 4a\sqrt{2b}
+		\item \(\dfrac{x^{\tfrac12}\cdot\sqrt{18x^{3}}}{\sqrt{2}}\) % → 3x^{2}
+		\item \(\dfrac{\sqrt{32\,x^{6}}\cdot x^{\tfrac{3}{2}}}{\sqrt{2x}\cdot x}\) % → 4x^{3}
+		\item \(\dfrac{\sqrt{12x}}{\sqrt{3}}\cdot \sqrt{x}\) % → 2x
+		\item \(\left(\dfrac{\sqrt{9a}-\sqrt{4a}}{\sqrt{a}}\right)^{2}\) % → 1
+		\item \(\dfrac{a^{2n+1}}{b^{-3n}}\cdot \dfrac{b^{-3n}}{a^{2n+1}}\) % → 1
+	\end{enumerate}
+\end{multicols}
+	
+	\vspace{1.5cm}
+	% -------------------------------------------------
+	% Aufgabe 5
+	% -------------------------------------------------
+	\textbf{Aufgabe 5 (6 + 6* Punkte)}\\
+	Vereinfache vollständig (Definitionsmenge beachten). Es gelte \(a,x>0\).
+	\begin{enumerate}[label=\alph*)]	
+		\item \[
+		\left(\frac{36-a^{2}}{(a+6)(6-a)}\right)^{2}
+		\cdot
+		\left(\frac{12+2a}{\,6-a\,}\right)^{2}
+		\cdot
+		\left(\frac{6-a}{\,2(6+a)\,}\right)^{2}
+		\] % Ergebnis: 1 \; (da 36-a^2=(6-a)(6+a)); DGM: a\neq \pm 6
+
+		\item[b\textsuperscript{*})]
+		\[
+		\left(\frac{x^{2}-2x+1}{x-3}\right)^{4}:
+		\left(\frac{x-1}{x^{2}-9}\right)^{4}
+		\cdot
+		\left(\frac{3}{(x+3)(x-1)}\right)^{4}
+		\]
+		
+	\end{enumerate}
+	
+	\vspace{2cm}
+	\textbf{Auswertungstabelle:}
+	\begin{center}
+		\begin{tabular}{|c|c|c|c|c|c|c|c|}
+			\hline
+			Aufgabe & 1 & 2 & 3 & 4 & 5 &  Summe\\
+			\hline
+			Punkte & \text{\ / \punkteA} & \text{\ / \punkteB} & \text{\ / \punkteC} & \text{\ / \punkteD} & \text{\ / \punkteE} & \text{\ / \summe}\\
+			\hline
+		\end{tabular}
+	\end{center}
+	
+	\textbf{Notenschlüssel:}
+	\begin{center}
+		\begin{tabular}{|c|c|c|c|c|c|c|}
+			\hline
+			Note & 1 & 2 & 3 & 4 & 5 & 6 \\
+			\hline
+			Prozent \% & 100--95 & 94--80 & 79--60 & 59--45 & 44--16 & 15--0 \\
+			\hline
+			Punkte & \maxSumme{}--\noteEinsMin{} & \fpeval{\noteEinsMin-1}--\noteZweiMin{} & \fpeval{\noteZweiMin-1}--\noteDreiMin{} & \fpeval{\noteDreiMin-1}--\noteVierMin{} & \fpeval{\noteVierMin-1}--\noteFunfMin{} & \fpeval{\noteFunfMin-1}--\noteSechsMin{} \\
+			\hline
+		\end{tabular}
+	\end{center}
+	
+	\vspace{2cm}
+	\textbf{Kenntnisnahme eines Elternteils:} \hrulefill \hfill \textbf{Note:} \hrulefill
+	
+\end{document}

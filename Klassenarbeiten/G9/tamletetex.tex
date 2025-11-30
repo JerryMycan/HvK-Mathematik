@@ -1,0 +1,67 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage{tabularx}
+\usepackage{amsmath}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath, amssymb, amsthm}
+\usepackage{graphicx}
+\usepackage{enumitem}
+\usepackage{array}
+\usepackage[left=2cm, right=2cm, top=2cm, bottom=2cm]{geometry}
+\usepackage{fancyhdr}
+\usepackage{xfp}
+\usepackage{pgf}
+
+\pagestyle{fancy}
+\lhead{Probe-Klassenarbeit 45min.}
+\chead{Heinrich-von-Kleist-Schule}
+\rhead{Mathematik - G8A}
+\lfoot{}
+\cfoot{Seite \thepage}
+\rfoot{}
+
+\newcommand{\punkteA}{10}
+\newcommand{\punkteB}{8}
+\newcommand{\punkteC}{5}
+\newcommand{\punkteD}{12}
+\newcommand{\punkteE}{10}
+
+\newcommand{\maxSumme}{45}
+\newcommand{\noteEinsMin}{\fpeval{round(\maxSumme * 0.96,0)}}
+\newcommand{\noteZweiMin}{\fpeval{round(\maxSumme * 0.80,0)}}
+\newcommand{\noteDreiMin}{\fpeval{round(\maxSumme * 0.60,0)}}
+\newcommand{\noteVierMin}{\fpeval{round(\maxSumme * 0.45,0)}}
+\newcommand{\noteFunfMin}{\fpeval{round(\maxSumme * 0.20,0)}}
+\newcommand{\noteSechsMin}{0}
+
+\newcommand{\summe}{%
+	\pgfmathparse{\punkteA + \punkteB + \punkteC + \punkteD + \punkteE}%
+	\pgfmathprintnumber{\pgfmathresult}}
+
+\begin{document}
+	
+	\begin{center}
+		\textbf{Probe-Klassenarbeit - Lineare Funktionen und LGS}
+	\end{center}
+	
+	\textbf{Vor- und Nachname:} \underline{\hspace{10cm}}\\[0.1cm]
+	Die Lösungen sowie Lösungswege sollten klar strukturiert und gut nachvollziehbar sein. Jeder einzelne Berechnungsschritt ist mit einer kurzen, prägnanten Überschrift zu versehen, die verdeutlicht, welcher Teil der Aufgabe bearbeitet wird. \\[0.1cm]
+	
+	\textbf{Aufgabe 1 (10 Punkte)}\\
+
+
+	
+	\vspace{1cm}
+	
+% 3x3-LGS als Matrix (mit ganzzahliger Lösung)
+\textbf{Aufgabe: 2{\small×}3-LGS in Matrixform}\\
+
+	%\newpage
+	
+% Reelle Zahlen – Wurzeln vereinfachen (teilweises Ziehen)
+
+\textbf{Aufgabe 3: Wurzeln mit Zahlen vereinfachen}\\
+
+	\vspace{1.5cm}
+	
+	\textbf{Aufgabe 4 (10 Punkte)}\\
+\end{document}

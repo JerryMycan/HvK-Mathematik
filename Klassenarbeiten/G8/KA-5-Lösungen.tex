@@ -1,0 +1,94 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman]{babel}
+\usepackage{amsmath, amssymb}
+\usepackage{graphicx}
+\usepackage[top=2cm, bottom=2cm, left=2.5cm, right=2.5cm]{geometry}
+\usepackage{parskip}
+\usepackage{enumitem}
+
+\begin{document}
+	
+	\begin{center}
+		\textbf{L\"osungen zur Probe-Klassenarbeit -- Lineare Funktionen und LGS}
+	\end{center}
+	
+	\section*{Aufgabe 1: Schnittpunkt zweier Funktionen (10 Punkte)}
+	\textbf{1. Gleichungen aufstellen (aus dem Graph ablesen)}\\
+	Beispielhaft: 
+	\[ f(x) = 2x + 1 \quad \text{und} \quad g(x) = -x + 4 \]
+	
+	\textbf{2. Gleichsetzen der Funktionen (Schnittpunkt bestimmen)}
+	\[ 2x + 1 = -x + 4 \]
+	
+	\textbf{3. Umformen und L\"osen}
+	\[ 2x + x = 4 - 1 \Rightarrow 3x = 3 \Rightarrow x = 1 \]
+	
+	\textbf{4. Einsetzen in eine der Funktionen}
+	\[ f(1) = 2 \cdot 1 + 1 = 3 \Rightarrow y = 3 \]
+	
+	\textbf{\underline{Schnittpunkt:}} \( S(1|3) \)
+	
+	\section*{Aufgabe 2: Tiere im Terrarium (8 Punkte)}
+	\textbf{1. Variablen festlegen}
+	\[ x = \text{Anzahl der K\"afer (6 Beine)}, \quad y = \text{Anzahl der Spinnen (8 Beine)} \]
+	
+	\textbf{2. Gleichungssystem aufstellen}
+	\[ \begin{aligned}
+		x + y &= 18 \\ 
+		6x + 8y &= 110
+	\end{aligned} \]
+	
+	\textbf{3. Einsetzungsverfahren:} Erste Gleichung nach \( x \) umstellen:
+	\[ x = 18 - y \]
+	\textbf{In die zweite Gleichung einsetzen:}
+	\[ 6(18 - y) + 8y = 110 \Rightarrow 108 - 6y + 8y = 110 \Rightarrow 2y = 2 \Rightarrow y = 1 \]
+	\[ x = 18 - 1 = 17 \]
+	
+	\textbf{\underline{L\"osung:}} 17 K\"afer, 1 Spinne
+	
+	\section*{Aufgabe 3: Mutter und Tochter (5 Punkte)}
+	\textbf{1. Variablen festlegen:}
+	\[ x = \text{Alter der Tochter}, \quad y = \text{Alter der Mutter} \]
+	
+	\textbf{2. Gleichungen aufstellen:}
+	\[ \begin{aligned}
+		y &= 4x \\ 
+		y + 5 &= 2(x + 5)
+	\end{aligned} \]
+	
+	\textbf{3. Einsetzen:}
+	\[ 4x + 5 = 2x + 10 \Rightarrow 4x - 2x = 10 - 5 \Rightarrow 2x = 5 \Rightarrow x = 2{,}5 \]
+	\[ y = 4x = 10 \]
+	
+	\textbf{\underline{L\"osung:}} Tochter: 2,5 Jahre, Mutter: 10 Jahre (Sachlich nicht realistisch, aber rechnerisch korrekt)
+	
+	\section*{Aufgabe 4: Lagerbestand (12 Punkte)}
+	\textbf{1. Funktion aufstellen:}
+	\[ B(t) = 1200 - 40t + 15t = 1200 - 25t \]
+	
+	\textbf{2. Gleichung:}
+	\[ 1200 - 25t = 900 \]
+	
+	\textbf{3. L\"osen:}
+	\[ -25t = -300 \Rightarrow t = 12 \]
+	
+	\textbf{\underline{Antwort:}} Nach 12 Monaten sind noch 900 B\"ucher auf Lager.
+	
+	\section*{Aufgabe 5: Boote auf dem Main (10 Punkte)}
+	\textbf{1. Variablen:} 
+	\[ t = \text{Zeit in Stunden ab 10:00 Uhr}, \quad d = \text{Entfernung bis zum Treffpunkt} \]
+	
+	\textbf{2. Strecke des Ausflugsschiffs:} 
+	\[ s_1 = 18t \]
+	
+	\textbf{3. Strecke des Frachtkahns (Start 15 Min sp\"ater = 0{,}25h):}
+	\[ s_2 = 12(t - 0{,}25) \]
+	
+	\textbf{4. Gleichung:} 
+	\[ 18t + 12(t - 0{,}25) = 21 \]
+	\[ 18t + 12t - 3 = 21 \Rightarrow 30t = 24 \Rightarrow t = 0{,}8 \text{ h} = 48 \text{ Minuten} \]
+	
+	\textbf{\underline{Treffen:}} Um \textbf{10:48 Uhr} \quad \textbf{Ort:} \( s_1 = 18 \cdot 0{,}8 = 14{,}4 \) km von Mainz entfernt
+	
+\end{document}

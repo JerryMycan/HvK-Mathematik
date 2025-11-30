@@ -1,0 +1,221 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage{tabularx}
+\usepackage{amsmath, amssymb, amsthm}
+\usepackage[utf8]{inputenc}
+\usepackage{geometry}
+\usepackage{fancyhdr}
+\usepackage{graphicx}
+
+\geometry{left=2cm, right=2cm, top=2cm, bottom=2cm}
+\pagestyle{fancy}
+\lhead{L\"osungen - Klassenarbeit}
+\chead{Heinrich-von-Kleist-Schule}
+\rhead{Mathematik - G8A}
+\lfoot{}
+\cfoot{Seite \thepage}
+\rfoot{}
+
+\begin{document}
+	
+	\begin{center}
+		\textbf{Lösungen zur Klassenarbeit: Un- und Gleichungen, Bruchgleichungen, quadratische Ergänzung, Wahrscheinlichkeitsrechnung}\
+	\end{center}
+	
+	\section*{Aufgabe 1: Gleichungen und Ungleichungen lösen.}
+	
+	\textbf{a)} \quad $(2x - 3)^2 = 4x^2 - 12x + 9$
+	\begin{align*}
+		(2x - 3)^2 &= 4x^2 - 12x + 9 \\
+		4x^2 - 12x + 9 &= 4x^2 - 12x + 9 \\
+		0 &= 0 \quad \text{(Unendlich viele L\"osungen)} 
+	\end{align*}
+	
+	\textbf{b)} \quad $x(3x + 20) + 50 = (2x + 5)^2$
+	\begin{align*}
+		    x(3x + 20) + 50 &= (2x + 5)^2 \\
+		3x^2 + 20x + 50 &= 4x^2 + 20x + 25 \quad |-4x², -20x, -25\\
+		3x^2 + 20x + 50 - 4x^2 - 20x - 25 &= 0 \\
+		-x^2 + 25 &= 0 \\
+		-x^2 = -25 \\
+		x^2 = 25 \\
+		x = \pm 5
+	\end{align*}
+	
+	\textbf{c)} \quad $\frac{x - 3}{4} \geq \frac{2x + 1}{6}$
+	\begin{align*}
+		6(x - 3) &\geq 4(2x + 1) \\
+		6x - 18 &\geq 8x + 4 \\
+		-18 - 4 &\geq 8x - 6x \\
+		-22 &\geq 2x \\
+		-11 &\geq x 
+		\end{align*}
+	
+	\section*{Aufgabe 2: Bruchgleichungen l\"osen.}
+	
+	\textbf{a)} \quad $\frac{x}{4} + \frac{3}{x} = \frac{1}{4}x$
+	\begin{align*}
+		    \frac{x}{4} + \frac{3}{x} &= \frac{1}{4}x \\
+		x^2 + 12 &= \frac{1}{4}x^2 \cdot 4 \\
+		4x^2 + 12x - x^2 &= 0 \\
+		3x^2 + 12x &= 0 \\
+		3x(x + 4) &= 0 \\
+		x_1 = 0, \quad x_2 = -4
+	\end{align*}
+	
+	\textbf{b)} \quad $\frac{2x}{x+1} - \frac{3}{x-1} = \frac{x^2 - 16}{x^2 - 1}$
+	\begin{align*}
+		\frac{2x}{x+1} - \frac{3}{x-1} &= \frac{x^2 - 16}{x^2 - 1} \\
+		\text{Ersetze } x^2 - 1 \text{ durch } (x+1)(x-1): \\
+		\frac{2x}{x+1} - \frac{3}{x-1} &= \frac{(x-4)(x+4)}{(x+1)(x-1)} \\
+		\text{Hauptnenner: } (x+1)(x-1) \\
+		2x(x-1) - 3(x+1) &= (x-4)(x+4) \\
+		2x^2 - 2x - 3x - 3 &= x^2 - 16 \\
+		2x^2 - 5x - 3 &= x^2 - 16 \\
+		2x^2 - 5x - 3 - x^2 + 16 &= 0 \\
+		x^2 - 5x + 13 &= 0 \\
+		(x-4)(x+4) &= 0 \\
+		x_1 = 4, \quad x_2 = -4
+	\end{align*}
+	
+	\textbf{c)} \quad $\frac{2}{x} + \frac{3}{x-1} = \frac{5}{x^2 - x}$
+	\begin{align*}
+		\frac{2}{x} + \frac{3}{x-1} &= \frac{5}{x^2 - x} \\
+		\text{Ersetze } x^2 - x \text{ durch } x(x-1): \\
+		\frac{2}{x} + \frac{3}{x-1} &= \frac{5}{x(x-1)} \\
+		\text{Hauptnenner: } x(x-1) \\
+		2(x-1) + 3x &= 5 \\
+		2x - 2 + 3x &= 5 \\
+		5x - 2 &= 5 \\
+		5x &= 7 \\
+		x &= \frac{7}{5}
+	\end{align*}
+	
+	
+	\section*{Aufgabe 3: Quadratische Erg\"anzung.}
+	
+	\textbf{a)} \quad $x^2 + 6x$
+	\begin{align*}
+		x^2 + 6x + 9 - 9 &= (x+3)^2 - 9
+	\end{align*}
+	
+	\textbf{b)} \quad $x^2 - 10x + 7$
+	\begin{align*}
+		x^2 - 10x + 7 &= x^2 - 10x + \left(\frac{10}{2}\right)^2 - \left(\frac{10}{2}\right)^2 + 7 \\
+		&= (x - 5)^2 - 25 + 7 \\
+		&= (x - 5)^2 - 18
+	\end{align*}
+	\textbf{b)} \quad $3x^2 - 12x + 11$
+	\begin{align*}
+		3x^2 - 12x + 11 &= 3\left(x^2 - 4x\right) + 11 \\
+		&= 3\left(x^2 - 4x + \left(\frac{4}{2}\right)^2 - \left(\frac{4}{2}\right)^2 \right) + 11 \\
+		&= 3\left((x - 2)^2 - 4\right) + 11 \\
+		&= 3(x - 2)^2 - 12 + 11 \\
+		&= 3(x - 2)^2 - 1
+	\end{align*}
+	
+	\textbf{Aufgabe 4} \hfill (.. Punkte)\\
+Bei einem Rechteck ist eine Seite 7 cm lang. Verkürzt man diese Seite um 2 cm und verlängert man die andere Seite um 2 cm, so ist der Flächeninhalt des neuen Rechtecks um 2 cm² kleiner. Wie lang ist die andere Seite des Rechtecks?
+\begin{align*}
+	\text{Gegeben:} & \quad \text{Eine Seite des Rechtecks ist } 7 \text{ cm lang.} \\
+	& \quad \text{Sei die andere Seite } x. \\
+	\text{Fläche des ursprünglichen Rechtecks:} & \quad A_{\text{alt}} = 7 \cdot x \\
+	\text{Nach der Änderung:} & \quad A_{\text{neu}} = (7-2) \cdot (x+2) \\
+	& \quad A_{\text{neu}} = 5(x+2) \\
+	\text{Es gilt:} & \quad A_{\text{alt}} - A_{\text{neu}} = 2 \\
+	& \quad 7x - 5(x+2) = 2 \\
+	& \quad 7x - 5x - 10 = 2 \\
+	& \quad 2x - 10 = 2 \\
+	& \quad 2x = 12 \\
+	& \quad x = 6
+\end{align*}
+	
+	\textbf{Aufgabe 5} \hfill (.. Punkte)\\
+Ein Beutel enthält **jeweils 2 rote, 3 blaue und 5 grüne Kugeln**. Es werden **nacheinander drei Kugeln ohne Zurücklegen** gezogen.
+\[
+\begin{aligned}
+	\textbf{a)} & \quad \text{Zeichne ein Baumdiagramm, das alle möglichen Ziehungen darstellt.} \\
+	\textbf{b)} & \quad \text{Wie groß ist die Wahrscheinlichkeit, dass alle drei Kugeln dieselbe Farbe haben?} \\
+	\textbf{c)} & \quad \text{Wie groß ist die Wahrscheinlichkeit, dass genau zwei Kugeln dieselbe Farbe haben und die dritte Kugel eine andere Farbe?} \\
+	\textbf{d)} & \quad \text{Wie groß ist die Wahrscheinlichkeit, dass alle drei Kugeln unterschiedliche Farben haben?} 
+\end{aligned}
+\]
+Lösung:\\
+\textbf{b)} Wahrscheinlichkeit, dass alle drei Kugeln dieselbe Farbe haben:
+\begin{align*}
+	P(\text{RRR}) &= \frac{2}{10} \times \frac{1}{9} \times \frac{0}{8} = 0 \\
+	P(\text{BBB}) &= \frac{3}{10} \times \frac{2}{9} \times \frac{1}{8} = \frac{6}{720} = \frac{1}{120} \\
+	P(\text{GGG}) &= \frac{5}{10} \times \frac{4}{9} \times \frac{3}{8} = \frac{60}{720} = \frac{1}{12} \\
+	P(\text{alle gleich}) &= P(\text{RRR}) + P(\text{BBB}) + P(\text{GGG}) = 0 + \frac{1}{120} + \frac{1}{12} = \frac{11}{120} \approx 0.0917
+\end{align*}
+
+\textbf{c)} Wahrscheinlichkeit, dass genau zwei Kugeln dieselbe Farbe haben und die dritte eine andere Farbe:
+\begin{align*}
+	P(\text{RRG}) &= \frac{2}{10} \times \frac{1}{9} \times \frac{5}{8} = 0 \\
+	P(\text{RRB}) &= \frac{2}{10} \times \frac{1}{9} \times \frac{3}{8} = 0 \\
+	P(\text{BBR}) &= \frac{3}{10} \times \frac{2}{9} \times \frac{2}{8} = \frac{12}{720} = \frac{1}{60} \\
+	P(\text{BBG}) &= \frac{3}{10} \times \frac{2}{9} \times \frac{5}{8} = \frac{30}{720} = \frac{1}{24} \\
+	P(\text{GGR}) &= \frac{5}{10} \times \frac{4}{9} \times \frac{2}{8} = \frac{40}{720} = \frac{1}{18} \\
+	P(\text{GGB}) &= \frac{5}{10} \times \frac{4}{9} \times \frac{3}{8} = \frac{60}{720} = \frac{1}{12} \\
+	P(\text{genau zwei gleich}) &= P(\text{BBR}) + P(\text{BBG}) + P(\text{GGR}) + P(\text{GGB}) = \frac{1}{60} + \frac{1}{24} + \frac{1}{18} + \frac{1}{12} = \frac{19}{120} \approx 0.1583
+\end{align*}
+
+\textbf{d)} Wahrscheinlichkeit, dass alle drei Kugeln unterschiedliche Farben haben:
+\begin{align*}
+	P(\text{RGB}) &= \frac{2}{10} \times \frac{3}{9} \times \frac{5}{8} = \frac{30}{720} = \frac{1}{24} \\
+	P(\text{RBG}) &= \frac{2}{10} \times \frac{5}{9} \times \frac{3}{8} = \frac{30}{720} = \frac{1}{24} \\
+	P(\text{BRG}) &= \frac{3}{10} \times \frac{2}{9} \times \frac{5}{8} = \frac{30}{720} = \frac{1}{24} \\
+	P(\text{BGR}) &= \frac{3}{10} \times \frac{5}{9} \times \frac{2}{8} = \frac{30}{720} = \frac{1}{24} \\
+	P(\text{GRB}) &= \frac{5}{10} \times \frac{2}{9} \times \frac{3}{8} = \frac{30}{720} = \frac{1}{24} \\
+	P(\text{GBR}) &= \frac{5}{10} \times \frac{3}{9} \times \frac{2}{8} = \frac{30}{720} = \frac{1}{24} \\
+	P(\text{alle unterschiedlich}) &= P(\text{RGB}) + P(\text{RBG}) + P(\text{BRG}) + P(\text{BGR}) + P(\text{GRB}) + P(\text{GBR}) \\
+	&= \frac{6}{24} = \frac{1}{4} = 0.25
+\end{align*}
+
+	\textbf{Aufgabe 6} \hfill (.. Punkte)\\
+In einer Kiste befinden sich **8 Schokoladen, 5 Karamell- und 7 Erdbeerbonbons**. Ein Kind zieht **nacheinander zwei Bonbons ohne Zurücklegen**.
+\[
+\begin{aligned}
+	\textbf{a)} & \quad \text{Zeichne ein Baumdiagramm für die möglichen Ziehungen.} \\
+	\textbf{b)} & \quad \text{Wie groß ist die Wahrscheinlichkeit, dass beide Bonbons Schokolade sind?} \\
+	\textbf{c)} & \quad \text{Wie groß ist die Wahrscheinlichkeit, dass das erste Bonbon Schokolade und das zweite Erdbeere ist?} \\
+	\textbf{d)} & \quad \text{Wie groß ist die Wahrscheinlichkeit, dass mindestens ein Bonbon Karamell ist?} 
+\end{aligned}
+\]
+Lösung:\\
+\textbf{b)} Wahrscheinlichkeit für zwei Schokoladenbonbons:
+\begin{align*}
+	P(SS) &= \frac{8}{20} \times \frac{7}{19} = \frac{56}{380} = \frac{14}{95} \approx 0.1474
+\end{align*}
+
+\textbf{c)} Wahrscheinlichkeit für zuerst Schokolade, dann Erdbeere:
+\begin{align*}
+	P(SE) &= \frac{8}{20} \times \frac{7}{19} = \frac{56}{380} = \frac{14}{95} \approx 0.1474
+\end{align*}
+
+\textbf{d)} Wahrscheinlichkeit für mindestens ein Karamellbonbon:
+\begin{align*}
+	P(\text{kein K}) &= P(SS) + P(SE) + P(ES) + P(EE) \\
+	&= \frac{56}{380} + \frac{56}{380} + \frac{56}{380} + \frac{42}{380} \\
+	&= \frac{210}{380} = \frac{21}{38} \approx 0.5526
+\end{align*}
+
+\begin{align*}
+	P(\text{mindestens ein K}) &= 1 - P(\text{kein K}) \\
+	&= 1 - 0.5526 = 0.4474
+\end{align*}
+
+
+	
+	\section*{Gesamtauswertung}
+	
+	\begin{center}
+		\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|}
+			\hline
+			Aufgabe & 1 & 2 & 3 & 4 & 5 & Summe & Note \\
+			\hline
+			Punkte  &  &  &  &  &  &  &  \\
+			\hline
+		\end{tabular}
+	\end{center}
+	
+\end{document}

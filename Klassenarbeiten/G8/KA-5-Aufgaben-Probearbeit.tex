@@ -1,0 +1,257 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage{tabularx}
+\usepackage{amsmath}
+\usepackage{enumitem}
+
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath, amssymb, amsthm}
+\usepackage{graphicx}
+\usepackage{array}
+\usepackage[left=2cm, right=2cm, top=2cm, bottom=2cm]{geometry}
+\usepackage{fancyhdr}
+\usepackage{xfp}
+\usepackage{pgf}
+
+\pagestyle{fancy}
+\lhead{Probe-Klassenarbeit 45min.}
+\chead{Heinrich-von-Kleist-Schule}
+\rhead{Mathematik - G8A}
+\lfoot{}
+\cfoot{Seite \thepage}
+\rfoot{}
+
+\newcommand{\punkteA}{10}
+\newcommand{\punkteB}{8}
+\newcommand{\punkteC}{5}
+\newcommand{\punkteD}{12}
+\newcommand{\punkteE}{10}
+
+\newcommand{\maxSumme}{45}
+\newcommand{\noteEinsMin}{\fpeval{round(\maxSumme * 0.96,0)}}
+\newcommand{\noteZweiMin}{\fpeval{round(\maxSumme * 0.80,0)}}
+\newcommand{\noteDreiMin}{\fpeval{round(\maxSumme * 0.60,0)}}
+\newcommand{\noteVierMin}{\fpeval{round(\maxSumme * 0.45,0)}}
+\newcommand{\noteFunfMin}{\fpeval{round(\maxSumme * 0.20,0)}}
+\newcommand{\noteSechsMin}{0}
+
+\newcommand{\summe}{%
+	\pgfmathparse{\punkteA + \punkteB + \punkteC + \punkteD + \punkteE}%
+	\pgfmathprintnumber{\pgfmathresult}}
+
+\begin{document}
+	
+	\begin{center}
+		\textbf{Probe-Klassenarbeit - Lineare Funktionen und LGS}
+	\end{center}
+	
+	\textbf{Vor- und Nachname:} \underline{\hspace{10cm}}\\[0.1cm]
+	Die Lösungen sowie Lösungswege sollten klar strukturiert und gut nachvollziehbar sein. Jeder einzelne Berechnungsschritt ist mit einer kurzen, prägnanten Überschrift zu versehen, die verdeutlicht, welcher Teil der Aufgabe bearbeitet wird. \\[0.1cm]
+	
+	\textbf{Aufgabe 1 (10 Punkte)}\\
+	Gegeben ist ein Koordinatensystem mit zwei linearen Funktionen \(f\) und \(g\), die durch ihre Graphen dargestellt sind (siehe Figure 1).
+	Berechne den Schnittpunkt der beiden Funktionen rechnerisch. Stelle dazu
+	ein lineares Gleichungssystem auf und löse dieses mit dem Einsetzungsverfahren.\\
+	\begin{figure}[h!]
+		\centering
+		\includegraphics[width=0.8\textwidth]{plot-1.png}
+		\caption{Graph der linearen Funktionen \(f\) und \(g\)}
+	\end{figure}
+	
+	\vspace{1.5cm}
+	
+	\textbf{Aufgabe 2 (8 Punkte)}\\
+	In einem Terrarium befinden sich Käfer und Spinnen. Zusammen sind es 18 Tiere. Insgesamt haben sie 110 Beine.
+	Wie viele Käfer und wie viele Spinnen sind es?\\
+	
+	\vspace{1cm}
+	
+	\textbf{Aufgabe 3 (5 Punkte)}\\
+	Anna und Ben sind zusammen 28 Jahre alt. Anna ist doppelt so alt wie Ben. Wie alt sind Anna und Ben? Stelle ein lineares Gleichungssystem auf und löse es.\\
+	
+	\newpage
+	
+	\textbf{Aufgabe 4 (12 Punkte)}\\
+	Ein Lagerbestand von 500 Stück wird monatlich um 20 Stück reduziert. Gleichzeitig werden monatlich 5 Stück nachbestellt. Stelle eine lineare Funktion auf, die die Entwicklung des Lagerbestands nach Monaten angibt. Berechne, nach wie vielen Monaten der Bestand auf 300 Stück gesunken ist.\\
+	
+	\vspace{1.5cm}
+	
+	\textbf{Aufgabe 5 (10 Punkte)}\\
+	Auto A startet um 14:00 Uhr in Frankfurt am Main und fährt mit einer Geschwindigkeit von 60 km/h Richtung Wiesbaden. Auto B startet um 14:10 Uhr in Wiesbaden und fährt mit 40 km/h Richtung Frankfurt am Main. Die beiden Städte liegen 40 km auseinander.\\
+	Berechne die Zeit, wann sich die beiden Autos auf der A66 begegnen. Gib die genaue Uhrzeit an, zu der sie sich treffen. Stelle ein lineares Gleichungssystem auf und löse es.\\
+	
+	\vspace{5cm}
+
+	
+	
+	\vspace{1cm}
+	\textbf{Auswertungstabelle:}
+	\begin{center}
+		\begin{tabular}{|c|c|c|c|c|c|c|c|}
+			\hline
+			Aufgabe & 1 & 2 & 3 & 4 & 5 & Summe\\
+			\hline
+			Punkte & \text{\ / \punkteA} & \text{\ / \punkteB} & \text{\ / \punkteC} & \text{\ / \punkteD} & \text{\ / \punkteE} & \text{\ / \summe}\\
+			\hline
+		\end{tabular}
+	\end{center}
+	
+	\textbf{Notenschlüssel:}
+	\begin{center}
+		\begin{tabular}{|c|c|c|c|c|c|c|}
+			\hline
+			Note & 1 & 2 & 3 & 4 & 5 & 6 \\
+			\hline
+			Prozent \% & 100--96 & 95--80 & 79--60 & 59--45 & 44--16 & 15--0 \\
+			\hline
+			Punkte & \maxSumme{}--\noteEinsMin{} & \fpeval{\noteEinsMin-1}--\noteZweiMin{} & \fpeval{\noteZweiMin-1}--\noteDreiMin{} & \fpeval{\noteDreiMin-1}--\noteVierMin{} & \fpeval{\noteVierMin-1}--\noteFunfMin{} & \fpeval{\noteFunfMin-1}--\noteSechsMin{} \\
+			\hline
+		\end{tabular}
+	\end{center}
+	
+	\vspace{2cm}
+	\textbf{Kenntnisnahme eines Elternteils:} \hrulefill \hfill \textbf{Note:} \hrulefill
+	
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	% -------------------------------
+	% LÖSUNGEN – Probe-Klassenarbeit
+	% -------------------------------
+	
+	% Aufgabe 1
+	\textbf{Lösung zu Aufgabe 1 (Schnittpunkt aus dem Graphen)}\\
+	\emph{Musterlösung (allgemein, da konkrete Ablesewerte aus der Abbildung benötigt werden):}
+	\begin{enumerate}[label=\arabic*)]
+		\item \textbf{Funktionsgleichungen bestimmen:} 
+		Lies für jede Gerade zwei Punkte ab und bestimme
+		\(m_f=\frac{y_2-y_1}{x_2-x_1}\), dann \(n_f\) über \(y=m_fx+n_f\); analog \(m_g,n_g\).
+		So erhältst du \(f(x)=m_f x+n_f\) und \(g(x)=m_g x+n_g\).
+		\item \textbf{Gleichungssystem aufstellen (Gleichsetzung/Einsetzung):}
+		\[
+		\begin{cases}
+			y=f(x)\\
+			y=g(x)
+		\end{cases}
+		\;\Longleftrightarrow\;
+		m_fx+n_f=m_gx+n_g.
+		\]
+		\item \textbf{Schnittpunkt berechnen:}
+		\[
+		x_S=\frac{n_g-n_f}{m_f-m_g},\qquad y_S=f(x_S)=g(x_S).
+		\]
+		\item \textbf{Ergebnis:} \(S(x_S\mid y_S)\). (Die konkreten Zahlen hängen von den aus der Abbildung abgelesenen Punkten ab.)
+	\end{enumerate}
+	
+	% Aufgabe 2
+	\textbf{Lösung zu Aufgabe 2 (Eintrittspreise)}\\
+	Seien \(A\) der Preis für Erwachsene, \(K\) der Preis für Kinder (in €).
+	\[
+	\begin{cases}
+		2A+3K=23\\
+		A+5K=22
+	\end{cases}
+	\]
+	\textbf{Einsetzungsverfahren:} \(A=22-5K\) in die erste Gleichung:
+	\[
+	2(22-5K)+3K=23\ \Rightarrow\ 44-10K+3K=23\ \Rightarrow\ -7K=-21\ \Rightarrow\ K=3.
+	\]
+	Dann \(A=22-5\cdot 3=7\).\\
+	\textbf{Antwortsatz:} Erwachsene: \(7\,€\), Kinder: \(3\,€\).\\
+	\textbf{d)} \(3A+4K=3\cdot 7+4\cdot 3=21+12=33\,€\).\\
+	\textbf{e)} Anzahl Erwachsene \(E\), Kinder \(C\):
+	\[
+	\begin{cases}
+		E+C=250\\
+		7E+3C=1070
+	\end{cases}
+	\Rightarrow
+	7E+3(250-E)=1070\Rightarrow 4E=320\Rightarrow E=80,\ C=170.
+	\]
+	
+	% Aufgabe 3
+	\textbf{Lösung zu Aufgabe 3 (3$\times$3–LGS)}\\
+	\[
+	\begin{cases}
+		2x+y-z=0\quad (1)\\
+		x-y+2z=9\quad (2)\\
+		3x+2y+z=7\quad (3)
+	\end{cases}
+	\]
+	Aus (1): \(y=z-2x\). In (2): \(x-(z-2x)+2z=9\Rightarrow 3x+z=9\Rightarrow z=9-3x\).\\
+	Dann \(y=(9-3x)-2x=9-5x\). In (3) einsetzen:
+	\[
+	3x+2(9-5x)+(9-3x)=7\Rightarrow -10x+27=7\Rightarrow x=2.
+	\]
+	Damit \(z=9-3\cdot 2=3\), \(y=9-5\cdot 2=-1\).\\
+	\textbf{Lösung:} \((x,y,z)=(2,-1,3)\). \textbf{Probe:} In (1)–(3) jeweils erfüllt.
+	
+	% Aufgabe 4
+	\textbf{Lösung zu Aufgabe 4 (Wurzeln – Zahlen)}\\
+	\begin{align*}
+		\text{a)}\ \sqrt{20}&=\sqrt{4\cdot 5}=2\sqrt{5},&
+		\text{b)}\ \sqrt{45}&=\sqrt{9\cdot 5}=3\sqrt{5},&
+		\text{c)}\ \sqrt{72}&=\sqrt{36\cdot 2}=6\sqrt{2},\\
+		\text{d)}\ \sqrt{147}&=\sqrt{49\cdot 3}=7\sqrt{3},&
+		\text{e)}\ \sqrt{108}&=\sqrt{36\cdot 3}=6\sqrt{3},&
+		\text{f)}\ \sqrt{300}&=\sqrt{100\cdot 3}=10\sqrt{3}.
+	\end{align*}
+	
+	% Aufgabe 5
+	\textbf{Lösung zu Aufgabe 5 (Wurzeln – Variablen; $a,b,x,y\ge 0$)}\\
+	\begin{align*}
+		\text{a)}\ \sqrt{18x^{2}}&=\sqrt{9\cdot 2\cdot x^{2}}=3x\sqrt{2},&
+		\text{b)}\ \sqrt{50a^{2}}&=\sqrt{25\cdot 2\cdot a^{2}}=5a\sqrt{2},\\
+		\text{c)}\ \sqrt{12x^{4}}&=\sqrt{4\cdot 3\cdot x^{4}}=2x^{2}\sqrt{3},&
+		\text{d)}\ \sqrt{\tfrac{72x^{2}}{2}}&=\sqrt{36x^{2}}=6x,\\
+		\text{e)}\ \sqrt{27a^{2}b}&=\sqrt{9\cdot 3\cdot a^{2}b}=3a\sqrt{3b},&
+		\text{f)}\ \sqrt{8x^{3}y^{5}}&=\sqrt{4\cdot 2\cdot x^{2}\cdot x\cdot y^{4}\cdot y}=2xy^{2}\sqrt{2xy}.
+	\end{align*}
+	
+	% Aufgabe 6
+	\textbf{Lösung zu Aufgabe 6 (Wurzelgesetze; $a,b,x,y>0$)}\\
+	\begin{align*}
+		\text{a)}\ \sqrt{18a^{2}b}&=\sqrt{9\cdot 2\cdot a^{2}b}=3a\sqrt{2b}.\\[2pt]
+		\text{b)}\ \sqrt{12x}\cdot\sqrt{27x^{3}}
+		&=\sqrt{12\cdot 27}\,\sqrt{x^{4}}
+		=\sqrt{324}\,x^{2}=18x^{2}.\\[2pt]
+		\text{c)}\ \frac{\sqrt{48a^{5}}}{\sqrt{3a}}
+		&=\sqrt{\frac{48a^{5}}{3a}}=\sqrt{16a^{4}}=4a^{2}.\\[2pt]
+		\text{d)}\ 5\sqrt{2x}-2\sqrt{8x}+3\sqrt{18x}
+		&=5\sqrt{2x}-2\cdot 2\sqrt{2x}+3\cdot 3\sqrt{2x}=10\sqrt{2x}.\\[2pt]
+		\text{e)}\ \sqrt{\frac{9a^{3}b}{4a}}\cdot \frac{\sqrt{b}}{\sqrt{a^{2}}}
+		&=\frac{3a}{2}\sqrt{b}\cdot \frac{\sqrt{b}}{a}
+		=\frac{3}{2}\,b.\\[2pt]
+		\text{f)}\ \frac{2}{\sqrt{5x}}+\frac{3\sqrt{x}}{\sqrt{20}}
+		&=\frac{2\sqrt{5x}}{5x}+\frac{3\sqrt{5x}}{10}
+		=\frac{4\sqrt{5x}}{10x}+\frac{3x\sqrt{5x}}{10x}
+		=\frac{(3x+4)\sqrt{5x}}{10x}.
+	\end{align*}
+	
+	% Aufgabe 7 (fortgeschritten)
+	\textbf{Lösung zu Aufgabe 7 (fortgeschritten; $a,b,x,y>0$)}\\
+	\begin{align*}
+		\text{a)}\ \sqrt{75a^{3}b^{5}}\cdot \frac{\sqrt{12ab}}{3\sqrt{3a}}
+		&=\frac{\sqrt{900\,a^{4}b^{6}}}{3\sqrt{3a}}
+		=\frac{30a^{2}b^{3}}{3\sqrt{3a}}
+		=\frac{10a^{2}b^{3}}{\sqrt{3a}}
+		=\frac{10ab^{3}\sqrt{3a}}{3}.\\[2pt]
+		\text{b)}\ \frac{\sqrt{32x^{5}}}{4\sqrt{2x}}+\frac{3\sqrt{18x^{3}}}{2\sqrt{8x}}
+		&=\frac{4x^{2}\sqrt{2x}}{4\sqrt{2x}}+\frac{3x\sqrt{2x}}{4\sqrt{2x}}
+		=x^{2}+\frac{3}{4}x.\\[2pt]
+		\text{c)}\ \frac{5}{\sqrt{a}+\sqrt{b}}-\frac{2}{\sqrt{a}-\sqrt{b}}
+		&=\frac{5(\sqrt{a}-\sqrt{b})}{a-b}-\frac{2(\sqrt{a}+\sqrt{b})}{a-b}
+		=\frac{3\sqrt{a}-7\sqrt{b}}{a-b}.\\[2pt]
+		\text{d)}\ \left(\frac{\sqrt{45x^{4}y}}{\sqrt{5xy}}\right):\left(\frac{\sqrt{9x^{2}}}{\sqrt{x}}\right)
+		&=\frac{\sqrt{9x^{3}}}{\sqrt{9x}}
+		=\frac{3x\sqrt{x}}{3\sqrt{x}}=x.\\[2pt]
+		\text{e)}\ \sqrt{\frac{(12a^{3}b^{2})(27ab^{5})}{3a^{2}b}}\cdot\frac{1}{\sqrt{6ab}}
+		&=\frac{\sqrt{108\,a^{2}b^{6}}}{\sqrt{6ab}}
+		=\frac{6ab^{3}\sqrt{3}}{\sqrt{6ab}}
+		=\frac{6ab^{3}}{\sqrt{2ab}}
+		=3b^{2}\sqrt{2ab}.\\[2pt]
+		\text{f)}\ \sqrt{50x^{3}y^{5}}-2\sqrt{2xy}\cdot\sqrt{8x^{2}y^{3}}+\sqrt{200x^{3}y^{5}}
+		&=5xy^{2}\sqrt{2xy}-8xy^{2}\sqrt{x}+10xy^{2}\sqrt{2xy}\\
+		&=xy^{2}\sqrt{x}\,\bigl(15\sqrt{2y}-8\bigr).
+	\end{align*}
+	
+	
+\end{document}

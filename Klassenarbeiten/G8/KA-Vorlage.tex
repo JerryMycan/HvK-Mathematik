@@ -1,0 +1,105 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage{tabularx}
+\usepackage{amsmath}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath, amssymb, amsthm}
+\usepackage{graphicx}
+\usepackage{array}
+\usepackage[left=2cm, right=2cm, top=2cm, bottom=2cm]{geometry}
+\usepackage{fancyhdr}
+\usepackage{xfp} % Für mathematische Berechnungen in LaTeX
+\usepackage{pgf} % Erlaubt Berechnungen mit \pgfmathparse
+
+% Kopf- und Fußzeile
+\pagestyle{fancy}
+\lhead{Klassenarbeit 45min.}
+\chead{Heinrich-von-Kleist-Schule}
+\rhead{Mathematik - G8A}
+\lfoot{}
+\cfoot{Seite \thepage}
+\rfoot{}
+
+% Makro für einzelne Punkteingaben (hier einfach Platzhalter)
+\newcommand{\punkteA}{14}  % Eingetragene Punkte für Aufgabe 1
+\newcommand{\punkteB}{17}  % Eingetragene Punkte für Aufgabe 2
+\newcommand{\punkteC}{9}   % Eingetragene Punkte für Aufgabe 3
+\newcommand{\punkteD}{6}   % Eingetragene Punkte für Aufgabe 4
+\newcommand{\punkteE}{15}  % Eingetragene Punkte für Aufgabe 5
+
+% Maximale Punktzahl insgesamt
+\newcommand{\maxSumme}{61}  % Hier die maximale Punktzahl anpassen
+
+% Automatische Berechnung der Notengrenzen
+\newcommand{\noteEinsMin}{\fpeval{round(\maxSumme * 0.90,0)}}
+\newcommand{\noteZweiMin}{\fpeval{round(\maxSumme * 0.75,0)}}
+\newcommand{\noteDreiMin}{\fpeval{round(\maxSumme * 0.60,0)}}
+\newcommand{\noteVierMin}{\fpeval{round(\maxSumme * 0.45,0)}}
+\newcommand{\noteFunfMin}{\fpeval{round(\maxSumme * 0.20,0)}}
+\newcommand{\noteSechsMin}{0}
+
+% Automatische Berechnung der Summe
+\newcommand{\summe}{%
+	\pgfmathparse{\punkteA + \punkteB + \punkteC + \punkteD + \punkteE}%
+	\pgfmathprintnumber{\pgfmathresult}
+}
+
+
+\begin{document}
+	
+	\begin{center}
+		%\textbf{Klassenarbeit N°1 G8}\\[0.3cm]
+		\textbf{Themen der Klassenarbeit}\\[0.2cm]
+		%\textbf{© J. Mycan}\\[0.5cm]
+	\end{center}
+	
+	\textbf{Vor- und Nachname:} \underline{\hspace{10cm}}\\%[0.5cm]
+	
+	%\vspace{1cm}
+	
+	\textbf{Aufgabe 1} \hfill (4+6+4 = \punkteA{} Punkte)\\
+
+	
+	\textbf{Aufgabe 2} \hfill (5+7+5 = \punkteB{} Punkte)\\
+
+	
+	\textbf{Aufgabe 3} \hfill (3+3+3 = \punkteC{} Punkte)\\
+
+	
+	\textbf{Aufgabe 4} \hfill (\punkteD{} Punkte)\\
+
+	
+	\textbf{Aufgabe 5} \hfill (2+3+8+4 = \punkteE{} Punkte)\\
+
+	
+	
+	\textbf{Auswertungstabelle:}
+	\begin{center}
+		\begin{tabular}{|c|c|c|c|c|c|c|c|}
+			\hline
+			Aufgabe & 1 & 2 & 3 & 4 & 5 & Summe & Note \\
+			\hline
+			Punkte  & \text{/ \punkteA } & \text{/ \punkteB } & \text{/ \punkteC } & \text{/ \punkteD } & \text{/ \punkteE}  & \summe & \\
+			\hline
+		\end{tabular}
+	\end{center}	
+	%	\vspace{1cm}
+	
+	\textbf{Notenschlüssel:}
+	
+	\begin{center}
+		\begin{tabular}{|c|c|c|c|c|c|c|}
+			\hline
+			Note & 1 & 2 & 3 & 4 & 5 & 6 \\
+			\hline
+			Prozent \% & 100--90 & 89--75 & 74--60 & 59--45 & 44--20 & 19--0 \\
+			\hline
+			Punkte & \maxSumme{}--\noteEinsMin{} & \fpeval{\noteEinsMin-1}--\noteZweiMin{} & \fpeval{\noteZweiMin-1}--\noteDreiMin{} & \fpeval{\noteDreiMin-1}--\noteVierMin{} & \fpeval{\noteVierMin-1}--\noteFunfMin{} & \fpeval{\noteFunfMin-1}--\noteSechsMin{} \\
+			\hline
+		\end{tabular}
+	\end{center}
+	
+	\vspace{3cm}
+	
+	\textbf{Kenntnisnahme eines Elternteils:} \hrulefill \hfill \textbf{Note:} \hrulefill
+	
+\end{document}

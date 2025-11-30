@@ -1,0 +1,290 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage{tabularx}
+\usepackage{amsmath}
+\usepackage[utf8]{inputenc}
+\usepackage{multicol}
+\usepackage{cancel}
+\usepackage{amsmath, amssymb, amsthm}
+\usepackage{graphicx}
+\usepackage{enumitem}
+\usepackage{array}
+\usepackage[left=2cm, right=2cm, top=2cm, bottom=2cm]{geometry}
+\usepackage{fancyhdr}
+\usepackage{xfp}
+\usepackage{pgf}
+
+\usepackage{graphicx}
+\usepackage{fancyhdr}
+\setlength{\headheight}{28pt} % genug Platz für das Logo
+\pagestyle{fancy}
+\fancyhf{} % alles leeren
+\fancyhead[L]{\includegraphics[height=1.2cm]{logo.png}}
+\fancyhead[C]{\small Klassenarbeit – Rechnen mit Potenzen \ (Kl. G10B)}
+\fancyhead[R]{\small Name:\ \rule{2.8cm}{0.4pt}}
+\fancyfoot[C]{\thepage}
+
+\fancyfoot[C]{Seite \thepage \enspace\textbullet\enspace J.\,Mycan \textcopyright~2025 *Klassenarbeit 45 min.*}
+
+\renewcommand{\footrulewidth}{0.4pt}
+
+
+
+
+%\pagestyle{fancy}
+%\lhead{Klassenarbeit 45min.}
+%\chead{Heinrich-von-Kleist-Schule}
+%\rhead{Mathematik - G8A}
+%\lfoot{}
+%\cfoot{Seite \thepage}
+%\rfoot{}
+
+\newcommand{\punkteA}{6}
+\newcommand{\punkteB}{6}
+\newcommand{\punkteC}{6}
+\newcommand{\punkteD}{18}
+\newcommand{\punkteE}{6}
+%\newcommand{\punkteF}{12}
+
+\newcommand{\maxSumme}{42}
+\newcommand{\noteEinsMin}{\fpeval{round(\maxSumme * 0.95,0)}}
+\newcommand{\noteZweiMin}{\fpeval{round(\maxSumme * 0.80,0)}}
+\newcommand{\noteDreiMin}{\fpeval{round(\maxSumme * 0.60,0)}}
+\newcommand{\noteVierMin}{\fpeval{round(\maxSumme * 0.45,0)}}
+\newcommand{\noteFunfMin}{\fpeval{round(\maxSumme * 0.20,0)}}
+\newcommand{\noteSechsMin}{0}
+
+\newcommand{\summe}{%
+	\pgfmathparse{\punkteA + \punkteB + \punkteC + \punkteD + \punkteE}%
+	\pgfmathprintnumber{\pgfmathresult}}
+
+\begin{document}
+	
+%	\begin{center}
+%		\textbf{Klassenarbeit - Lineare Funktionen und LGS}
+%	\end{center}
+	
+%	\textbf{Vor- und Nachname:} \underline{\hspace{10cm}}\\[0.1cm]
+\vspace{2cm}
+Lösungen! \\[1cm]
+	
+	% -------------------------------------------------
+	% Aufgabe 1
+	% -------------------------------------------------
+\textbf{Aufgabe 1 (6 Punkte)}\\
+Wandle \emph{ohne Rundung} in die Form \(a\cdot 10^{n}\) mit \(1\le a<10\) um.
+
+\begin{multicols}{2}
+	\begin{enumerate}[label=\alph*)]
+		\item \(0{,}00052=5{,}2\cdot10^{-4}\)
+		\item \(0{,}0063=6{,}3\cdot10^{-3}\)
+		\item \(4\,700\,000=4{,}7\cdot10^{6}\)
+		\item \(0{,}0000008=8\cdot10^{-7}\)
+		\item \(125\,000=1{,}25\cdot10^{5}\)
+		\item \(91{,}2=9{,}12\cdot10^{1}\)
+	\end{enumerate}
+\end{multicols}
+	
+	\vspace{2 cm}
+	
+	% -------------------------------------------------
+	% Aufgabe 2
+	% -------------------------------------------------
+\textbf{Aufgabe 2 (6 Punkte)}\\
+Schreibe in normale Dezimalschreibweise um (\emph{ohne} Rundung).
+% Lösung zu Aufgabe 2
+\begin{multicols}{2}
+	\begin{enumerate}[label=\alph*)]
+		\item \(4{,}5\cdot 10^{3}=4500\)
+		\item \(6{,}02\cdot 10^{-4}=0{,}000602\)
+		\item \(9\cdot 10^{1}=90\)
+		\item \(1{,}8\cdot 10^{-2}=0{,}018\)
+		\item \(2{,}75\cdot 10^{5}=275000\)
+		\item \(3{,}6\cdot 10^{0}=3{,}6\)
+	\end{enumerate}
+\end{multicols}
+
+
+	
+	
+	\vspace{2cm}
+	% -------------------------------------------------
+	% Aufgabe 3
+	% -------------------------------------------------
+\textbf{Aufgabe 3 (6 Punkte)}\\
+Vereinfache und berechne vollständig.
+% Lösung zu Aufgabe 3
+\begin{multicols}{2}
+	\begin{enumerate}[label=\alph*)]
+		\item \(2^{5}\cdot 2^{-2}\cdot 2 = 2^{5-2+1}=2^{4}=16\)
+		\item \(3^{-2}:3^{-5}=3^{-2-(-5)}=3^{3}=27\)
+		\item \(\bigl(5^{2}\cdot 5^{-1}\bigr)^{2}=\bigl(5^{2-1}\bigr)^{2}=5^{2}=25\)
+		\item \(10^{-4}\cdot 10^{6}:10=10^{-4+6-1}=10^{1}=10\)
+		\item \(4^{-1}\cdot 2^{2}=(2^{2})^{-1}\cdot 2^{2}=2^{-2}\cdot 2^{2}=2^{0}=1\)
+		\item \(16^{\tfrac{3}{4}}=(2^{4})^{\tfrac{3}{4}}=2^{3}=8\)
+	\end{enumerate}
+\end{multicols}
+
+
+	
+	\newpage
+	% -------------------------------------------------
+	% Aufgabe 4
+	% -------------------------------------------------
+\textbf{Aufgabe 4 (18 Punkte)}\\
+Vereinfache vollständig; schreibe ohne negative Exponenten und rationalisiere ggf. den Nenner. Es gelte \(a,b,x,y>0\).
+
+% Lösung zu Aufgabe 4
+\begin{multicols}{2}
+	\begin{enumerate}[label=\alph*)]
+		\item \(\sqrt{32\,a^{2}b}
+		=\sqrt{16\cdot2}\,\sqrt{a^{2}}\,\sqrt{b}
+		=4a\sqrt{2b}\)
+		
+		\item \(\dfrac{x^{\tfrac12}\cdot\sqrt{18x^{3}}}{\sqrt{2}}
+		=\dfrac{x^{\tfrac12}\cdot 3x\sqrt{2x}}{\sqrt{2}}
+		=3x^{\tfrac12+1}\sqrt{x}
+		=3x^{2}\)
+		
+		\item \(\dfrac{\sqrt{32\,x^{6}}\cdot x^{\tfrac{3}{2}}}{\sqrt{2x}\cdot x}
+		=\dfrac{4x^{3}\sqrt{2}\cdot x^{\tfrac{3}{2}}}{x\cdot \sqrt{2}\,\sqrt{x}}
+		=\dfrac{4x^{\tfrac{9}{2}}}{x^{\tfrac{3}{2}}}
+		=4x^{3}\)
+		
+		\item \(\dfrac{\sqrt{12x}}{\sqrt{3}}\cdot \sqrt{x}
+		=\dfrac{\sqrt{12x}\,\sqrt{x}}{\sqrt{3}}
+		=\dfrac{\sqrt{12x^{2}}}{\sqrt{3}}
+		=\sqrt{\tfrac{12x^{2}}{3}}
+		=\sqrt{4x^{2}}
+		=2x\)
+		
+		\item \(\left(\dfrac{\sqrt{9a}-\sqrt{4a}}{\sqrt{a}}\right)^{2}
+		=\left(\dfrac{3\sqrt{a}-2\sqrt{a}}{\sqrt{a}}\right)^{2}
+		=1^{2}=1\)
+		
+		\item \(\dfrac{a^{2n+1}}{b^{-3n}}\cdot \dfrac{b^{-3n}}{a^{2n+1}}
+		=\dfrac{a^{2n+1}\,b^{3n}}{1}\cdot \dfrac{b^{-3n}}{a^{2n+1}}
+		=1\)
+	\end{enumerate}
+\end{multicols}
+
+	
+	% -------------------------------------------------
+	% Aufgabe 4
+	% -------------------------------------------------
+%	\textbf{Aufgabe 5 (15 Punkte)}\\
+%	Vereinfache vollständig; schreibe ohne negative Exponenten und rationalisiere ggf. den Nenner. Es gelte \(a,b,x,y>0\).
+%	\begin{multicols}{2}
+%		\begin{enumerate}[label=\alph*)]
+%			\item \( \dfrac{a^{2n+1}}{b^{-3n}}\cdot \dfrac{b^{-3n-5}}{a^{2n+6}} \)
+%			\item \( \dfrac{y^{3n-5}}{x^{n+3}}\cdot \dfrac{x^{2n+5}}{y^{2n-4}} \)
+%		\end{enumerate}
+%	\end{multicols}
+	
+	
+	\vspace{1.5cm}
+	% -------------------------------------------------
+	% Aufgabe 5
+	% -------------------------------------------------
+	\textbf{Aufgabe 5 (6 + 6* Punkte)}\\
+% Lösungen zu Aufgabe 5 (6 + 6* Punkte)
+
+\begin{enumerate}[label=\alph*)]
+	
+	\item \[
+	\left(\frac{36-a^{2}}{(a+6)(6-a)}\right)^{2}
+	\cdot
+	\left(\frac{12+2a}{\,6-a\,}\right)^{2}
+	\cdot
+	\left(\frac{6-a}{\,2(6+a)\,}\right)^{2}
+	\]
+
+	\[
+	\begin{aligned}
+	&=\left(\frac{(6-a)(6+a)}{(6+a)(6-a)}\right)^{2}\!\cdot
+	\left(\frac{2(6+a)}{6-a}\right)^{2}\!\cdot
+	\left(\frac{6-a}{2(6+a)}\right)^{2}\\[2pt]
+	&=1^{2}\cdot 1^{2}\cdot 1^{2}\\
+	&=1
+\end{aligned}
+	\]
+	
+	\item[b$^{*}$)] 
+% Lösung
+\[
+\left(\frac{x^{2}-2x+1}{x-3}\right)^{4}:
+\left(\frac{x-1}{x^{2}-9}\right)^{4}
+\cdot
+\left(\frac{3}{(x+3)(x-1)}\right)^{4}
+\]
+
+\[
+\begin{aligned}
+	&=\left[
+	\frac{x^{2}-2x+1}{x-3}\cdot
+	\frac{x^{2}-9}{x-1}\cdot
+	\frac{3}{(x+3)(x-1)}
+	\right]^{\!4}
+	\\[2pt]
+	&=\left[
+	\frac{(x-1)^{2}}{x-3}\cdot
+	\frac{(x-3)(x+3)}{x-1}\cdot
+	\frac{3}{(x+3)(x-1)}
+	\right]^{\!4}
+	\quad
+	\\[2pt]
+	&=\left[
+	\cancel{\frac{(x-1)^{2}}{\,}}{\phantom{(x-3)}}\frac{\cancel{(x-3)}(x+3)}{\cancel{(x-1)}}\cdot
+	\frac{3}{(x+3)\, \cancel{(x-1)}}
+	\right]^{\!4}
+	=\left[\,3\,\right]^{4}
+	=81
+\end{aligned}
+\]
+
+\end{enumerate}
+
+
+
+
+%		\item \[
+%		\left(\frac{a^{2}-8a+16}{a-4}\right)^{2}
+%		\cdot
+%		\left(\frac{2a+2}{a^{2}-1}\right)^{2}
+%		\cdot
+%		\left(\frac{a-1}{2\,(a-4)}\right)^{2}
+%		\]
+		% Ergebnis: 1, da a^2-8a+16=(a-4)^2 und a^2-1=(a-1)(a+1), (2a+2)=2(a+1).
+		% DGM: a \neq 4,\, \pm 1
+	%\vspace{5cm}
+	
+	
+	
+	\vspace{6cm}
+	\textbf{Auswertungstabelle:}
+	\begin{center}
+		\begin{tabular}{|c|c|c|c|c|c|c|c|}
+			\hline
+			Aufgabe & 1 & 2 & 3 & 4 & 5 &  Summe\\
+			\hline
+			Punkte & \text{\ / \punkteA} & \text{\ / \punkteB} & \text{\ / \punkteC} & \text{\ / \punkteD} & \text{\ / \punkteE} & \text{\ / \summe}\\
+			\hline
+		\end{tabular}
+	\end{center}
+	
+	\textbf{Notenschlüssel:}
+	\begin{center}
+		\begin{tabular}{|c|c|c|c|c|c|c|}
+			\hline
+			Note & 1 & 2 & 3 & 4 & 5 & 6 \\
+			\hline
+			Prozent \% & 100--95 & 94--80 & 79--60 & 59--45 & 44--16 & 15--0 \\
+			\hline
+			Punkte & \maxSumme{}--\noteEinsMin{} & \fpeval{\noteEinsMin-1}--\noteZweiMin{} & \fpeval{\noteZweiMin-1}--\noteDreiMin{} & \fpeval{\noteDreiMin-1}--\noteVierMin{} & \fpeval{\noteVierMin-1}--\noteFunfMin{} & \fpeval{\noteFunfMin-1}--\noteSechsMin{} \\
+			\hline
+		\end{tabular}
+	\end{center}
+	
+	\vspace{2cm}
+	\textbf{Kenntnisnahme eines Elternteils:} \hrulefill \hfill \textbf{Note:} \hrulefill
+	
+\end{document}

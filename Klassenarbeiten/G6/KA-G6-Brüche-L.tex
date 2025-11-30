@@ -1,0 +1,227 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage{tabularx}
+\usepackage{amsmath}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath, amssymb, amsthm}
+\usepackage{graphicx}
+\usepackage{array}
+\usepackage[left=2cm, right=2cm, top=2cm, bottom=2cm]{geometry}
+\usepackage{fancyhdr}
+\usepackage{xfp} % Für mathematische Berechnungen in LaTeX
+\usepackage{pgf} % Erlaubt Berechnungen mit \pgfmathparse
+
+% Kopf- und Fußzeile
+\pagestyle{fancy}
+\lhead{Klassenarbeit 45min.}
+\chead{Heinrich-von-Kleist-Schule}
+\rhead{Mathematik - G6E}
+\lfoot{}
+%\cfoot{Seite \thepage}
+\rfoot{}
+
+% Makro für einzelne Punkteingaben (hier einfach Platzhalter)
+\newcommand{\punkteA}{20}  % Eingetragene Punkte für Aufgabe 1
+\newcommand{\punkteB}{15}  % Eingetragene Punkte für Aufgabe 2
+\newcommand{\punkteC}{12}   % Eingetragene Punkte für Aufgabe 3
+\newcommand{\punkteD}{6}   % Eingetragene Punkte für Aufgabe 4
+\newcommand{\punkteE}{8}  % Eingetragene Punkte für Aufgabe 5
+
+% Maximale Punktzahl insgesamt
+\newcommand{\maxSumme}{69}  % Hier die maximale Punktzahl anpassen
+
+% Automatische Berechnung der Notengrenzen
+\newcommand{\noteEinsMin}{\fpeval{round(\maxSumme * 0.90,0)}}
+\newcommand{\noteZweiMin}{\fpeval{round(\maxSumme * 0.75,0)}}
+\newcommand{\noteDreiMin}{\fpeval{round(\maxSumme * 0.60,0)}}
+\newcommand{\noteVierMin}{\fpeval{round(\maxSumme * 0.45,0)}}
+\newcommand{\noteFunfMin}{\fpeval{round(\maxSumme * 0.20,0)}}
+\newcommand{\noteSechsMin}{0}
+
+% Automatische Berechnung der Summe
+\newcommand{\summe}{%
+	\pgfmathparse{\punkteA + \punkteB + \punkteC + \punkteD + \punkteE}%
+	\pgfmathprintnumber{\pgfmathresult}
+}
+
+
+\begin{document}
+	
+	\begin{center}
+		%\textbf{Klassenarbeit N°1 G8}\\[0.3cm]
+		\textbf{Rechnen mit Brüchen}\\[0.2cm]
+		\textbf{© J. Mycan}\\[0.5cm]
+	\end{center}
+	
+	\textbf{Vor- und Nachname:} \underline{\hspace{10cm}}\\%[0.5cm]
+	
+	%\vspace{1cm}
+	
+	\textbf{Aufgabe 1}\hfill (8+12 = \punkteA{} Punkte)\
+	
+	\section*{Lösungen zu Aufgabe 1}
+	
+	\begin{enumerate}
+		\item[a)] Berechnung von $\frac{3}{4} + \frac{5}{6}=$
+		\begin{align*}
+			\frac{3}{4} + \frac{5}{6} &= \frac{3 \cdot 3}{4 \cdot 3} + \frac{5 \cdot 2}{6 \cdot 2} \\
+			&= \frac{9}{12} + \frac{10}{12} \\
+			&= \frac{19}{12}=1\frac{7}{12} \approx 1.58
+		\end{align*}
+		
+		\item[b)] Berechnung von $\frac{7}{8} - \frac{2}{5}=$
+		\begin{align*}
+			\frac{7}{8} - \frac{2}{5} &= \frac{7 \cdot 5}{8 \cdot 5} - \frac{2 \cdot 8}{5 \cdot 8} \\
+			&= \frac{35}{40} - \frac{16}{40} \\
+			&= \frac{19}{40} \approx 0.475
+		\end{align*}
+		
+		\item[c)] Berechnung von $\frac{2}{3} \cdot \frac{4}{9}=$
+		\begin{align*}
+			\frac{2}{3} \cdot \frac{4}{9} &= \frac{2 \cdot 4}{3 \cdot 9} \\
+			&= \frac{8}{27} \approx 0.296
+		\end{align*}
+		
+		\item[d)] Berechnung von $\frac{5}{7} \div \frac{3}{8}=$
+		\begin{align*}
+			\frac{5}{7} \div \frac{3}{8} &= \frac{5}{7} \cdot \frac{8}{3} \\
+			&= \frac{5 \cdot 8}{7 \cdot 3} \\
+			&= \frac{40}{21}=1\frac{19}{21} \approx 1.905
+		\end{align*}
+		
+		\item[e)] Berechnung von $\frac{1}{2} + \frac{1}{3} - \frac{1}{4}=$
+		\begin{align*}
+			\frac{1}{2} + \frac{1}{3} - \frac{1}{4} &= \frac{6}{12} + \frac{4}{12} - \frac{3}{12} \\
+			&= \frac{7}{12} \approx 0.583
+		\end{align*}
+		
+		\item[f)] Berechnung von $\frac{5}{6} \cdot \frac{3}{4} \div \frac{2}{5}=$
+		\begin{align*}
+			\left( \frac{5}{6} \cdot \frac{3}{4} \right) \div \frac{2}{5} &= \frac{15}{24} \div \frac{2}{5} \\
+			&= \frac{15}{24} \cdot \frac{5}{2} \\
+			&= \frac{75}{48} = \frac{25}{16}=1\frac{9}{16} \approx 1.563
+		\end{align*}
+		
+		\item[g)] Berechnung von $\left( \frac{3}{5} + \frac{2}{7} \right) \cdot \frac{4}{9}=$
+		\begin{align*}
+			\left(\frac{3}{5} + \frac{2}{7}\right)\cdot \frac{4}{9} &= \left(\frac{21}{35} + \frac{10}{35} \right)\cdot\frac{4}{9} \\
+			&= \frac{31}{35}\cdot\frac{4}{9} \\
+			&= \frac{124}{315} \approx 0.394
+		\end{align*}
+		
+		\item[h)] Berechnung von $\frac{8}{11} \div \left( \frac{5}{6} - \frac{1}{4} \right)=$
+		\begin{align*}
+			\frac{8}{11}\div\left(\frac{5}{6} - \frac{1}{4}\right) &= \frac{8}{11}\div\left(\frac{10}{12} - \frac{3}{12}\right) \\
+			&= \frac{8}{11}\div\frac{7}{12} = \frac{8}{11}\cdot\frac{12}{7}\\
+			&= \frac{96}{77} = 1\frac{19}{77} \approx 1.247
+		\end{align*}
+	\end{enumerate}
+	
+	
+	\textbf{Aufgabe 2} \hfill (6+9 = \punkteB{} Punkte)\\
+	
+	\section*{Lösungen zu Aufgabe 2}
+	\textbf{Aufgabe 2} \hfill (6+9 = \punkteB{} Punkte)\\
+
+	\begin{center}
+		\renewcommand{\arraystretch}{1.5}
+		\begin{tabular}{lll}
+			a) $25\% = \frac{1}{4} = 0.25$ & \quad b) $40\% = \frac{2}{5} = 0.4$ & \quad c) $12.5\% = \frac{1}{8} = 0.125$ \\
+			d) $66.6\% = \frac{2}{3} = 0.66\overline{6} \approx 0,667$ & \quad e) $5\% = \frac{1}{20} = 0.05$ & \quad f) $83.33\% = \frac{5}{6} = 0.833\overline{3} \approx 0,833$ \\
+		\end{tabular}
+	\end{center}
+	
+	\textbf{Aufgabe 3} \hfill (6+6 = \punkteC{} Punkte)\\
+	Berechne die entsprechende  Anteile von Größen.
+	\begin{center}
+		\renewcommand{\arraystretch}{1.5}
+		\begin{tabular}{lll}
+			a) $\frac{1}{12}$ von 200m = & b) $\frac{5}{6}$ von 4,2dm = & c) $11\%$ von 2m = \\
+			d) $\frac{1}{5}$ von \dots min sind 40min &  e) $\frac{9}{10}$ von \dots sind 54h = & f) $\frac{6}{13}$ von \dots sind 84€\\
+		\end{tabular}
+	\end{center}
+	
+	\section*{Lösungen zu Aufgabe 3}
+	
+	\begin{center}
+		\renewcommand{\arraystretch}{1.5}
+		\begin{tabular}{lll}
+			a) $\frac{1}{12}$ von 200m = $\frac{50}{3} \approx 16.67$m & b) $\frac{5}{6}$ von 4,2dm = $3.5$dm & c) $11\%$ von 2m = $\frac{11}{100}\cdot 2 = 0.22$m \\
+			d) $\frac{1}{5}$ von \underline{200}min sind 40min & e) $\frac{9}{10}$ von \underline{60} sind 54h & f) $\frac{6}{13}$ von \underline{182} sind 84€\\
+		\end{tabular}
+	\end{center}
+	
+	\textbf{Aufgabe 4} \hfill (\punkteD{} Punkte)\\
+	Kurt Klugschwätzer behauptet: "In der Klasse 6b spielen ein Drittel aller Schüler genau ein Instrument. Die Hälfte davon spielt Geige, zwei Schüler flöten und drei Schüler spielen Klavier."
+	Wie viele Schüler hat die Klasse 6b? Begründe deine Antwort.\\
+	
+	\section*{Lösungen zu Aufgabe 4}
+	
+	Sei $x$ die Gesamtanzahl der Schüler.
+	\begin{align*}
+		\text{Ein Drittel spielt ein Instrument:} & \quad \frac{1}{3}x \\
+		\text{Die Hälfte davon spielt Geige:} & \quad \frac{1}{3} x \div 2 = \frac{1}{3} x \cdot\frac{1}{2} = \frac{1}{6} x \\
+		\text{Zwei Schüler flöten, drei spielen Klavier, also:} & \quad \frac{1}{6}x + 2 + 3 = \frac{1}{3}x \\
+		\text{Gleichung lösen:} & \quad \frac{1}{6}x + 5 = \frac{1}{3}x \\
+		\Rightarrow \quad 5 &= \frac{1}{3}x - \frac{1}{6}x \\
+		&= \frac{2}{6}x - \frac{1}{6}x = \frac{1}{6}x \\
+		\Rightarrow x &= 30
+	\end{align*}
+	
+	Also hat die Klasse 6b insgesamt \textbf{30 Schüler}.\\ \\
+	
+	\textbf{Aufgabe 5} \hfill (2+6=\punkteE{} Punkte)\\
+	Ein Zwölftel aller Schüler einer Realschule fahren mit dem Fahrrad und mit dem Moped zur Schule. Ein Teil der Schüler wird mit dem Schulbus gebracht. Die übrigen kommen zu Fuß.
+	\begin{enumerate}
+		\item[a)] Welcher Anteil (Bruch) der Schüler kommt nicht zu Fuß?
+		\item[b)] Wenn 27 Schüler ein Moped benutzen, wie viele Schüler hat dann diese Schule?
+	\end{enumerate}
+	
+	\begin{enumerate}
+		\item[a)] Welcher Anteil (Bruch) der Schüler kommt nicht zu Fuß?
+		\begin{align*}
+			\text{Ein Zwölftel fährt mit Fahrrad oder Moped:} & \quad \frac{1}{12} \\
+			\text{Der Rest kommt nicht zu Fuß:} & \quad 1 - \frac{1}{12} = \frac{11}{12}
+		\end{align*}
+		
+		\item[b)] Wenn 27 Schüler ein Moped benutzen, wie viele Schüler hat dann diese Schule?
+		\begin{align*}
+			\text{Sei } x \text{ die Gesamtanzahl der Schüler:} & \\
+			\frac{1}{12} x &= 27 \\
+			x &= 27 \times 12 \\
+			x &= 324
+		\end{align*}
+		Also hat die Schule insgesamt \textbf{324 Schüler}.
+	\end{enumerate}
+	
+	\vspace{1cm}
+	\textbf{Auswertungstabelle:}
+	\begin{center}
+		\begin{tabular}{|c|c|c|c|c|c|c|c|}
+			\hline
+			Aufgabe & 1 & 2 & 3 & 4 & 5 & Summe & Note \\
+			\hline
+			Punkte  & \text{\quad / \punkteA } & \text{\quad / \punkteB } & \text{ \quad / \punkteC } & \text{\quad / \punkteD } & \text{\quad / \punkteE}  & \summe & \\
+			\hline
+		\end{tabular}
+	\end{center}	
+	%	\vspace{1cm}
+	
+	\textbf{Notenschlüssel:}
+	
+	\begin{center}
+		\begin{tabular}{|c|c|c|c|c|c|c|}
+			\hline
+			Note & 1 & 2 & 3 & 4 & 5 & 6 \\
+			\hline
+			Prozent \% & 100--90 & 89--75 & 74--60 & 59--45 & 44--20 & 19--0 \\
+			\hline
+			Punkte & \maxSumme{}--\noteEinsMin{} & \fpeval{\noteEinsMin-1}--\noteZweiMin{} & \fpeval{\noteZweiMin-1}--\noteDreiMin{} & \fpeval{\noteDreiMin-1}--\noteVierMin{} & \fpeval{\noteVierMin-1}--\noteFunfMin{} & \fpeval{\noteFunfMin-1}--\noteSechsMin{} \\
+			\hline
+		\end{tabular}
+	\end{center}
+	
+	\vspace{3cm}
+	
+	\textbf{Kenntnisnahme eines Elternteils:} \hrulefill \hfill \textbf{Note:} \hrulefill
+	
+\end{document}

@@ -1,0 +1,121 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage{tabularx}
+\usepackage{amsmath}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath, amssymb, amsthm}
+\usepackage{graphicx}
+\usepackage{array}
+\usepackage[left=2cm, right=2cm, top=2cm, bottom=2cm]{geometry}
+\usepackage{fancyhdr}
+\usepackage{xfp}
+\usepackage{pgf}
+
+\pagestyle{fancy}
+\lhead{Klassenarbeit 45min.}
+\chead{Heinrich-von-Kleist-Schule}
+\rhead{Mathematik - G8A}
+\lfoot{}
+\cfoot{Seite \thepage}
+\rfoot{}
+
+\newcommand{\punkteA}{10}
+\newcommand{\punkteB}{8}
+\newcommand{\punkteC}{7}
+\newcommand{\punkteD}{9}
+\newcommand{\punkteE}{11}
+
+\newcommand{\maxSumme}{45}
+\newcommand{\noteEinsMin}{\fpeval{round(\maxSumme * 0.96,0)}}
+\newcommand{\noteZweiMin}{\fpeval{round(\maxSumme * 0.80,0)}}
+\newcommand{\noteDreiMin}{\fpeval{round(\maxSumme * 0.60,0)}}
+\newcommand{\noteVierMin}{\fpeval{round(\maxSumme * 0.45,0)}}
+\newcommand{\noteFunfMin}{\fpeval{round(\maxSumme * 0.20,0)}}
+\newcommand{\noteSechsMin}{0}
+
+\newcommand{\summe}{%
+	\pgfmathparse{\punkteA + \punkteB + \punkteC + \punkteD + \punkteE}%
+	\pgfmathprintnumber{\pgfmathresult}}
+
+\begin{document}
+	
+	\begin{center}
+		\textbf{Klassenarbeit - Lineare Funktionen und LGS}
+	\end{center}
+	
+	\textbf{Vor- und Nachname:} \underline{\hspace{10cm}}\\[0.1cm]
+	Die Lösungen sowie Lösungswege sollten klar strukturiert und gut nachvollziehbar sein. Jeder einzelne Berechnungsschritt ist mit einer kurzen, prägnanten Überschrift zu versehen, die verdeutlicht, welcher Teil der Aufgabe bearbeitet wird. \\[0.1cm]
+	
+	\textbf{Aufgabe 1 (10 Punkte)}\\
+	Gegeben ist ein Koordinatensystem mit zwei linearen Funktionen \(f\) und \(g\), die durch ihre Graphen dargestellt sind (siehe Figure 1).
+	Berechne den Schnittpunkt der beiden Funktionen rechnerisch mit einem Verfahren deiner Wahl.\\
+	\begin{figure}[h!]
+		\centering
+		\includegraphics[width=0.8\textwidth]{plot-3.png}
+		\caption{Graph der linearen Funktionen \(f\) und \(g\)}
+	\end{figure}
+	
+	\vspace{1.5cm}
+	
+	\textbf{Aufgabe 2 (8 Punkte)}\\
+	In einem Terrarium befinden sich Käfer und Spinnen. Zusammen sind es 18 Tiere. Insgesamt haben sie 110 Beine.
+	Wie viele Käfer und wie viele Spinnen sind es? Stelle ein Gleichungssystem auf und bestimme die Lösung.\\
+	
+	\vspace{1cm}
+	
+	\textbf{Aufgabe 3 (7 Punkte)}\\
+	Eine Mutter ist heute viermal so alt wie ihre Tochter.
+	In 5 Jahren wird sie nur noch doppelt so alt sein.
+	Wie alt sind Mutter und Tochter heute?
+	Stelle ein Gleichungssystem auf und bestimme die Lösung.\\
+	
+	\newpage
+	
+	\textbf{Aufgabe 4 (9 Punkte)}\\
+	Ein Verlag hat anfangs 1.200 Bücher auf Lager.
+	Jeden Monat werden 40 Bücher verkauft. Gleichzeitig werden 15 neue Bücher nachgeliefert.
+	Nach wie vielen Monaten sind noch 900 Bücher auf Lager?
+	Stelle eine Gleichung auf und bestimme die Lösung rechnerisch.\\
+	
+	\vspace{1.5cm}
+	
+	\textbf{Aufgabe 5 (11 Punkte)}\\
+	Ein Ausflugsschiff startet um 10:00 Uhr in Mainz und fährt mit einer Geschwindigkeit von 18 km/h flussaufwärts nach Wiesbaden.
+	Ein Frachtkahn legt um 10:15 Uhr in Wiesbaden ab und fährt mit 12 km/h flussabwärts Richtung Mainz.
+	Die beiden Städte liegen 21 Kilometer auseinander.
+	Stelle ein lineares Gleichungssystem auf, das die zurückgelegten Strecken beschreibt.
+	Berechne die Zeit, \underline{wann und wo} sich die beiden Boote auf dem Main begegnen.
+	Gib die genaue Uhrzeit an, zu der sich die beiden Boote treffen.
+	
+	\vspace{5cm}
+
+	
+	
+	\vspace{1cm}
+	\textbf{Auswertungstabelle:}
+	\begin{center}
+		\begin{tabular}{|c|c|c|c|c|c|c|c|}
+			\hline
+			Aufgabe & 1 & 2 & 3 & 4 & 5 & Summe\\
+			\hline
+			Punkte & \text{\ / \punkteA} & \text{\ / \punkteB} & \text{\ / \punkteC} & \text{\ / \punkteD} & \text{\ / \punkteE} & \text{\ / \summe}\\
+			\hline
+		\end{tabular}
+	\end{center}
+	
+	\textbf{Notenschlüssel:}
+	\begin{center}
+		\begin{tabular}{|c|c|c|c|c|c|c|}
+			\hline
+			Note & 1 & 2 & 3 & 4 & 5 & 6 \\
+			\hline
+			Prozent \% & 100--96 & 95--80 & 79--60 & 59--45 & 44--16 & 15--0 \\
+			\hline
+			Punkte & \maxSumme{}--\noteEinsMin{} & \fpeval{\noteEinsMin-1}--\noteZweiMin{} & \fpeval{\noteZweiMin-1}--\noteDreiMin{} & \fpeval{\noteDreiMin-1}--\noteVierMin{} & \fpeval{\noteVierMin-1}--\noteFunfMin{} & \fpeval{\noteFunfMin-1}--\noteSechsMin{} \\
+			\hline
+		\end{tabular}
+	\end{center}
+	
+	\vspace{2cm}
+	\textbf{Kenntnisnahme eines Elternteils:} \hrulefill \hfill \textbf{Note:} \hrulefill
+	
+\end{document}

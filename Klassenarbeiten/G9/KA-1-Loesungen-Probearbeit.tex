@@ -1,0 +1,126 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[ngerman]{babel}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath,amssymb}
+\usepackage{enumitem}
+\usepackage{multicol}
+\setlist[enumerate]{itemsep=4pt, topsep=4pt}
+\setlength\parindent{0pt}
+
+\begin{document}
+	\begin{center}
+		{\Large \textbf{Lösungsblatt – Probe-Klassenarbeit}}\\
+		\small(Alle Rechenschritte stichpunktartig; Ergebnisse – soweit möglich – ohne negative Exponenten.)
+	\end{center}
+	
+	% =============== Aufgabe 1 ===================
+	\textbf{Aufgabe 1: Schnittpunkt zweier Geraden aus dem Graphen}\\
+	\emph{Vorgehen (allgemein, da der Graph vorgegeben ist):}
+	\begin{enumerate}[label=\arabic*)]
+		\item \textbf{Funktionsgleichungen bestimmen:} Für jede Gerade zwei Punkte ablesen, Steigung
+		\(m=\frac{\Delta y}{\Delta x}\) und Achsenabschnitt \(n\) bestimmen. So erhält man \(f(x)=m_f x+n_f\) und \(g(x)=m_g x+n_g\).
+		\item \textbf{Gleichsetzen:} \(m_f x+n_f=m_g x+n_g \Rightarrow x_S=\dfrac{n_g-n_f}{m_f-m_g}\).
+		\item \textbf{Einsetzen:} \(y_S=f(x_S)=g(x_S)\).
+		\item \textbf{Schnittpunkt:} \(S(x_S\mid y_S)\).
+	\end{enumerate}
+	
+	\vspace{0.4em}
+	% =============== Aufgabe 2 ===================
+	\textbf{Aufgabe 2: Eintrittspreise}\\
+	Seien \(A\) (Erwachsenenpreis) und \(K\) (Kinderpreis) in Euro.\\
+	\textbf{a)} LGS: \(\begin{cases}2A+3K=23\\ A+5K=22\end{cases}\)
+	
+	\textbf{b)} \emph{Einsetzungsverfahren:} \(A=22-5K\) in die erste Gleichung:
+	\[
+	2(22-5K)+3K=23 \Rightarrow 44-10K+3K=23 \Rightarrow -7K=-21 \Rightarrow K=3.
+	\]
+	Dann \(A=22-5\cdot 3=7\).
+	
+	\textbf{c)} \emph{Antwortsatz:} Erwachsene \(7\,€\), Kinder \(3\,€\).
+	\quad \emph{Probe:} \(2\cdot7+3\cdot3=14+9=23\), \(1\cdot7+5\cdot3=7+15=22\).
+	
+	\textbf{d)} Gruppe \(3\) Erw. und \(4\) Kinder: \(3A+4K=3\cdot7+4\cdot3=21+12=33\,€\).
+	
+	\textbf{e)} (Tageseinnahmen) \(\begin{cases}E+C=250\\ 7E+3C=1070\end{cases}\Rightarrow
+	7E+3(250-E)=1070\Rightarrow 4E=320\Rightarrow E=80,\;C=170.\)
+	
+	\vspace{0.4em}
+	% =============== Aufgabe 3 ===================
+	\textbf{Aufgabe 3: \(3\times3\)-LGS in Matrixform}\\
+	Gegeben: \(A=\begin{pmatrix}2&1&-1\\[2pt]1&-1&2\\[2pt]3&2&1\end{pmatrix},\;
+	\vec b=\begin{pmatrix}0\\9\\7\end{pmatrix}\).
+	Das LGS ist
+	\(\begin{cases}
+		2x+y-z=0\\
+		x-y+2z=9\\
+		3x+2y+z=7
+	\end{cases}\).
+	
+	\emph{Lösen (Substitution):} Aus (1) \(y=z-2x\).
+	In (2): \(x-(z-2x)+2z=9 \Rightarrow 3x+z=9 \Rightarrow z=9-3x\).
+	Dann \(y=9-5x\).
+	In (3): \(3x+2(9-5x)+(9-3x)=7 \Rightarrow -10x+27=7 \Rightarrow x=2\).
+	Somit \(z=9-3\cdot2=3\), \(y=9-5\cdot2=-1\). \\
+	\textbf{Lösung:} \((x,y,z)=(2,\,-1,\,3)\). \emph{Probe} in allen drei Gleichungen erfüllt.
+	
+	\vspace{0.4em}
+	% =============== Aufgabe 4 ===================
+	\textbf{Aufgabe 4: Wurzeln – nur Zahlen (vereinfachen)}\\
+	\begin{multicols}{2}
+		\begin{enumerate}[label=\alph*)]
+			\item \(\sqrt{20}=2\sqrt{5}\)
+			\item \(\sqrt{45}=3\sqrt{5}\)
+			\item \(\sqrt{72}=6\sqrt{2}\)
+			\item \(\sqrt{147}=7\sqrt{3}\)
+			\item \(\sqrt{108}=6\sqrt{3}\)
+			\item \(\sqrt{300}=10\sqrt{3}\)
+		\end{enumerate}
+	\end{multicols}
+	
+	\vspace{0.2em}
+	% =============== Aufgabe 5 ===================
+	\textbf{Aufgabe 5: Wurzeln – mit Variablen (vereinfachen; \(a,b,x,y\ge0\))}\\
+	\begin{multicols}{2}
+		\begin{enumerate}[label=\alph*)]
+			\item \(\sqrt{18x^{2}}=3x\sqrt{2}\)
+			\item \(\sqrt{50a^{2}}=5a\sqrt{2}\)
+			\item \(\sqrt{12x^{4}}=2x^{2}\sqrt{3}\)
+			\item \(\sqrt{\frac{72x^{2}}{2}}=6x\)
+			\item \(\sqrt{27a^{2}b}=3a\sqrt{3b}\)
+			\item \(\sqrt{8x^{3}y^{5}}=2xy^{2}\sqrt{2xy}\)
+		\end{enumerate}
+	\end{multicols}
+	
+	\vspace{0.2em}
+	% =============== Aufgabe 6 ===================
+	\textbf{Aufgabe 6: Wurzelgesetze (rationalisiere ggf.; \(a,b,x,y>0\))}\\
+	\begin{enumerate}[label=\alph*)]
+		\item \(\sqrt{18a^{2}b}=3a\sqrt{2b}\)
+		\item \(\sqrt{12x}\cdot\sqrt{27x^{3}}=18x^{2}\)
+		\item \(\dfrac{\sqrt{48a^{5}}}{\sqrt{3a}}=\sqrt{16a^{4}}=4a^{2}\)
+		\item \(5\sqrt{2x}-2\sqrt{8x}+3\sqrt{18x}=10\sqrt{2x}\)
+		\item \(\sqrt{\dfrac{9a^{3}b}{4a}}\cdot \dfrac{\sqrt b}{\sqrt{a^{2}}}
+		=\dfrac{3a}{2}\sqrt b\cdot \dfrac{\sqrt b}{a}=\dfrac{3}{2}\,b\)
+		\item \(\dfrac{2}{\sqrt{5x}}+\dfrac{3\sqrt{x}}{\sqrt{20}}
+		=\dfrac{(3x+4)\sqrt{5x}}{10x}\)
+	\end{enumerate}
+	
+	\vspace{0.2em}
+	% =============== Aufgabe 7 ===================
+	\textbf{Aufgabe 7: Wurzelgesetze – fortgeschritten ( \(a,b,x,y>0\) )}\\
+	\begin{enumerate}[label=\alph*)]
+		\item \(\sqrt{75a^{3}b^{5}}\cdot \dfrac{\sqrt{12ab}}{3\sqrt{3a}}
+		=\dfrac{10ab^{3}\sqrt{3a}}{3}\)
+		\item \(\dfrac{\sqrt{32x^{5}}}{4\sqrt{2x}}+\dfrac{3\sqrt{18x^{3}}}{2\sqrt{8x}}
+		=x^{2}+\dfrac{3}{4}x\)
+		\item \(\dfrac{5}{\sqrt a+\sqrt b}-\dfrac{2}{\sqrt a-\sqrt b}
+		=\dfrac{3\sqrt a-7\sqrt b}{a-b}\)
+		\item \(\left(\dfrac{\sqrt{45x^{4}y}}{\sqrt{5xy}}\right):\left(\dfrac{\sqrt{9x^{2}}}{\sqrt{x}}\right)=x\)
+		\item \(\sqrt{\dfrac{(12a^{3}b^{2})(27ab^{5})}{3a^{2}b}}\cdot\dfrac{1}{\sqrt{6ab}}
+		=3b^{2}\sqrt{2ab}\)
+		\item \(\sqrt{50x^{3}y^{5}}-2\sqrt{2xy}\cdot\sqrt{8x^{2}y^{3}}+\sqrt{200x^{3}y^{5}}
+		=xy^{2}\sqrt{x}\,\bigl(15\sqrt{2y}-8\bigr)\)
+	\end{enumerate}
+	
+\end{document}

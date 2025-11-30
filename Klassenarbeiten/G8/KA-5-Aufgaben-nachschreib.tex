@@ -1,0 +1,128 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage{tabularx}
+\usepackage{amsmath}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath, amssymb, amsthm}
+\usepackage{graphicx}
+\usepackage{array}
+\usepackage[left=2cm, right=2cm, top=2cm, bottom=2cm]{geometry}
+\usepackage{fancyhdr}
+\usepackage{xfp}
+\usepackage{pgf}
+
+\pagestyle{fancy}
+\lhead{Klassenarbeit 45min.}
+\chead{Heinrich-von-Kleist-Schule}
+\rhead{Mathematik - G8A}
+\lfoot{}
+\cfoot{Seite \thepage}
+\rfoot{}
+
+\newcommand{\punkteA}{10}
+\newcommand{\punkteB}{8}
+\newcommand{\punkteC}{7}
+\newcommand{\punkteD}{9}
+\newcommand{\punkteE}{11}
+
+\newcommand{\maxSumme}{45}
+\newcommand{\noteEinsMin}{\fpeval{round(\maxSumme * 0.96,0)}}
+\newcommand{\noteZweiMin}{\fpeval{round(\maxSumme * 0.80,0)}}
+\newcommand{\noteDreiMin}{\fpeval{round(\maxSumme * 0.60,0)}}
+\newcommand{\noteVierMin}{\fpeval{round(\maxSumme * 0.45,0)}}
+\newcommand{\noteFunfMin}{\fpeval{round(\maxSumme * 0.20,0)}}
+\newcommand{\noteSechsMin}{0}
+
+\newcommand{\summe}{%
+	\pgfmathparse{\punkteA + \punkteB + \punkteC + \punkteD + \punkteE}%
+	\pgfmathprintnumber{\pgfmathresult}}
+
+\begin{document}
+	
+	\begin{center}
+		\textbf{(Nachschreib-)Klassenarbeit - Lineare Funktionen und LGS}
+	\end{center}
+	
+	\textbf{Vor- und Nachname:} \underline{\hspace{10cm}}\\[0.1cm]
+	Die Lösungen sowie Lösungswege sollten klar strukturiert und gut nachvollziehbar sein. Jeder einzelne Berechnungsschritt ist mit einer kurzen, prägnanten Überschrift zu versehen, die verdeutlicht, welcher Teil der Aufgabe bearbeitet wird. \\[0.1cm]
+	
+	\textbf{Aufgabe 1 (10 Punkte)}\\
+	Gegeben ist ein Koordinatensystem mit zwei linearen Funktionen \(f\) und \(g\), die durch ihre Graphen dargestellt sind (siehe Figure 1).
+	Berechne den Schnittpunkt der beiden Funktionen rechnerisch mit einem Verfahren deiner Wahl.\\
+	\begin{figure}[h!]
+		\centering
+		\includegraphics[width=0.8\textwidth]{plot-3.png}
+		\caption{Graph der linearen Funktionen \(f\) und \(g\)}
+	\end{figure}
+	
+	\vspace{1 cm}
+	
+\textbf{Aufgabe 2 (8 Punkte)}
+Vor einem Kindergarten stehen Fahrräder und Kinderräder mit Stützrädern.
+Insgesamt stehen dort \textbf{22 Fahrräder}.
+Zählt man alle Räder der Fahrräder zusammen, kommt man auf \textbf{64 Räder}.
+Wie viele Kinderräder mit Stützrädern und wie viele normale Fahrräder stehen dort? 
+Stelle ein Gleichungssystem auf und bestimme die Lösung.
+
+	
+	\vspace{1cm}
+	
+\textbf{Aufgabe 3 (7 Punkte)}
+Ein Vater ist heute dreimal so alt wie sein Sohn.
+In 12 Jahren wird er nur noch doppelt so alt sein.
+Wie alt sind Vater und Sohn heute?
+Stelle ein Gleichungssystem auf und bestimme die Lösung.
+
+	
+	\newpage
+	
+\textbf{Aufgabe 4 (9 Punkte)}
+Ein Wassertank enthält anfangs 1.500 Liter Wasser.
+Jede Woche werden 50 Liter Wasser entnommen. Gleichzeitig wird der Tank wöchentlich automatisch mit 20 Litern nachgefüllt.
+Nach wie vielen Wochen sind noch 1.080 Liter im Tank?
+Stelle eine Gleichung auf und bestimme die Lösung rechnerisch.
+
+	
+	\vspace{1.5cm}
+	
+\textbf{Aufgabe 5 (11 Punkte)}
+Ein Ausflugsschiff legt um 9:00 Uhr in Frankfurt ab und fährt mit einer Geschwindigkeit von 20 km/h flussabwärts nach Mainz.
+Ein Schnellboot startet um 10:00 Uhr am gleichen Ort und fährt mit 30 km/h dieselbe Strecke. \\
+Wie lange braucht das Schnellboot, um das Ausflugsschiff einzuholen?
+Stelle ein lineares Gleichungssystem auf, das die zurückgelegten Strecken beschreibt.
+Berechne den Zeitpunkt, \underline{wann und nach wie vielen Kilometern} werden sich die beiden Boote begegnen.
+Gib die genaue Uhrzeit an, zu der das Schnellboot das Ausflugsschiff einholt.
+
+	
+	\vspace{5cm}
+
+	
+	
+	\vspace{1cm}
+	\textbf{Auswertungstabelle:}
+	\begin{center}
+		\begin{tabular}{|c|c|c|c|c|c|c|c|}
+			\hline
+			Aufgabe & 1 & 2 & 3 & 4 & 5 & Summe\\
+			\hline
+			Punkte & \text{\ / \punkteA} & \text{\ / \punkteB} & \text{\ / \punkteC} & \text{\ / \punkteD} & \text{\ / \punkteE} & \text{\ / \summe}\\
+			\hline
+		\end{tabular}
+	\end{center}
+	
+	\textbf{Notenschlüssel:}
+	\begin{center}
+		\begin{tabular}{|c|c|c|c|c|c|c|}
+			\hline
+			Note & 1 & 2 & 3 & 4 & 5 & 6 \\
+			\hline
+			Prozent \% & 100--96 & 95--80 & 79--60 & 59--45 & 44--16 & 15--0 \\
+			\hline
+			Punkte & \maxSumme{}--\noteEinsMin{} & \fpeval{\noteEinsMin-1}--\noteZweiMin{} & \fpeval{\noteZweiMin-1}--\noteDreiMin{} & \fpeval{\noteDreiMin-1}--\noteVierMin{} & \fpeval{\noteVierMin-1}--\noteFunfMin{} & \fpeval{\noteFunfMin-1}--\noteSechsMin{} \\
+			\hline
+		\end{tabular}
+	\end{center}
+	
+	\vspace{2cm}
+	\textbf{Kenntnisnahme eines Elternteils:} \hrulefill \hfill \textbf{Note:} \hrulefill
+	
+\end{document}

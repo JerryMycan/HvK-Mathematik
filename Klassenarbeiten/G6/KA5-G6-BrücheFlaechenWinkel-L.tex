@@ -1,0 +1,210 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage{tabularx}
+\usepackage{amsmath}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath, amssymb, amsthm}
+\usepackage{graphicx}
+\usepackage{array}
+\usepackage[left=2cm, right=2cm, top=2cm, bottom=2cm]{geometry}
+\usepackage{fancyhdr}
+\usepackage{xfp} % Für mathematische Berechnungen in LaTeX
+\usepackage{pgf} % Erlaubt Berechnungen mit \pgfmathparse
+
+% Kopf- und Fußzeile
+\pagestyle{fancy}
+\lhead{6. März 2025\\Vorbereitung 45min.}
+\chead{Heinrich-von-Kleist-Schule}
+\rhead{Mathematik - G6E}
+\lfoot{}
+%\cfoot{Seite \thepage}
+\rfoot{}
+
+% Makro für einzelne Punkteingaben (hier einfach Platzhalter)
+\newcommand{\punkteA}{0}  % Eingetragene Punkte für Aufgabe 1
+\newcommand{\punkteB}{0}  % Eingetragene Punkte für Aufgabe 2
+\newcommand{\punkteC}{0}   % Eingetragene Punkte für Aufgabe 3
+\newcommand{\punkteD}{0}   % Eingetragene Punkte für Aufgabe 4
+\newcommand{\punkteE}{0}  % Eingetragene Punkte für Aufgabe 5
+
+% Maximale Punktzahl insgesamt
+\newcommand{\maxSumme}{100}  % Hier die maximale Punktzahl anpassen
+
+% Automatische Berechnung der Notengrenzen
+\newcommand{\noteEinsMin}{\fpeval{round(\maxSumme * 0.90,0)}}
+\newcommand{\noteZweiMin}{\fpeval{round(\maxSumme * 0.75,0)}}
+\newcommand{\noteDreiMin}{\fpeval{round(\maxSumme * 0.60,0)}}
+\newcommand{\noteVierMin}{\fpeval{round(\maxSumme * 0.45,0)}}
+\newcommand{\noteFunfMin}{\fpeval{round(\maxSumme * 0.20,0)}}
+\newcommand{\noteSechsMin}{0}
+
+% Automatische Berechnung der Summe
+\newcommand{\summe}{%
+	\pgfmathparse{\punkteA + \punkteB + \punkteC + \punkteD + \punkteE}%
+	\pgfmathprintnumber{\pgfmathresult}
+}
+
+
+\begin{document}
+	
+	\begin{center}
+		%\textbf{Klassenarbeit N°1 G8}\\[0.3cm]
+		\textbf{Rechnen mit Brüchen}\\[0.2cm]
+		%\textbf{© J. Mycan}\\[0.5cm]
+	\end{center}
+	
+	\textbf{Vor- und Nachname:} \underline{\hspace{10cm}}\\%[0.5cm]
+	
+	%\vspace{1cm}
+
+\textbf{Aufgabe 1 a)} \\
+\[
+\left( \frac{3}{4} + \frac{1}{2} \right) \cdot \frac{2}{5}
+= \left( \frac{3}{4} + \frac{2}{4} \right) \cdot \frac{2}{5}
+= \frac{5}{4} \cdot \frac{2}{5}
+= \frac{10}{20}
+= \frac{1}{2}
+\]
+
+\textbf{Aufgabe 1 b)} \\
+\[
+\frac{7}{8} : \left( \frac{3}{4} - \frac{1}{8} \right)
+= \frac{7}{8} : \left( \frac{6}{8} - \frac{1}{8} \right)
+= \frac{7}{8} : \frac{5}{8}
+= \frac{7}{8} \cdot \frac{8}{5}
+= \frac{56}{40}
+= \frac{7}{5}
+\]
+
+\textbf{Aufgabe 1 c)} \\
+\[
+\left( \frac{5}{6} - \frac{2}{3} \right) \cdot \left( \frac{3}{4} + \frac{1}{2} \right)
+= \left( \frac{5}{6} - \frac{4}{6} \right) \cdot \left( \frac{3}{4} + \frac{2}{4} \right)
+= \frac{1}{6} \cdot \frac{5}{4}
+= \frac{5}{24}
+\]
+
+\textbf{Aufgabe 1 d)} \\
+\[
+\frac{2}{3} + \left[ \frac{4}{9} : \frac{2}{3} \right]
+= \frac{2}{3} + \left[ \frac{4}{9} \cdot \frac{3}{2} \right]
+= \frac{2}{3} + \frac{12}{18}
+= \frac{2}{3} + \frac{2}{3}
+= \frac{4}{3}
+\]
+
+
+\textbf{Aufgabe 2} \hfill ( \punkteB{} Punkte)\\
+Ein Kino möchte seine Sitzplätze erneuern. 
+Geplant ist, \(\frac{3}{5}\) aller Sitzplätze mit neuen Polstern auszustatten.  
+Davon sollen \(\frac{3}{10}\) rote Bezüge erhalten, \(\frac{1}{4}\) blaue.
+
+Wie groß ist der Anteil der Sitze mit roten Bezügen an allen Sitzplätzen?  
+Und wie groß ist der Anteil der Sitze mit blauen Bezügen an allen Sitzplätzen?  
+Gib beide Anteile vollständig gekürzt als Bruch an.\\
+
+\textbf{Aufgabe 2} \\
+\textit{Anteil der Sitze mit roten Bezügen:} \\
+\[
+\frac{3}{5} \cdot \frac{3}{10} = \frac{9}{50}
+\]
+
+\textit{Anteil der Sitze mit blauen Bezügen:} \\
+\[
+\frac{3}{5} \cdot \frac{1}{4} = \frac{3}{20}
+\]
+
+
+
+\textbf{Aufgabe 3} \hfill ( \punkteC{} Punkte)\\
+Ein Laib Käse wiegt \( \frac{5}{6} \) kg.  
+Davon werden \( \frac{1}{4} \) kg für eine Verkostung zurückgelegt.  
+Der Rest wird in 5 gleich große Stücke geschnitten.
+
+Wie viel wiegt eines dieser Stücke? Gib dein Ergebnis als Bruch in kg an.\\
+
+
+\[
+\left( \frac{7}{8} - \frac{1}{2} \right) : 4
+= \left( \frac{7}{8} - \frac{4}{8} \right) : 4
+= \frac{3}{8} : 4
+= \frac{3}{8} \cdot \frac{1}{4}
+= \frac{3}{32}
+\]
+
+
+
+\textbf{Aufgabe 4} \hfill ( \punkteD{} Punkte)\\
+Ein Wasserbecken im Botanischen Garten hat die Maße: 25 m lang, 12 m breit und 1{,}8 m tief.
+a) Berechne das Volumen des Beckens in Kubikmetern.\\[0.2cm]
+b) Wie viele Liter Wasser passen in das Becken?\\
+
+
+\textit{Volumen des Beckens in Kubikmetern:} \\
+\[
+25 \cdot 12 \cdot 1{,}8 = 300 \cdot 1{,}8 = 540\,\text{m}^3
+\]
+
+\textit{1 Kubikmeter entspricht 1000 Litern:} \\
+\[
+540\,\text{m}^3 = 540 \cdot 1000 = 540\,000\,\text{Liter}
+\]
+
+
+\textbf{Aufgabe 5} \hfill ( Punkte)\\
+Gib jeweils die fehlenden Winkel an.
+
+\begin{center}
+		\includegraphics[width=0.50\textwidth]{winkel1.png}\\
+	Berechne die Winkel \(\alpha\), \(\beta\), \(\gamma\), \(\epsilon\), \(\delta\), \(\phi\) und \(\eta\). Begründe jeweils mit einer Winkelbeziehung.
+\end{center}
+
+
+
+
+\textbf{Aufgabe 6} \hfill ( Punkte)\\
+Berechne die Flächeninhalte der folgenden Figuren. Zerlege die Flächen in bekannte geometrische Formen (z.\,B.\ Rechtecke, Dreiecke, Trapeze). Notiere alle Zwischenschritte und gib die Lösung jeweils in  an.\\
+
+\begin{minipage}{0.38\textwidth}
+	\includegraphics[width=0.9\textwidth]{flaeche1.png}\\
+\end{minipage}
+\hfill
+\begin{minipage}{0.48\textwidth}
+	\textbf{b)}\\
+	\includegraphics[width=0.9\textwidth]{flaeche2.png}\\
+\end{minipage}
+
+
+
+
+	\vspace{0.5cm}
+	\textbf{Auswertungstabelle:}
+	\begin{center}
+		\begin{tabular}{|c|c|c|c|c|c|c|c|}
+			\hline
+			Aufgabe & 1 & 2 & 3 & 4 & 5 & Summe & Note \\
+			\hline
+			Punkte  & \text{\quad / \punkteA } & \text{\quad / \punkteB } & \text{ \quad / \punkteC } & \text{\quad / \punkteD } & \text{\quad / \punkteE}  & \summe & \\
+			\hline
+		\end{tabular}
+	\end{center}	
+	%	\vspace{1cm}
+	
+	\textbf{Notenschlüssel:}
+	
+	\begin{center}
+		\begin{tabular}{|c|c|c|c|c|c|c|}
+			\hline
+			Note & 1 & 2 & 3 & 4 & 5 & 6 \\
+			\hline
+			Prozent \% & 100--90 & 89--75 & 74--60 & 59--45 & 44--20 & 19--0 \\
+			\hline
+			Punkte & \maxSumme{}--\noteEinsMin{} & \fpeval{\noteEinsMin-1}--\noteZweiMin{} & \fpeval{\noteZweiMin-1}--\noteDreiMin{} & \fpeval{\noteDreiMin-1}--\noteVierMin{} & \fpeval{\noteVierMin-1}--\noteFunfMin{} & \fpeval{\noteFunfMin-1}--\noteSechsMin{} \\
+			\hline
+		\end{tabular}
+	\end{center}
+	
+	\vspace{3cm}
+	
+	\textbf{Kenntnisnahme eines Elternteils:} \hrulefill \hfill \textbf{Note:} \hrulefill
+	
+\end{document}
