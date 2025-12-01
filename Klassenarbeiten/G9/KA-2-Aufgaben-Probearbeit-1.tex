@@ -1,0 +1,213 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage{tabularx}
+\usepackage{amsmath}
+\usepackage[utf8]{inputenc}
+\usepackage{multicol}
+\usepackage{amsmath, amssymb, amsthm}
+\usepackage{graphicx}
+\usepackage{enumitem}
+\usepackage{array}
+\usepackage[left=2cm, right=2cm, top=2cm, bottom=2cm]{geometry}
+\usepackage{fancyhdr}
+\usepackage{xfp}
+\usepackage{pgf}
+
+\usepackage{graphicx}
+\usepackage{fancyhdr}
+\setlength{\headheight}{28pt} % genug Platz für das Logo
+\pagestyle{fancy}
+\fancyhf{} % alles leeren
+\fancyhead[L]{\includegraphics[height=1.2cm]{logo.png}}
+\fancyhead[C]{\small Klassenarbeit – Funktionale Zusammenhänge\\ Potenzfunktionen \ (Kl. G9A)}
+\fancyhead[R]{\small Name:\ \rule{2.8cm}{0.4pt}}
+\fancyfoot[C]{\thepage}
+
+\fancyfoot[C]{Seite \thepage \enspace\textbullet\enspace J.\,Mycan \textcopyright~2025}
+
+\renewcommand{\footrulewidth}{0.4pt}
+
+
+
+
+%\pagestyle{fancy}
+%\lhead{Klassenarbeit 45min.}
+%\chead{Heinrich-von-Kleist-Schule}
+%\rhead{Mathematik - G8A}
+%\lfoot{}
+%\cfoot{Seite \thepage}
+%\rfoot{}
+
+\newcommand{\punkteA}{6}
+\newcommand{\punkteB}{6}
+\newcommand{\punkteC}{6}
+\newcommand{\punkteD}{18}
+\newcommand{\punkteE}{6}
+%\newcommand{\punkteF}{12}
+
+\newcommand{\maxSumme}{42}
+\newcommand{\noteEinsMin}{\fpeval{round(\maxSumme * 0.95,0)}}
+\newcommand{\noteZweiMin}{\fpeval{round(\maxSumme * 0.80,0)}}
+\newcommand{\noteDreiMin}{\fpeval{round(\maxSumme * 0.60,0)}}
+\newcommand{\noteVierMin}{\fpeval{round(\maxSumme * 0.45,0)}}
+\newcommand{\noteFunfMin}{\fpeval{round(\maxSumme * 0.20,0)}}
+\newcommand{\noteSechsMin}{0}
+
+\newcommand{\summe}{%
+	\pgfmathparse{\punkteA + \punkteB + \punkteC + \punkteD + \punkteE}%
+	\pgfmathprintnumber{\pgfmathresult}}
+
+\begin{document}
+	
+%	\begin{center}
+%		\textbf{Klassenarbeit - Lineare Funktionen und LGS}
+%	\end{center}
+	
+%	\textbf{Vor- und Nachname:} \underline{\hspace{10cm}}\\[0.1cm]
+	Die Lösungen sowie Lösungswege sollten klar strukturiert und gut nachvollziehbar sein.\\[0.1cm]
+	
+	% -------------------------------------------------
+	% Aufgabe 1
+	% -------------------------------------------------
+	\textbf{Aufgabe 1 ( Punkte)}\\
+	Gegeben ist eine quadratische Funktion der Form
+	\[
+	f(x) = x^2 + bx + c.
+	\]
+	Der Graph dieser Funktion verläuft durch die Punkte
+	\[
+	P(1 \mid -6) \quad \text{und} \quad Q(3 \mid -4).
+	\]
+	
+	\begin{enumerate}
+		\item Bestimme den Funktionsterm von \(f\), also die Werte von \(b\) und \(c\).
+		
+		\item Berechne die Nullstellen der Funktion aus Teilaufgabe a).
+		
+		\item Gib die gefundene Funktion in Scheitelpunktform an.
+		
+		\textbf{Hinweis:} Solltest du den Funktionsterm in Teilaufgabe a) nicht bestimmen können, 
+		rechne in den Teilaufgaben b) und c) mit der Funktion
+		\[
+		f(x) = 2x^2 - 4x - 6
+		\]
+		weiter.
+	\end{enumerate}
+	
+	% -------------------------------------------------
+	% Aufgabe 2
+	% -------------------------------------------------
+	\textbf{Aufgabe 2 ( Punkte)}\\
+	Ein Baum ist bei einem Drittel seiner Höhe abgeknickt. Die Spitze berührt den Boden in einem Abstand von
+	\(10\,\text{m}\) vom Stamm (siehe Abbildung~\ref{fig:baum}).
+	
+	\begin{figure}[h]
+		\centering
+		\includegraphics[width=0.4\textwidth]{baum.png}
+		\caption{Abgeknickter Baum}
+		\label{fig:baum}
+	\end{figure}
+	
+	\noindent
+	Berechne, wie hoch der Baum ursprünglich war.\\
+	
+	% -------------------------------------------------
+	% Aufgabe 3
+	% -------------------------------------------------
+	\textbf{Aufgabe 3 ( Punkte)}\\
+	Ein Rechteck soll so konstruiert werden, dass seine Breite \(x\) Meter beträgt und seine Länge
+	durch die Funktion
+	\[
+	L(x) = 12 - x
+	\]
+	gegeben ist. Die Fläche des Rechtecks ergibt sich damit durch
+	\[
+	A(x) = x \cdot L(x).
+	\]
+	
+	\begin{enumerate}
+		\item Stelle die Flächenfunktion \(A(x)\) explizit als quadratische Funktion auf.
+		\item Bestimme durch geeignete Verfahren den Wert von \(x\), bei dem die Fläche maximal wird.
+		\item Berechne die maximale Fläche.
+	\end{enumerate}
+	\vspace{1 cm}
+	%\newpage
+	% -------------------------------------------------
+	% Aufgabe 4
+	% -------------------------------------------------
+	\textbf{Aufgabe 4 ( Punkte)}\\
+	Gegeben sind die Funktionen
+	\[
+	f(x) = 5x^6 - 3x^2 - 4
+	\]
+	und
+	\[
+	g(x) = 2x^5+ 3x^3 - 3x.
+	\]
+	
+	\begin{enumerate}
+		\item[(a)] Untersuche die Graphen von \(f\) und \(g\) auf Symmetrie.
+		\begin{itemize}
+			\item Entscheide für jede der beiden Funktionen, ob ihr Graph \textbf{achsensymmetrisch zur \(y\)-Achse}, \textbf{punktsymmetrisch zum Ursprung} oder \textbf{keine der beiden Symmetrien} besitzt.
+			\item Begründe deine Entscheidung jeweils mit einem passenden Merkmal der Funktionsgleichung oder mit einer Skizze.
+		\end{itemize}
+		
+		\item[(b)] Beweise deine Vermutungen aus Teilaufgabe (a) rechnerisch:
+
+	\end{enumerate}
+	
+	% -------------------------------------------------
+	% Aufgabe 5
+	% -------------------------------------------------
+	\textbf{Aufgabe 5 ( Punkte)}\\
+	Löse die folgenden quadratischen Gleichungen. Begründe jeden Schritt kurz (z.\,B. quadratische Ergänzung, Mitternachtsformel, Ausklammern).
+	
+	\begin{enumerate}
+		\item[(a)] 
+		\[
+		x^2 - 6x + 5 = 0
+		\]
+		Löse die Gleichung und gib beide Lösungen an.
+		
+		\item[(b)]
+		\[
+		3x^2 + 12x = 9
+		\]
+		Bringe die Gleichung zunächst auf eine Seite und löse sie anschließend mit einem Verfahren deiner Wahl.
+		
+		\item[(c)] 
+		\[
+		(x - 4)(x + 2) = 10
+		\]
+		Multipliziere aus, forme eine quadratische Gleichung und löse sie.
+		
+		\item[(d)] Zusatz (optional):  
+		Prüfe für jede Gleichung, ob die Lösungen reell sind oder ob keine reellen Lösungen existieren.
+	\end{enumerate}
+
+	% -------------------------------------------------
+	% Aufgabe 6
+	% -------------------------------------------------
+	\textbf{Aufgabe 6 ( Punkte)}\\
+	Gegeben ist eine quadratische Funktion, deren Nullstellen bei
+	\[
+	x_1 = -2 \quad \text{und} \quad x_2 = 4
+	\]
+	liegen. Außerdem verläuft der Graph der Funktion durch den Punkt
+	\[
+	P(1 \mid -9).
+	\]
+	
+	\begin{enumerate}
+		\item Bestimme den Funktionsterm der quadratischen Funktion in der in der normal Form.
+		
+		\item Gib anschließend die Funktionsgleichung in der Produktform
+
+		an und überprüfe, ob sie mit deinem Ergebnis aus Teil (1) übereinstimmt.
+	\end{enumerate}
+	\vspace{6cm}
+
+	
+	\vspace{2cm}
+	\textbf{Kenntnisnahme eines Elternteils:} \hrulefill \hfill \textbf{Note:} \hrulefill
+	
+\end{document}

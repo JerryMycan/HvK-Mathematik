@@ -1,0 +1,198 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage{tabularx}
+\usepackage{amsmath}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath, amssymb, amsthm}
+\usepackage{graphicx}
+\usepackage{enumitem}
+\usepackage{multicol}
+\usepackage{array}
+\usepackage[left=2cm, right=2cm, top=2cm, bottom=2cm]{geometry}
+\usepackage{fancyhdr}
+\usepackage{xfp}
+\usepackage{pgf}
+
+\usepackage{graphicx}
+\usepackage{fancyhdr}
+\setlength{\headheight}{28pt} % genug Platz für das Logo
+\pagestyle{fancy}
+\fancyhf{} % alles leeren
+\fancyhead[L]{\includegraphics[height=1.2cm]{logo.png}}
+\fancyhead[C]{\small Probe-Klassenarbeit – LGS und Wurzelgesetze \ (Kl. G9A)}
+%\fancyhead[R]{\small Name:\ \rule{2.8cm}{0.4pt}}
+\fancyfoot[C]{\thepage}
+
+\fancyfoot[C]{Seite \thepage \enspace\textbullet\enspace J.\,Mycan \textcopyright~2025}
+
+\renewcommand{\footrulewidth}{0.4pt}
+%\pagestyle{fancy}
+%\lhead{Probe-Klassenarbeit 45min.}
+%\chead{Heinrich-von-Kleist-Schule}
+%\rhead{Mathematik - G9A}
+%\lfoot{}
+%\cfoot{Seite \thepage}
+%\rfoot{}
+
+\newcommand{\punkteA}{8}
+\newcommand{\punkteB}{8}
+\newcommand{\punkteC}{12}
+\newcommand{\punkteD}{6}
+\newcommand{\punkteE}{12}
+
+\newcommand{\maxSumme}{44}
+\newcommand{\noteEinsMin}{\fpeval{round(\maxSumme * 0.95,0)}}
+\newcommand{\noteZweiMin}{\fpeval{round(\maxSumme * 0.80,0)}}
+\newcommand{\noteDreiMin}{\fpeval{round(\maxSumme * 0.60,0)}}
+\newcommand{\noteVierMin}{\fpeval{round(\maxSumme * 0.45,0)}}
+\newcommand{\noteFunfMin}{\fpeval{round(\maxSumme * 0.20,0)}}
+\newcommand{\noteSechsMin}{0}
+
+\newcommand{\summe}{%
+	\pgfmathparse{\punkteA + \punkteB + \punkteC + \punkteD + \punkteE}%
+	\pgfmathprintnumber{\pgfmathresult}}
+	
+	
+\begin{document}
+	
+
+	\textbf{Vor- und Nachname:} \underline{\hspace{10cm}}\\[0.1cm]
+Die Lösungen sowie Lösungswege sollten klar strukturiert und gut nachvollziehbar sein. \\[0.1cm]
+	
+	% ===================== A1 =====================
+	\textbf{Aufgabe 1 (8 Punkte)}\\
+	Gegeben ist ein Koordinatensystem, in dem die Graphen der linearen Funktionen \(f\) und \(g\) eingezeichnet sind (siehe Abbildung~1).\\
+	Bestimme den Schnittpunkt der beiden Funktionen \emph{rechnerisch}.
+	Bestimme dazu zunächst aus der Abbildung die Funktionsgleichungen von \(f\) und \(g\).
+	Stelle anschließend das lineare Gleichungssystem
+	%	\[
+	%	\begin{cases}
+		%		y = f(x)\\
+		%		y = g(x)
+		%	\end{cases}
+	%	\]
+	auf und löse es.
+	Gib das Ergebnis als Punkt \(S(x_S \mid y_S)\) an.
+	
+	\begin{figure}[h!]
+		\centering
+		\includegraphics[width=0.7\textwidth]{plot-3.png}
+		\caption{Graph der linearen Funktionen \(f\) und \(g\)}
+	\end{figure}
+
+	
+	% ===================== A2 =====================
+	\bigskip
+	\textbf{Aufgabe 2 (8 Punkte)}\\
+	In der \emph{Bäckerei} kosten \emph{Brötchen} und \emph{Brezeln} unterschiedlich viel.
+	Kundin A bezahlt für \emph{3 Brötchen und 4 Brezeln} insgesamt \(\,2{,}50\,€\).
+	Kunde B bezahlt für \emph{2 Brötchen und 7 Brezeln} insgesamt \(\,3{,}40\,€\).
+
+	
+	\begin{enumerate}[label=\alph*)]
+		\item Lege Variablen fest (Preis pro Farbdruck, Preis pro Schwarzweißkopie) und stelle ein LGS auf. \hfill (3P)
+		\item Löse das LGS rechnerisch mit einem geeigneten Verfahren und gib beide Einzelpreise an. \hfill (5P)
+	\end{enumerate}
+	
+	% (Hinweis für die Lehrkraft: Lösung ist ganzzahlig und einstellig.)
+	
+	% ===================== A3 =====================
+	\newpage
+	
+	\textbf{Aufgabe 3 (12 Punkte)}\\
+	Gegeben ist das lineare Gleichungssystem in Matrixschreibweise
+	\[
+	A\vec{x}=\vec{b},\quad
+	A=\begin{pmatrix}
+		1 & 1 & 0\\
+		0 & 1 & 1\\
+		1 & 0 & 1
+	\end{pmatrix},\quad
+	\vec{b}=\begin{pmatrix}
+		2\\
+		2\\
+		2
+	\end{pmatrix}.
+	\]
+	Löse das Gleichungssystem rechnerisch (z.\,B. mit dem Gauß-Verfahren).
+	% Hinweis: Die Lösung ist klein und ganzzahlig.
+
+
+	
+	% ===================== A4 =====================
+	\bigskip
+	\textbf{Aufgabe 4 (6 Punkte)}\\
+	Vereinfache so weit wie möglich, indem du vollständige Quadrate aus der Wurzel ziehst.
+	\begin{multicols}{2}
+		\begin{enumerate}[label=\alph*)]
+			\item \(\sqrt{9000}\)
+			\item \(\sqrt{176}\)
+			\item \(\sqrt{0,512}\)
+			\item \(\sqrt{605}\)
+			\item \(\sqrt{864}\)
+			\item \(\sqrt{245}\)
+		\end{enumerate}
+	\end{multicols}
+	
+	% ===================== A5 =====================
+	\bigskip
+	\textbf{Aufgabe 5 (12 Punkte)}\\
+	Vereinfache vollständig; rationalisiere ggf. den Nenner. Es gelte \(a,b,x,y>0\).
+	\begin{multicols}{2}
+		\begin{enumerate}[label=\alph*)]
+			\item \(\dfrac{\sqrt{48\,a^{5}}}{\sqrt{6a}}\)
+			\item \(\sqrt{9x}\cdot\sqrt{8x^{3}}\)
+			\item \(\dfrac{2}{\sqrt{x}}+\dfrac{\sqrt{x}}{\sqrt{12}}\)
+			\item \(\left(\dfrac{\sqrt{a}}{\sqrt{a^{3}}}\right)^{2}\cdot\dfrac{a^{2}}{\sqrt{a}}\)
+			\item \(\dfrac{\sqrt{27a^{2}b}}{\sqrt{3b}}\cdot \sqrt{b}\)
+			\item \(\displaystyle \frac{2}{\sqrt{5x}}+\frac{3\sqrt{x}}{\sqrt{20}}\)
+		\end{enumerate}
+	\end{multicols}
+	
+	% ===================== A6 =====================
+%	\textbf{Aufgabe 6 (Punkte)}\\
+%	Vereinfache mithilfe der Wurzelgesetze. Rationalisiere ggf. den Nenner.
+%	\emph{Hinweis:} Es gelte \(a,b,x,y>0\).
+%	
+%	\begin{multicols}{2}
+%		\begin{enumerate}[label=\alph*)]
+%			\item \(\sqrt{18a^{2}b}\)
+%			\item \(\sqrt{12x}\cdot\sqrt{27x^{3}}\)
+%			\item \(\displaystyle \frac{\sqrt{48a^{5}}}{\sqrt{3a}}\)
+%			\item \(5\sqrt{2x}-2\sqrt{8x}+3\sqrt{18x}\)
+%			\item \(\sqrt{\dfrac{9a^{3}b}{4a}}\cdot \dfrac{\sqrt{b}}{\sqrt{a^{2}}}\)
+%			\item \(\displaystyle \frac{2}{\sqrt{5x}}+\frac{3\sqrt{x}}{\sqrt{20}}\)
+%		\end{enumerate}
+%	\end{multicols}
+
+	
+	
+	\vspace{3 cm}
+	\textbf{Auswertungstabelle:}
+	\begin{center}
+		\begin{tabular}{|c|c|c|c|c|c|c|c|}
+			\hline
+			Aufgabe & 1 & 2 & 3 & 4 & 5 &  Summe\\
+			\hline
+		\hline
+	Punkte & \text{\ / \punkteA} & \text{\ / \punkteB} & \text{\ / \punkteC} & \text{\ / \punkteD} & \text{\ / \punkteE} & \text{\ / \summe}\\
+	\hline
+		\end{tabular}
+	\end{center}
+	
+	\textbf{Notenschlüssel:}
+	\begin{center}
+		\begin{tabular}{|c|c|c|c|c|c|c|}
+			\hline
+			Note & 1 & 2 & 3 & 4 & 5 & 6 \\
+			\hline
+			Prozent \% & 100--95 & 94--80 & 79--60 & 59--45 & 44--16 & 15--0 \\
+			\hline
+			Punkte & \maxSumme{}--\noteEinsMin{} & \fpeval{\noteEinsMin-1}--\noteZweiMin{} & \fpeval{\noteZweiMin-1}--\noteDreiMin{} & \fpeval{\noteDreiMin-1}--\noteVierMin{} & \fpeval{\noteVierMin-1}--\noteFunfMin{} & \fpeval{\noteFunfMin-1}--\noteSechsMin{} \\
+			\hline
+		\end{tabular}
+	\end{center}
+	
+	\vspace{1cm}
+	\textbf{Kenntnisnahme eines Elternteils:} \hrulefill \hfill \textbf{Note:} \hrulefill
+	
+\end{document}
