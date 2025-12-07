@@ -152,100 +152,185 @@ Dabei werden \(f(x)\) und \(x\) jeweils in Metern gemessen.
 	% Aufgabe 3
 	% -------------------------------------------------
 	\textbf{Aufgabe 3 ( Punkte)}\\
-	Ein Rechteck soll so konstruiert werden, dass seine Breite \(x\) Meter beträgt und seine Länge
-	durch die Funktion
-	\[
-	L(x) = 12 - x
-	\]
-	gegeben ist. Die Fläche des Rechtecks ergibt sich damit durch
-	\[
-	A(x) = x \cdot L(x).
-	\]
-	
-	\begin{enumerate}
-		\item Stelle die Flächenfunktion \(A(x)\) explizit als quadratische Funktion auf.
-		\item Bestimme durch geeignete Verfahren den Wert von \(x\), bei dem die Fläche maximal wird.
-		\item Berechne die maximale Fläche.
-	\end{enumerate}
-	\vspace{1 cm}
-	%\newpage
+	Der Zähler eines Bruches ist um 7 größer als dessen Nenner. Werden Zähler und Nenner um
+	8 vergrößert, so wird der Bruch um \(\frac{1}{10}\) kleiner als der ursprüngliche Bruch.
+	Bestimme alle Brüche, welche diese Eigenschaft erfüllen.\\
+
+%\textbf{Lösung der Gleichung}
+%
+%Wir haben die Gleichung
+%\[
+%\frac{x+15}{x+8} = \frac{x+7}{x} - \frac{1}{10}.
+%\]
+%
+%\textbf{1. Schritt: Definitionsbereich}\\
+%Im Nenner stehen \(x\) und \(x+8\), also
+%\[
+%x \neq 0,\quad x \neq -8.
+%\]
+%
+%\textbf{2. Schritt: Brüche durch Multiplikation beseitigen}\\
+%Wir multiplizieren beide Seiten mit dem Hauptnenner \(10x(x+8)\):
+%\[
+%10x(x+8)\cdot \frac{x+15}{x+8}
+%=
+%10x(x+8)\cdot\left(\frac{x+7}{x} - \frac{1}{10}\right).
+%\]
+%
+%Links kürzt sich \((x+8)\), rechts einmal \(x\) bzw. \(10\):
+%\[
+%10x(x+15)
+%=
+%10(x+8)(x+7) - x(x+8).
+%\]
+%
+%\textbf{3. Schritt: Klammern ausmultiplizieren}\\
+%Links:
+%\[
+%10x(x+15) = 10x^2 + 150x.
+%\]
+%
+%Rechts:
+%\[
+%(x+8)(x+7) = x^2 + 15x + 56,
+%\]
+%also
+%\[
+%10(x+8)(x+7) = 10x^2 + 150x + 560,
+%\]
+%und
+%\[
+%x(x+8) = x^2 + 8x.
+%\]
+%
+%Damit:
+%\[
+%10x^2 + 150x
+%=
+%\bigl(10x^2 + 150x + 560\bigr) - \bigl(x^2 + 8x\bigr)
+%=
+%9x^2 + 142x + 560.
+%\]
+%
+%\textbf{4. Schritt: Auf eine Seite bringen}\\
+%\begin{align*}
+%	10x^2 + 150x &= 9x^2 + 142x + 560\\
+%	10x^2 - 9x^2 + 150x - 142x - 560 &= 0\\
+%	x^2 + 8x - 560 &= 0.
+%\end{align*}
+%
+%\textbf{5. Schritt: Quadratische Gleichung lösen}\\
+%Wir faktorisieren:
+%\[
+%x^2 + 8x - 560 = 0.
+%\]
+%Gesucht sind zwei Zahlen mit Produkt \(-560\) und Summe \(8\):
+%\[
+%28 \cdot (-20) = -560,\quad 28 + (-20) = 8.
+%\]
+%Also
+%\[
+%x^2 + 8x - 560 = (x+28)(x-20) = 0.
+%\]
+%
+%Damit:
+%\[
+%x_1 = -28,\quad x_2 = 20.
+%\]
+%
+%Beide Werte sind im Definitionsbereich (\(x\neq 0, -8\)), also zulässig.
+%
+%\textbf{6. Schritt: Zugehörige Brüche bestimmen}\\
+%Der Nenner ist \(x\), der Zähler ist \(x+7\).
+%
+%\[
+%x = -28 \Rightarrow \text{Bruch} = \frac{x+7}{x} = \frac{-28+7}{-28}
+%= \frac{-21}{-28} = \frac{21}{28} = \frac{3}{4}.
+%\]
+%
+%\[
+%x = 20 \Rightarrow \text{Bruch} = \frac{x+7}{x} = \frac{20+7}{20}
+%= \frac{27}{20}.
+%\]
+%
+%\[
+%\boxed{\text{Die gesuchten Brüche sind } \frac{3}{4} \text{ und } \frac{27}{20}.}
+%\]
+
 	% -------------------------------------------------
 	% Aufgabe 4
 	% -------------------------------------------------
 	\textbf{Aufgabe 4 ( Punkte)}\\
-	Gegeben sind die Funktionen
-	\[
-	f(x) = 5x^6 - 3x^2 - 4
-	\]
-	und
-	\[
-	g(x) = 2x^5+ 3x^3 - 3x.
-	\]
+Löse folgende quadratische Gleichungen:
+\begin{enumerate}
+	\item[a)] \(2x^2 + x - 3 \;=\; x^2 + 5x - 7\)
 	
-	\begin{enumerate}
-		\item[(a)] Untersuche die Graphen von \(f\) und \(g\) auf Symmetrie.
-		\begin{itemize}
-			\item Entscheide für jede der beiden Funktionen, ob ihr Graph \textbf{achsensymmetrisch zur \(y\)-Achse}, \textbf{punktsymmetrisch zum Ursprung} oder \textbf{keine der beiden Symmetrien} besitzt.
-			\item Begründe deine Entscheidung jeweils mit einem passenden Merkmal der Funktionsgleichung oder mit einer Skizze.
-		\end{itemize}
-		
-		\item[(b)] Beweise deine Vermutungen aus Teilaufgabe (a) rechnerisch:
+	\item[b)] \((x+2)^2 - 3x \;=\; x^2 - x + 6\)
+	
+	\item[c)] \(4x^2 - (x-1)^2 \;=\; 2x^2 + 7x - 3\)
+\end{enumerate}
 
-	\end{enumerate}
-	
 	% -------------------------------------------------
 	% Aufgabe 5
-	% -------------------------------------------------
+	% -------------------------------------------------\textbf{Aufgabe: Hängebrücke}\\[0.5em]
 	\textbf{Aufgabe 5 ( Punkte)}\\
-	Löse die folgenden quadratischen Gleichungen. Begründe jeden Schritt kurz (z.\,B. quadratische Ergänzung, Mitternachtsformel, Ausklammern).
-	
-	\begin{enumerate}
-		\item[(a)] 
-		\[
-		x^2 - 6x + 5 = 0
-		\]
-		Löse die Gleichung und gib beide Lösungen an.
-		
-		\item[(b)]
-		\[
-		3x^2 + 12x = 9
-		\]
-		Bringe die Gleichung zunächst auf eine Seite und löse sie anschließend mit einem Verfahren deiner Wahl.
-		
-		\item[(c)] 
-		\[
-		(x - 4)(x + 2) = 10
-		\]
-		Multipliziere aus, forme eine quadratische Gleichung und löse sie.
-		
-		\item[(d)] Zusatz (optional):  
-		Prüfe für jede Gleichung, ob die Lösungen reell sind oder ob keine reellen Lösungen existieren.
-	\end{enumerate}
+Die Form des Haupttrageseils der unten abgebildeten Hängebrücke kann in einem
+Koordinatensystem näherungsweise durch die quadratische Funktion
+\[
+h(x) = 0{,}014\,x^{2} + 4
+\]
+beschrieben werden. Dabei ist \(x\) der waagerechte Abstand von der Brückenmitte
+(in Metern) und \(h(x)\) die Höhe des Seils über der Fahrbahn (ebenfalls in Metern).
+An den Pylonen \(A\) und \(B\) ist das Seil jeweils \(14\,\text{m}\) über der Fahrbahn
+befestigt.
 
+\begin{center}
+	\includegraphics[width=\textwidth]{brücke.png}
+\end{center}
+
+\noindent
+Berechne die \emph{Spannweite} der Brücke, also den horizontalen Abstand der
+beiden Befestigungspunkte \(A\) und \(B\) voneinander.
+
+	\newpage
 	% -------------------------------------------------
 	% Aufgabe 6
 	% -------------------------------------------------
 	\textbf{Aufgabe 6 ( Punkte)}\\
-	Gegeben ist eine quadratische Funktion, deren Nullstellen bei
+	Gegeben ist eine quadratische Funktion \(f\). Der Graph von \(f\) besitzt die Nullstellen
 	\[
-	x_1 = -2 \quad \text{und} \quad x_2 = 4
+	x_1 = -1 \quad\text{und}\quad x_2 = 3.
 	\]
-	liegen. Außerdem verläuft der Graph der Funktion durch den Punkt
+	Außerdem liegt der Punkt
 	\[
-	P(1 \mid -9).
+	P(0\mid -6)
 	\]
+	auf dem Graphen von \(f\).
+	
+%\medskip
+	Bestimme die Funktionsgleichung von \(f\).\\
+
+	% -------------------------------------------------
+	% Aufgabe 7
+	% -------------------------------------------------
+	\textbf{Aufgabe 7 ( Punkte)}\\
+	Ein Feuerwerksflugkörper wird von der Erde aus senkrecht nach oben abgeschossen. 
+	Die Flugbahn des Feuerwerkskörpers in einem Koordinatensystem lässt sich näherungsweise 
+	durch den Graphen einer quadratischen Funktion beschreiben. 
+	
+	Dabei gilt:
+	\begin{itemize}
+		\item Der Abschuss erfolgt im Ursprung des Koordinatensystems, also im Punkt \(A(0\mid 0)\).
+		\item Nach \(35\,\text{m}\) horizontaler Entfernung vom Abschuss erreicht der 
+		Feuerwerkskörper seine maximale Höhe von \(37\,\text{m}\).
+		\item Nach insgesamt \(68\,\text{m}\) horizontaler Entfernung vom Abschuss 
+		schlägt der Feuerwerkskörper wieder am Boden auf.
+	\end{itemize}
 	
 	\begin{enumerate}
-		\item Bestimme den Funktionsterm der quadratischen Funktion in der in der normal Form.
-		
-		\item Gib anschließend die Funktionsgleichung in der Produktform
-
-		an und überprüfe, ob sie mit deinem Ergebnis aus Teil (1) übereinstimmt.
+		\item[] Bestimme den Funktionsterm \(f(x)\), der Funktion die, die Flugbahn des Feuerwerkskörpers beschreibt. \\
 	\end{enumerate}
-	\vspace{6cm}
-
 	
-	\vspace{2cm}
-	\textbf{Kenntnisnahme eines Elternteils:} \hrulefill \hfill \textbf{Note:} \hrulefill
+
 	
 \end{document}
