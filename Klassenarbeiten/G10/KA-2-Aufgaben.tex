@@ -13,6 +13,7 @@
 \usepackage{fancyhdr}
 \usepackage{xfp}
 \usepackage{pgf}
+\usepackage{tikz}
 
 \usepackage{graphicx}
 \usepackage{fancyhdr}
@@ -107,32 +108,23 @@ Hühner möglichst viel Platz haben? Begründe dein Ergebnis.
 	% Aufgabe 3
 	% -------------------------------------------------
 \textbf{Aufgabe 3 (6 Punkte)}\\
-Löse die folgenden quadratischen Gleichungen. Vereinfache jeweils die Terme auf beiden Seiten.
+\textbf{Aufgabe: Symmetrie von Potenzfunktionen}\\[0.3em]
+Untersuche die folgenden Funktionen auf Symmetrie.  
+Gib jeweils an, ob der Graph achsensymmetrisch zur \(y\)-Achse, punktsymmetrisch zum Ursprung
+oder ohne Symmetrie ist. Begründe rechnerisch mit \(f(-x)\) und ggf. \(-f(x)\).
 
 \begin{enumerate}
-	\item[a)] \((x + 2)^{2} - 3 = (x - 1)^{2} + 4\)
+	\item[a)] \(f(x) = -\dfrac{1}{2}x^{-4} + 3x^{-2} + 1\)
 	
-	\item[b)] \(3(x - 1)^{2} + 2x = 2(x + 2)^{2} - 5\)
-	
-	\item[c)] \((2x - 3)^{2} - (x + 1)(x - 5) = (x - 4)^{2} + 7\)
+	\item[b)] \(g(x) = \dfrac{1}{3}x^{5} - 2x^{3} + x\)
 \end{enumerate}
+
 
 	% -------------------------------------------------
 	% Aufgabe 4
 	% -------------------------------------------------
 \textbf{Aufgabe 4 (18 Punkte)}\\
 Löse die folgenden Potenzgleichungen. Vereinfache jeweils sinnvoll und gib alle Lösungen an.
-
-\[
-\begin{aligned}
-	\text{a)}\quad & 2^{x+2} - 16 \;=\; 3\cdot 2^{x} \\[4pt]
-	\text{b)}\quad & 4\cdot 5^{x} + 10 \;=\; 2\cdot 5^{x} + 60 \\[4pt]
-	\text{c)}\quad & 3^{2x} \;=\; 81\cdot 3^{x-1} \\[4pt]
-	\text{d)}\quad & \left(\frac{1}{3}\right)^{x+1} \;=\; 9\cdot \left(\frac{1}{3}\right)^{2x-1}
-\end{aligned}
-\]
-
-Löse die folgenden Potenzgleichungen:
 
 \[
 \begin{aligned}
@@ -148,25 +140,77 @@ Löse die folgenden Potenzgleichungen:
 	% Aufgabe 5
 	% -------------------------------------------------
 	\textbf{Aufgabe 5 (6 + 6* Punkte)}\\
-	Vereinfache vollständig (Definitionsmenge beachten). Es gelte \(a,x>0\).
-	\begin{enumerate}[label=\alph*)]	
-		\item \[
-		\left(\frac{36-a^{2}}{(a+6)(6-a)}\right)^{2}
-		\cdot
-		\left(\frac{12+2a}{\,6-a\,}\right)^{2}
-		\cdot
-		\left(\frac{6-a}{\,2(6+a)\,}\right)^{2}
-		\] % Ergebnis: 1 \; (da 36-a^2=(6-a)(6+a)); DGM: a\neq \pm 6
+Im folgenden sind vier Funktionsgraphen von Potenzfunktionen (\textbf{I–IV}) dargestellt.  
+Ordne jedem Graphen genau eine der Funktionsgleichungen \textbf{A–E} zu.  
+\emph{Eine} Funktionsgleichung bleibt übrig. Begründe deine Zuordnung kurz.
 
-		\item[b\textsuperscript{*})]
-		\[
-		\left(\frac{x^{2}-2x+1}{x-3}\right)^{4}:
-		\left(\frac{x-1}{x^{2}-9}\right)^{4}
-		\cdot
-		\left(\frac{3}{(x+3)(x-1)}\right)^{4}
-		\]
-		
-	\end{enumerate}
+\begin{center}
+	\begin{minipage}{0.60\textwidth}
+		\centering
+		\begin{tabular}{cc}
+			% -------- Graph I --------
+			\begin{tikzpicture}[scale=0.7]
+				\draw[step=1,very thin,gray!40] (-3,-3) grid (3,3);
+				\draw[->] (-3,0) -- (3.3,0);
+				\draw[->] (0,-3) -- (0,3.3);
+				% y = 1/2 x^2 + 1
+				\draw[domain=-2.5:2.5,smooth,thick,variable=\x]
+				plot ({\x},{0.5*\x*\x + 1});
+				\node[font=\small] at (-2.4,2.6) {\textbf{I}};
+			\end{tikzpicture}
+			&
+			% -------- Graph II --------
+			\begin{tikzpicture}[scale=0.7]
+				\draw[step=1,very thin,gray!40] (-3,-3) grid (3,3);
+				\draw[->] (-3,0) -- (3.3,0);
+				\draw[->] (0,-3) -- (0,3.3);
+				% y = -2/x + 1  (zwei Äste)
+				\draw[domain=-3:-0.3,smooth,thick,variable=\x]
+				plot ({\x},{-2/(\x) + 1});
+				\draw[domain=0.3:3,smooth,thick,variable=\x]
+				plot ({\x},{-2/(\x) + 1});
+				\node[font=\small] at (-2.4,2.6) {\textbf{II}};
+			\end{tikzpicture}
+			\\[0.8em]
+			% -------- Graph III --------
+			\begin{tikzpicture}[scale=0.7]
+				\draw[step=1,very thin,gray!40] (-3,-3) grid (3,3);
+				\draw[->] (-3,0) -- (3.3,0);
+				\draw[->] (0,-3) -- (0,3.3);
+				% y = sqrt(x) - 1, nur x >= 0
+				\draw[domain=0:3,smooth,thick,variable=\x]
+				plot ({\x},{sqrt(\x) - 1});
+				\node[font=\small] at (-2.4,2.6) {\textbf{III}};
+			\end{tikzpicture}
+			&
+			% -------- Graph IV --------
+			\begin{tikzpicture}[scale=0.7]
+				\draw[step=1,very thin,gray!40] (-3,-3) grid (3,3);
+				\draw[->] (-3,0) -- (3.3,0);
+				\draw[->] (0,-3) -- (0,3.3);
+				% y = -1/x^2 - 1  (zwei Äste)
+				\draw[domain=-3:-0.5,smooth,thick,variable=\x]
+				plot ({\x},{-1/(\x*\x) - 1});
+				\draw[domain=0.5:3,smooth,thick,variable=\x]
+				plot ({\x},{-1/(\x*\x) - 1});
+				\node[font=\small] at (-2.4,2.6) {\textbf{IV}};
+			\end{tikzpicture}
+			\\
+		\end{tabular}
+	\end{minipage}\hfill
+	\begin{minipage}{0.35\textwidth}
+		\small
+		\textbf{Funktionsgleichungen}\\[0.4em]
+		\begin{align*}
+			\text{A)}\quad & f(x) = \tfrac{1}{2}x^{2} + 1 \\[2pt]
+			\text{B)}\quad & f(x) = -\dfrac{2}{x} + 1 \\[2pt]
+			\text{C)}\quad & f(x) = \sqrt{x} - 1 \\[2pt]
+			\text{D)}\quad & f(x) = -\dfrac{1}{x^{2}} - 1 \\[2pt]
+			\text{E)}\quad & f(x) = 2x^{3}
+		\end{align*}
+	\end{minipage}
+\end{center}
+
 	
 	\vspace{2cm}
 	\textbf{Auswertungstabelle:}
