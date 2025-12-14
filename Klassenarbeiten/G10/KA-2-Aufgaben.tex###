@@ -21,11 +21,11 @@
 \pagestyle{fancy}
 \fancyhf{} % alles leeren
 \fancyhead[L]{\includegraphics[height=1.2cm]{logo.png}}
-\fancyhead[C]{\small Potenzfunktionen \ (Kl. G10B)}
+\fancyhead[C]{\small Klassenarbeit – Potenzfunktionen \ (Kl. G10B)}
 \fancyhead[R]{\small Name:\ \rule{2.8cm}{0.4pt}}
 \fancyfoot[C]{\thepage}
 
-\fancyfoot[C]{Seite \thepage \enspace\textbullet\enspace J.\,Mycan \textcopyright~15.Dez.2025 *Klassenarbeit 45 min.*}
+\fancyfoot[C]{Seite \thepage \enspace\textbullet\enspace J.\,Mycan \textcopyright~2025 *Klassenarbeit 45 min.*}
 
 \renewcommand{\footrulewidth}{0.4pt}
 
@@ -40,17 +40,17 @@
 %\cfoot{Seite \thepage}
 %\rfoot{}
 
-\newcommand{\punkteA}{12}
-\newcommand{\punkteB}{8}
-\newcommand{\punkteC}{9}
-\newcommand{\punkteD}{15}
-\newcommand{\punkteE}{8}
+\newcommand{\punkteA}{6}
+\newcommand{\punkteB}{6}
+\newcommand{\punkteC}{6}
+\newcommand{\punkteD}{18}
+\newcommand{\punkteE}{6}
 %\newcommand{\punkteF}{12}
 
-\newcommand{\maxSumme}{52}
+\newcommand{\maxSumme}{42}
 \newcommand{\noteEinsMin}{\fpeval{round(\maxSumme * 0.95,0)}}
 \newcommand{\noteZweiMin}{\fpeval{round(\maxSumme * 0.80,0)}}
-\newcommand{\noteDreiMin}{\fpeval{round(\maxSumme * 0.65,0)}}
+\newcommand{\noteDreiMin}{\fpeval{round(\maxSumme * 0.60,0)}}
 \newcommand{\noteVierMin}{\fpeval{round(\maxSumme * 0.45,0)}}
 \newcommand{\noteFunfMin}{\fpeval{round(\maxSumme * 0.20,0)}}
 \newcommand{\noteSechsMin}{0}
@@ -71,7 +71,7 @@ Die Lösungen sowie Lösungswege sollen klar strukturiert und gut nachvollziehba
 	% -------------------------------------------------
 	% Aufgabe 1
 	% -------------------------------------------------
-\textbf{Aufgabe 1 (12 Punkte)}\\
+\textbf{Aufgabe 1 (6 Punkte)}\\
 Bestimme zu den folgenden Angaben jeweils die Funktionsgleichung einer
 quadratischen Funktion in \emph{Scheitelpunktform}.
 
@@ -93,7 +93,7 @@ quadratischen Funktion in \emph{Scheitelpunktform}.
 	% -------------------------------------------------
 	% Aufgabe 2
 	% -------------------------------------------------
-	\textbf{Aufgabe 2 (8 Punkte)}\\
+	\textbf{Aufgabe 2 (Punkte)}\\
 Ein Landwirt will an einer geraden Mauer einen rechteckigen Hühnerhof mit
 Maschendraht abgrenzen. Die Mauer bildet dabei \emph{eine} Seite des
 Rechtecks, für die keine Einzäunung benötigt wird. Es stehen insgesamt
@@ -114,14 +114,13 @@ Hühner möglichst viel Platz haben? Begründe dein Ergebnis.
 	% -------------------------------------------------
 	% Aufgabe 3
 	% -------------------------------------------------
-\textbf{Aufgabe 3 (9 Punkte)}\\
+\textbf{Aufgabe 3 (6 Punkte)}\\
 Begründe zunächst welche Art der Symmetrie liegt jeweils vor. Untersuche rechnerisch die folgenden Funktionen auf Symmetrie.  
 
 \begin{enumerate}
-		
-	\item[a)] \(g(x) = \dfrac{1}{3}x^{5} - 2x^{3} + x\)
+	\item[a)] \(f(x) = -\dfrac{1}{2}x^{-4} + 3x^{-2} + 1\)
 	
-	\item[b)] \(f(x) = -\dfrac{1}{2}x^{-4} + 3x^{-2} + 1\)
+	\item[b)] \(g(x) = \dfrac{1}{3}x^{5} - 2x^{3} + x\)
 	
 	\item[c)] \(h(x) = \dfrac{1}{4}x^6 - \dfrac{1}{5}x^4 + \dfrac{1}{6}x^2 - 3x + 1\)
 \end{enumerate}
@@ -130,23 +129,25 @@ Begründe zunächst welche Art der Symmetrie liegt jeweils vor. Untersuche rechn
 	% -------------------------------------------------
 	% Aufgabe 4
 	% -------------------------------------------------
-\textbf{Aufgabe 4 (15 Punkte)}\\
+\textbf{Aufgabe 4 (18 Punkte)}\\
 Löse die folgenden Potenzgleichungen. Vereinfache jeweils sinnvoll und gib alle Lösungen an.
 
 \[
 \begin{aligned}
-	\text{a)}\quad & 5^{x+1} + 25 \;=\; 6\cdot 5^{x} \\[4pt]
+	\text{a)}\quad & 2^{x+2} - 8 \;=\; 3\cdot 2^{x-1} \\[4pt]
 	\text{b)}\quad & 3^{x+1} + 3^{x} \;=\; 36 \\[4pt]
-	\text{c)}\quad & 6\cdot 3^{x} \;=\;3^{x+1} + 27  \\[4pt]
-%	\text{d)}\quad & \left(\frac{1}{3}\right)^{x-1} \;=\; 9\cdot \left(\frac{1}{3}\right)^{2x}
+	\text{c)}\quad & 5^{2x-1} \;=\; 125\cdot 5^{x-3} \\[4pt]
+	\text{d)}\quad & \left(\frac{1}{2}\right)^{x-2} + \left(\frac{1}{2}\right)^{x}
+	\;=\; 5\cdot \left(\frac{1}{2}\right)^{x+1}
 \end{aligned}
 \]
 
 	% -------------------------------------------------
 	% Aufgabe 5
 	% -------------------------------------------------
-\textbf{Aufgabe 5 (8 Punkte)}\\
+	\textbf{Aufgabe 5 (6 + 6* Punkte)}\\
 Welche der angegebenen Funktionsgleichungen passt jeweils zum dargestellten Graphen?
+Begründe deine Wahl.
 
 \begin{center}
 	\begin{tabular}{cc}
@@ -154,71 +155,87 @@ Welche der angegebenen Funktionsgleichungen passt jeweils zum dargestellten Grap
 		% =========================================
 		% BLOCK 1 (oben links): Kubische Funktion
 		% =========================================
-		\begin{minipage}[t]{0.45\textwidth}
-			% linke Minipage: Graph
-			\begin{minipage}[t]{0.58\textwidth}
-				\begin{tikzpicture}[scale=0.8]
-					% Koordinatensystem: x von -1 bis 4, y von -2 bis 4
-					\draw[step=0.5,very thick,gray!60] (-1,-2) grid (4,4);
-					\draw[->] (-1,0) -- (4.2,0) node[right] {$x$};
-					\draw[->] (0,-2) -- (0,4.2) node[above] {$y$};
-					% Ticks
-					\foreach \x in {-1,0,1,2,3,4}
-					\draw (\x,0.1) -- (\x,-0.1);
-					\foreach \y in {-2,-1,1,2,3,4}
-					\draw (0.1,\y) -- (-0.1,\y);
-					% Graph: f(x) = 1.5 (x-1)^3 + 1
-					% Domain so gewählt, dass y zwischen etwa -2 und 4 bleibt
-					\draw[domain=-0.25:2.25,smooth,thick,variable=\x]
-					plot ({\x},{-1.5*(\x-1)*(\x-1)*(\x-1) + 1});
-				\end{tikzpicture}
-			\end{minipage}%
+\begin{minipage}[t]{0.45\textwidth}
+	% linke Minipage: Graph
+	\begin{minipage}[t]{0.58\textwidth}
+		\begin{tikzpicture}[scale=0.8]
+			% Koordinatensystem: x von -1 bis 4, y von -2 bis 4
+			\draw[step=0.5,very thin,gray!40] (-1,-2) grid (4,4);
+			\draw[->] (-1,0) -- (4.2,0) node[right] {$x$};
+			\draw[->] (0,-2) -- (0,4.2) node[above] {$y$};
+			% Ticks
+			\foreach \x in {-1,0,1,2,3,4}
+			\draw (\x,0.1) -- (\x,-0.1);
+			\foreach \y in {-2,-1,1,2,3,4}
+			\draw (0.1,\y) -- (-0.1,\y);
+			
+			% Graph: f(x) = 1.5 (x-1)^3 + 1
+			% Domain so gewählt, dass y zwischen etwa -2 und 4 bleibt
+			\draw[domain=-0.25:2.25,smooth,thick,variable=\x]
+			plot ({\x},{1.5*(\x-1)*(\x-1)*(\x-1) + 1});
+		\end{tikzpicture}
+	\end{minipage}%
+	\hfill
+	% rechte Minipage: Funktionsauswahl
+	\begin{minipage}[t]{0.38\textwidth}
+		\scriptsize
+		\begin{tabular}{@{}l@{}}
+			a) $f(x) = 1{,}5(x-1)^{3} + 1$\\[2pt]
+			b) $f(x) = 1{,}5(x+1)^{3} + 1$\\[2pt]
+			c) $f(x) = 1{,}5(x-1)^{3} - 1$\\[2pt]
+			d) $f(x) = 0{,}5(x-1)^{3} + 1$
+		\end{tabular}
+	\end{minipage}
+\end{minipage}
+
 			\hfill
-			% rechte Minipage: Funktionsauswahl
-			\begin{minipage}[t]{0.42\textwidth}
+			% Funktionsliste rechts
+			\begin{minipage}[t]{0.38\textwidth}
 				\scriptsize
 				\begin{tabular}{@{}l@{}}
-					a) $f(x) = -1{,}5(x-1)^{3} + 1$\\[2pt]
-					b) $f(x) = -1{,}5(x+1)^{3} + 1$\\[2pt]
-					c) $f(x) = -1{,}5(x-1)^{3} - 1$\\[2pt]
-					d) $f(x) = 0{,}5(x-1)^{3} + 1$
+					a) $f(x) = \tfrac{1}{4}(x-1)^{3} + 1$\\[2pt]
+					b) $f(x) = \tfrac{1}{4}(x+1)^{3} + 1$\\[2pt]
+					c) $f(x) = \tfrac{1}{4}(x-1)^{3} - 1$\\[2pt]
+					d) $f(x) = \tfrac{1}{2}(x-1)^{3} + 1$
 				\end{tabular}
 			\end{minipage}
 		\end{minipage}
 		&
 		% =========================================
-		% BLOCK 2 (oben rechts): Potenzfunktion 1/x^4
+		% BLOCK 2 (oben rechts): Parabel
 		% =========================================
-		\begin{minipage}[t]{0.45\textwidth}
-			% linke Minipage: Graph
-			\begin{minipage}[t]{0.58\textwidth}
-				\begin{tikzpicture}[scale=0.8]
-					\draw[step=0.5,thick,gray!60] (-4,-2) grid (4,4);
-					\draw[->] (-4,0) -- (4.2,0) node[right] {$x$};
-					\draw[->] (0,-2) -- (0,2.2) node[above] {$y$};
-					\foreach \x in {-4,-3,-2,-1,1,2,3,4}
-					\draw (\x,0.1) -- (\x,-0.1);
-					\foreach \y in {-2,-1,1,2}
-					\draw (0.1,\y) -- (-0.1,\y);
-					% Graph: f(x) = 2/x^4 - 1, |x| >= 0.8 (damit alles im Bild bleibt)
-					\draw[domain=-4:-0.8,smooth,thick,variable=\x]
-					plot ({\x},{2/(\x*\x*\x*\x) - 1});
-					\draw[domain=0.8:4,smooth,thick,variable=\x]
-					plot ({\x},{2/(\x*\x*\x*\x) - 1});
-				\end{tikzpicture}
-			\end{minipage}%
-			\hfill
-			% rechte Minipage: Funktionsauswahl
-			\begin{minipage}[t]{0.20\textwidth}
-				\scriptsize
-				\begin{tabular}{@{}l@{}}
-					a) $f(x) = 2\dfrac{1}{x^{4}} - 1$\\[2pt]
-					b) $f(x) = -2\dfrac{1}{x^{4}} - 1$\\[2pt]
-					c) $f(x) = \dfrac{1}{x^{2}} - 1$\\[2pt]
-					d) $f(x) = \dfrac{2}{x^{4}} + 1$
-				\end{tabular}
-			\end{minipage}
-		\end{minipage}
+\begin{minipage}[t]{0.45\textwidth}
+	% linke Minipage: Graph
+	\begin{minipage}[t]{0.58\textwidth}
+		\begin{tikzpicture}[scale=0.8]
+			\draw[step=0.5,thick,gray!60] (-4,-2) grid (4,4);
+			\draw[->] (-4,0) -- (4.2,0) node[right] {$x$};
+			\draw[->] (0,-2) -- (0,2.2) node[above] {$y$};
+			\foreach \x in {-4,-3,-2,-1,1,2,3,4}
+			\draw (\x,0.1) -- (\x,-0.1);
+			\foreach \y in {-2,-1,1,2}
+			\draw (0.1,\y) -- (-0.1,\y);
+			
+			% Graph: f(x) = 2/x^4 - 1, |x| >= 0.8 (damit alles im Bild bleibt)
+			\draw[domain=-4:-0.8,smooth,thick,variable=\x]
+			plot ({\x},{2/(\x*\x*\x*\x) - 1});
+			\draw[domain=0.8:4,smooth,thick,variable=\x]
+			plot ({\x},{2/(\x*\x*\x*\x) - 1});
+		\end{tikzpicture}
+	\end{minipage}%
+	\hfill
+	% rechte Minipage: Funktionsauswahl
+	\begin{minipage}[t]{0.20\textwidth}
+		\scriptsize
+		\begin{tabular}{@{}l@{}}
+			a) $f(x) = 2\dfrac{1}{x^{4}} - 1$\\[2pt]
+			b) $f(x) = -2\dfrac{1}{x^{4}} - 1$\\[2pt]
+			c) $f(x) = \dfrac{2}{x^{2}} - 1$\\[2pt]
+			d) $f(x) = \dfrac{2}{x^{4}} + 1$
+		\end{tabular}
+	\end{minipage}
+\end{minipage}
+
 		\\[1.4cm]
 		
 		% =========================================
@@ -227,8 +244,8 @@ Welche der angegebenen Funktionsgleichungen passt jeweils zum dargestellten Grap
 		\begin{minipage}[t]{0.45\textwidth}
 			\begin{minipage}[t]{0.58\textwidth}
 				\begin{tikzpicture}[scale=0.8]
-					\draw[step=0.5,thick,gray!60] (0,-1) grid (5,4);
-					\draw[->] (0,0) -- (5.2,0) node[right] {$x$};
+					\draw[step=0.5,very thin,gray!40] (0,-1) grid (5,4);
+					\draw[->] (0,-1) -- (5.2,-1) node[right] {$x$};
 					\draw[->] (0,-1) -- (0,4.2) node[above] {$y$};
 					\foreach \x in {0,1,2,3,4,5}
 					\draw (\x,-0.9) -- (\x,-1.1);
@@ -252,21 +269,22 @@ Welche der angegebenen Funktionsgleichungen passt jeweils zum dargestellten Grap
 		\end{minipage}
 		&
 		% =========================================
-		% BLOCK 4 (unten rechts): Kubikwurzel-Funktion
+		% BLOCK 4 (unten rechts): 1/x^2-Funktion
 		% =========================================
 		\begin{minipage}[t]{0.45\textwidth}
 			\begin{minipage}[t]{0.58\textwidth}
 				\begin{tikzpicture}[scale=0.8]
-					\draw[step=0.5,thick,gray!60] (-4,-3) grid (4,2);
+					\draw[step=0.5,thick,gray!40] (-4,-3) grid (4,2);
 					\draw[->] (-4,0) -- (4.2,0) node[right] {$x$};
 					\draw[->] (0,-2) -- (0,2.2) node[above] {$y$};
 					\foreach \x in {-4,-3,-2,-1,1,2,3,4}
 					\draw (\x,0.1) -- (\x,-0.1);
 					\foreach \y in {-2,-1,1,2}
 					\draw (0.1,\y) -- (-0.1,\y);
-					% Graph: f(x) = x^(1/3) - 1
+					% Graph: f(x) = x⁽1/x^3) - 1, |x| >= 1
 					\draw[domain=-4:4,smooth,thick,variable=\x]
 					plot ({\x},{sign(\x)*abs(\x)^(1/3) - 1});
+
 				\end{tikzpicture}
 			\end{minipage}%
 			\hfill
@@ -291,7 +309,7 @@ Welche der angegebenen Funktionsgleichungen passt jeweils zum dargestellten Grap
 			\hline
 			Note & 1 & 2 & 3 & 4 & 5 & 6 \\
 			\hline
-			Prozent \% & 100--95 & 94--80 & 79--65 & 64--45 & 44--16 & 15--0 \\
+			Prozent \% & 100--95 & 94--80 & 79--60 & 59--45 & 44--16 & 15--0 \\
 			\hline
 			Punkte & \maxSumme{}--\noteEinsMin{} & \fpeval{\noteEinsMin-1}--\noteZweiMin{} & \fpeval{\noteZweiMin-1}--\noteDreiMin{} & \fpeval{\noteDreiMin-1}--\noteVierMin{} & \fpeval{\noteVierMin-1}--\noteFunfMin{} & \fpeval{\noteFunfMin-1}--\noteSechsMin{} \\
 			\hline
