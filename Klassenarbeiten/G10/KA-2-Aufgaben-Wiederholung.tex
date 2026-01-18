@@ -21,11 +21,11 @@
 \pagestyle{fancy}
 \fancyhf{} % alles leeren
 \fancyhead[L]{\includegraphics[height=1.2cm]{logo.png}}
-\fancyhead[C]{\small Potenzfunktionen \ (Kl. G10B)}
+\fancyhead[C]{\small Potenzfunktionen - Wiederholungsarbeit \ (Kl. G10B)}
 \fancyhead[R]{\small Name:\ \rule{2.8cm}{0.4pt}}
 \fancyfoot[C]{\thepage}
 
-\fancyfoot[C]{Seite \thepage \enspace\textbullet\enspace J.\,Mycan \textcopyright~15.Dez.2025 *Klassenarbeit 45 min.*}
+\fancyfoot[C]{Seite \thepage \enspace\textbullet\enspace J.\,Mycan \textcopyright~19.Jan.2026 *Wiederholungsarbeit 45 min.*}
 
 \renewcommand{\footrulewidth}{0.4pt}
 
@@ -51,7 +51,7 @@
 \newcommand{\noteEinsMin}{\fpeval{round(\maxSumme * 0.95,0)}}
 \newcommand{\noteZweiMin}{\fpeval{round(\maxSumme * 0.80,0)}}
 \newcommand{\noteDreiMin}{\fpeval{round(\maxSumme * 0.65,0)}}
-\newcommand{\noteVierMin}{\fpeval{round(\maxSumme * 0.45,0)}}
+\newcommand{\noteVierMin}{\fpeval{round(\maxSumme * 0.50,0)}}
 \newcommand{\noteFunfMin}{\fpeval{round(\maxSumme * 0.20,0)}}
 \newcommand{\noteSechsMin}{0}
 
@@ -182,132 +182,167 @@ Welche der angegebenen Funktionsgleichungen passt jeweils zum dargestellten Grap
 		% =========================================
 		% BLOCK 1 (oben links): Kubische Funktion
 		% =========================================
-		\begin{minipage}[t]{0.45\textwidth}
-			% linke Minipage: Graph
-			\begin{minipage}[t]{0.58\textwidth}
-				\begin{tikzpicture}[scale=0.8]
-					% Koordinatensystem: x von -1 bis 4, y von -2 bis 4
-					\draw[step=0.5,very thick,gray!60] (-1,-2) grid (4,4);
-					\draw[->] (-1,0) -- (4.2,0) node[right] {$x$};
-					\draw[->] (0,-2) -- (0,4.2) node[above] {$y$};
-					% Ticks
-					\foreach \x in {-1,0,1,2,3,4}
-					\draw (\x,0.1) -- (\x,-0.1);
-					\foreach \y in {-2,-1,1,2,3,4}
-					\draw (0.1,\y) -- (-0.1,\y);
-					% Graph: f(x) = 1.5 (x-1)^3 + 1
-					% Domain so gewählt, dass y zwischen etwa -2 und 4 bleibt
-					\draw[domain=-0.25:2.25,smooth,thick,variable=\x]
-					plot ({\x},{-1.5*(\x-1)*(\x-1)*(\x-1) + 1});
-				\end{tikzpicture}
-			\end{minipage}%
-			\hfill
-			% rechte Minipage: Funktionsauswahl
-			\begin{minipage}[t]{0.42\textwidth}
-				\scriptsize
-				\begin{tabular}{@{}l@{}}
-					a) $f(x) = -1{,}5(x-1)^{3} + 1$\\[2pt]
-					b) $f(x) = -1{,}5(x+1)^{3} + 1$\\[2pt]
-					c) $f(x) = -1{,}5(x-1)^{3} - 1$\\[2pt]
-					d) $f(x) = 0{,}5(x-1)^{3} + 1$
-				\end{tabular}
-			\end{minipage}
+% --- Graph (Potenzfunktion mit Exponent 1/2) ---
+		\begin{minipage}[t]{0.18\textwidth}
+			\begin{tikzpicture}[scale=0.8]
+				% Koordinatensystem: x von -1 bis 4, y von -2 bis 4
+				\draw[step=0.5,very thick,gray!60] (-2,-2) grid (4,4);
+				\draw[->] (-2,0) -- (4.2,0) node[right] {$x$};
+				\draw[->] (0,-2) -- (0,4.2) node[above] {$y$};
+				% Ticks
+				\foreach \x in {-1,0,1,2,3,4}
+				\draw (\x,0.1) -- (\x,-0.1);
+				\foreach \y in {-2,-1,1,2,3,4}
+				\draw (0.1,\y) -- (-0.1,\y);
+				
+				% Graph: f(x) = 1*sqrt(x+1) - 1
+				\draw[domain=-1:4,smooth,thick,samples=200,variable=\x]
+				plot ({\x},{1*sqrt(\x+1)-1});
+			\end{tikzpicture}
+		\end{minipage}%
+		\hfill
+		% --- Auswahl der Funktionsterme (angepasst) ---
+		\begin{minipage}[t]{0.18\textwidth}
+			\scriptsize
+			\begin{tabular}{@{}l@{}}
+				a) $f(x)=2\sqrt{x+1}-1$\\[2pt]
+				b) $f(x)=2\sqrt{x}-1$\\[2pt]
+				c) $f(x)=\sqrt{x+1}-1$\\[2pt]
+				d) $f(x)=2\sqrt{x+1}+1$
+			\end{tabular}
 		\end{minipage}
+
 		&
 		% =========================================
 		% BLOCK 2 (oben rechts): Potenzfunktion 1/x^4
 		% =========================================
-		\begin{minipage}[t]{0.45\textwidth}
-			% linke Minipage: Graph
-			\begin{minipage}[t]{0.58\textwidth}
-				\begin{tikzpicture}[scale=0.8]
-					\draw[step=0.5,thick,gray!60] (-4,-2) grid (4,4);
-					\draw[->] (-4,0) -- (4.2,0) node[right] {$x$};
-					\draw[->] (0,-2) -- (0,2.2) node[above] {$y$};
-					\foreach \x in {-4,-3,-2,-1,1,2,3,4}
-					\draw (\x,0.1) -- (\x,-0.1);
-					\foreach \y in {-2,-1,1,2}
-					\draw (0.1,\y) -- (-0.1,\y);
-					% Graph: f(x) = 2/x^4 - 1, |x| >= 0.8 (damit alles im Bild bleibt)
-					\draw[domain=-4:-0.8,smooth,thick,variable=\x]
-					plot ({\x},{2/(\x*\x*\x*\x) - 1});
-					\draw[domain=0.8:4,smooth,thick,variable=\x]
-					plot ({\x},{2/(\x*\x*\x*\x) - 1});
-				\end{tikzpicture}
-			\end{minipage}%
-			\hfill
-			% rechte Minipage: Funktionsauswahl
-			\begin{minipage}[t]{0.20\textwidth}
-				\scriptsize
-				\begin{tabular}{@{}l@{}}
-					a) $f(x) = 2\dfrac{1}{x^{4}} - 1$\\[2pt]
-					b) $f(x) = -2\dfrac{1}{x^{4}} - 1$\\[2pt]
-					c) $f(x) = \dfrac{1}{x^{2}} - 1$\\[2pt]
-					d) $f(x) = \dfrac{2}{x^{4}} + 1$
-				\end{tabular}
-			\end{minipage}
-		\end{minipage}
+% --- Potenz-/Bruchfunktion: Graph + Auswahl ---
+\begin{minipage}[t]{0.48\textwidth}
+	% linke Minipage: Graph
+	\begin{minipage}[t]{0.58\textwidth}
+		\begin{tikzpicture}[scale=0.8]
+			\draw[step=0.5,thick,gray!60] (-4,-2) grid (4,4);
+			\draw[->] (-4,0) -- (4.2,0) node[right] {$x$};
+			\draw[->] (0,-2) -- (0,4.2) node[above] {$y$};
+			\foreach \x in {-4,-3,-2,-1,1,2,3,4}
+			\draw (\x,0.1) -- (\x,-0.1);
+			\foreach \y in {-2,-1,1,2,3,4}
+			\draw (0.1,\y) -- (-0.1,\y);
+			
+			% (optional) Asymptoten dünn gestrichelt
+			\draw[dashed,gray!70] (1,-2) -- (1,4);
+			\draw[dashed,gray!70] (-4,1) -- (4,1);
+			
+			% Graph A: f(x) = -1/(x-1) + 1
+			% Domain so gewählt, dass der Graph im Fenster y∈[-2,4] bleibt:
+			% links: x <= 2/3  und rechts: x >= 4/3
+			\draw[domain=-4:0.6667,smooth,thick,samples=200,variable=\x]
+			plot ({\x},{-1/(\x-1) + 1});
+			\draw[domain=1.3333:4,smooth,thick,samples=200,variable=\x]
+			plot ({\x},{-1/(\x-1) + 1});
+		\end{tikzpicture}
+	\end{minipage}%
+	\hfill
+	% rechte Minipage: Funktionsauswahl
+	\begin{minipage}[t]{0.33\textwidth}
+		\scriptsize
+		\begin{tabular}{@{}l@{}}
+			a) $f(x)= \phantom{-}\dfrac{1}{x-1}+1$\\[2pt]
+			b) $f(x)= -\dfrac{1}{x-1}-1$\\[2pt]
+			c) $f(x)= -\dfrac{1}{x-1}+1$\\[2pt]
+			d) $f(x)= -\dfrac{1}{x+1}+1$
+		\end{tabular}
+	\end{minipage}
+\end{minipage}
+
 		\\[1.4cm]
 		
 		% =========================================
 		% BLOCK 3 (unten links): Wurzelfunktion
 		% =========================================
-		\begin{minipage}[t]{0.45\textwidth}
-			\begin{minipage}[t]{0.58\textwidth}
-				\begin{tikzpicture}[scale=0.8]
-					\draw[step=0.5,thick,gray!60] (0,-1) grid (5,4);
-					\draw[->] (0,0) -- (5.2,0) node[right] {$x$};
-					\draw[->] (0,-1) -- (0,4.2) node[above] {$y$};
-					\foreach \x in {0,1,2,3,4,5}
-					\draw (\x,-0.9) -- (\x,-1.1);
-					\foreach \y in {-1,0,1,2,3,4}
-					\draw (0.1,\y) -- (-0.1,\y);
-					% Graph: f(x) = sqrt(x) + 1
-					\draw[domain=0:5,smooth,thick,variable=\x]
-					plot ({\x},{sqrt(\x)+1});
-				\end{tikzpicture}
-			\end{minipage}%
-			\hfill
-			\begin{minipage}[t]{0.38\textwidth}
-				\scriptsize
-				\begin{tabular}{@{}l@{}}
-					a) $f(x) = \sqrt{x} + 1$\\[2pt]
-					b) $f(x) = \sqrt{x-1} + 1$\\[2pt]
-					c) $f(x) = \sqrt{x} - 1$\\[2pt]
-					d) $f(x) = 2\sqrt{x} + 1$
-				\end{tabular}
-			\end{minipage}
-		\end{minipage}
+% --- Block: Kubische Potenzfunktion (Zuordnung) ---
+\begin{minipage}[t]{0.48\textwidth}
+	% linke Minipage: Graph
+	\begin{minipage}[t]{0.58\textwidth}
+		\begin{tikzpicture}[scale=0.8]
+			% Grid und Achsen
+			\draw[step=0.5,thick,gray!60] (-4,-2) grid (2,4);
+			\draw[->] (-4,0) -- (2.2,0) node[right] {$x$};
+			\draw[->] (0,-2) -- (0,4.2) node[above] {$y$};
+			
+			% Ticks
+			\foreach \x in {-4,-3,-2,-1,1,2}
+			\draw (\x,0.1) -- (\x,-0.1);
+			\foreach \y in {-2,-1,1,2,3,4}
+			\draw (0.1,\y) -- (-0.1,\y);
+			
+			% Graph A: f(x) = -(x+1)^3 + 1
+			% Domain so gewählt, dass der Graph im Fenster y∈[-2,4] bleibt:
+			\draw[domain=-2.44:0.44,smooth,thick,samples=200,variable=\x]
+			plot ({\x},{-(\x+1)*(\x+1)*(\x+1) + 1});
+		\end{tikzpicture}
+	\end{minipage}%
+	\hfill
+	% rechte Minipage: Funktionsauswahl
+	\begin{minipage}[t]{0.39\textwidth}
+		\scriptsize
+		\begin{tabular}{@{}l@{}}
+			
+			a) $f(x)=(x+1)^3+1$\\[2pt]
+			b) $f(x)=-(x+1)^3+1$\\[2pt]
+			c) $f(x)=-(x-1)^3+1$\\[2pt]
+			d) $f(x)=-(x+1)^3-1$
+		\end{tabular}
+	\end{minipage}
+\end{minipage}
+
 		&
 		% =========================================
 		% BLOCK 4 (unten rechts): Kubikwurzel-Funktion
 		% =========================================
-		\begin{minipage}[t]{0.45\textwidth}
-			\begin{minipage}[t]{0.58\textwidth}
-				\begin{tikzpicture}[scale=0.8]
-					\draw[step=0.5,thick,gray!60] (-4,-3) grid (4,2);
-					\draw[->] (-4,0) -- (4.2,0) node[right] {$x$};
-					\draw[->] (0,-2) -- (0,2.2) node[above] {$y$};
-					\foreach \x in {-4,-3,-2,-1,1,2,3,4}
-					\draw (\x,0.1) -- (\x,-0.1);
-					\foreach \y in {-2,-1,1,2}
-					\draw (0.1,\y) -- (-0.1,\y);
-					% Graph: f(x) = x^(1/3) - 1
-					\draw[domain=-4:4,smooth,thick,variable=\x]
-					plot ({\x},{sign(\x)*abs(\x)^(1/3) - 1});
-				\end{tikzpicture}
-			\end{minipage}%
-			\hfill
-			\begin{minipage}[t]{0.20\textwidth}
-				\scriptsize
-				\begin{tabular}{@{}l@{}}
-					a) $f(x) = \dfrac{x}{x^{3}} - 1$\\[2pt]
-					b) $f(x) = -x^{\dfrac{1}{3}} - 1$\\[2pt]
-					c) $f(x) = x^{\dfrac{1}{3}} - 1$\\[2pt]
-					d) $f(x) = \dfrac{1}{|x^{2}|} + 1$
-				\end{tabular}
-			\end{minipage}
-		\end{minipage}
+% --- Potenz-/Bruchfunktion: Graph + Auswahl ---
+\begin{minipage}[t]{0.48\textwidth}
+	% linke Minipage: Graph
+	\begin{minipage}[t]{0.58\textwidth}
+		\begin{tikzpicture}[scale=0.8]
+			% Grid und Achsen
+			\draw[step=0.5,thick,gray!60] (-4,-2) grid (3,4);
+			\draw[->] (-4,0) -- (3.2,0) node[right] {$x$};
+			\draw[->] (0,-2) -- (0,4.2) node[above] {$y$};
+			
+			% Ticks
+			\foreach \x in {-4,-3,-2,-1,1,2,3}
+			\draw (\x,0.1) -- (\x,-0.1);
+			\foreach \y in {-2,-1,1,2,3,4}
+			\draw (0.1,\y) -- (-0.1,\y);
+			
+			% Asymptoten (optional, hilft beim Erkennen)
+			\draw[dashed,gray!70] (-1,-2) -- (-1,4); % vertikale Asymptote x=-1
+			\draw[dashed,gray!70] (-4,3) -- (4,3);   % horizontale Asymptote y=3
+			
+			% Graph A: f(x) = -1/(x+1)^2 + 3
+			% Domain so gewählt, dass y >= -2 bleibt:
+			% |x+1| >= 1/sqrt(5) ≈ 0.4472
+			\draw[domain=-4:-1.4472,smooth,thick,samples=200,variable=\x]
+			plot ({\x},{-1/((\x+1)*(\x+1)) + 3});
+			\draw[domain=-0.5528:4,smooth,thick,samples=200,variable=\x]
+			plot ({\x},{-1/((\x+1)*(\x+1)) + 3});
+		\end{tikzpicture}
+	\end{minipage}%
+	\hfill
+	% rechte Minipage: Funktionsauswahl
+	\begin{minipage}[t]{0.38\textwidth}
+		\scriptsize
+		\begin{tabular}{@{}l@{}}
+			
+			a) $f(x)= \phantom{-}\dfrac{1}{(x+1)^{2}}+3$\\[2pt]
+			b) $f(x)= -\dfrac{1}{(x-1)^{2}}+3$\\[2pt]
+			c) $f(x)= -\dfrac{2}{(x+1)^{2}}+3$\\[2pt]
+			d) $f(x)= -\dfrac{1}{(x+1)^{2}}+3$
+		\end{tabular}
+	\end{minipage}
+\end{minipage}
+
 		
 	\end{tabular}
 \end{center}
@@ -319,7 +354,7 @@ Welche der angegebenen Funktionsgleichungen passt jeweils zum dargestellten Grap
 			\hline
 			Note & 1 & 2 & 3 & 4 & 5 & 6 \\
 			\hline
-			Prozent \% & 100--95 & 94--80 & 79--65 & 64--45 & 44--16 & 15--0 \\
+			Prozent \% & 100--95 & 94--80 & 79--65 & 64--50 & 49--16 & 15--0 \\
 			\hline
 			Punkte & \maxSumme{}--\noteEinsMin{} & \fpeval{\noteEinsMin-1}--\noteZweiMin{} & \fpeval{\noteZweiMin-1}--\noteDreiMin{} & \fpeval{\noteDreiMin-1}--\noteVierMin{} & \fpeval{\noteVierMin-1}--\noteFunfMin{} & \fpeval{\noteFunfMin-1}--\noteSechsMin{} \\
 			\hline
